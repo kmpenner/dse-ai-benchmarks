@@ -1,70 +1,97 @@
-# API Integration & Benchmarking Protocols
+# Benchmarking Protocols
 
-This document outlines the architecture and protocols for Phase 1 and Phase 2 of the project, focusing on establishing a secure, reproducible environment for testing Generative AI against traditional scholarly editing tools.
-
----
-
-## 1. API Integration Architecture
-
-To benchmark multiple Large Language Models (LLMs) effectively and reproducibly, the software environment should be designed to handle multiple API endpoints without rewriting the core application logic.
-
-### Recommended Framework: Unified API Router (OpenRouter)
-Instead of managing separate API keys and billing accounts for OpenAI, Anthropic, and Google, we highly recommend using **OpenRouter**. OpenRouter acts as a unified endpoint that allows you to call hundreds of LLMs using the standard OpenAI API format.
-
-**Benefits of OpenRouter for this SSHRC Project:**
-1. **Simplified Grant Accounting:** You only need to fund a single OpenRouter account using the StFX research funds, rather than managing separate credit card billings across multiple corporate entities.
-2. **Standardized Codebase:** The integration code is identical to using the official OpenAI Python package. You simply change the `base_url` to OpenRouter and use one universal API key.
-3. **Unrestricted Model Access:** It provides instant access to the core commercial models (GPT-5.5, Claude Fable 5, Gemini 3.1 Pro) as well as open-weight models (like DeepSeek V4 or Qwen 3.6) for comprehensive benchmarking.
-
-### Secure Environment Setup
-*   **Credential Management:** Never hardcode API keys. Use a `.env` file loaded via the `python-dotenv` library to manage your single `OPENROUTER_API_KEY`.
-*   **Reproducibility Parameters:** 
-    *   Set `temperature = 0.0` for the initial benchmarking phase to ensure outputs are as deterministic and reproducible as possible. 
-    *   Set `seed` values where supported (e.g., OpenAI) to lock generation consistency.
-*   **Data Storage:** Save all API requests and responses in structured JSON/JSONL format. Every saved output must include: 
-    *   The exact `system_prompt` and `user_prompt` used.
-    *   Model name and version (e.g., `openai/gpt-5.5` or `anthropic/claude-fable-5`).
-    *   Timestamps and token usage (to calculate the "Tokenization Tax").
-
-### Target Models (Mid-2026 SOTA)
-Based on current benchmarks, the following models should be prioritized in Phase 1:
-*   **Anthropic Claude (Fable 5 & Opus 4.8):** Top choices for highly nuanced, literary translation and adhering to strict negative constraints.
-*   **OpenAI (GPT-5.5):** Extremely capable at deep reasoning tasks, specifically useful for parsing Semitic morphology (*binyanim*) and explaining syntactical structures.
-*   **Google Gemini (3.1 Pro):** Preferred for RAG workflows requiring massive context (1M+ tokens), such as passing entire lexicons.
-*   **Specialized Models:** **DictaLM 3.0** (fine-tuned specifically for Hebrew base-level precision) and **DeepSeek V4 / Qwen 3.6** (for evaluating open-weight performance).
+This document describes how `editio-bench` tests language models on the tasks of a scholarly edition, as run for the RESAC 2026 paper. The code is in `editio-bench/`. For how the answers are scored, see `benchmarks_and_scoring_report.md`. For how the ground truth was established, see `GROUND_TRUTH_POLICIES.md`.
 
 ---
 
-## 2. Benchmarking Protocols (Phase 2 & Phase 3)
+## 1. API access
 
-The goal of the benchmarking process is not just to see if the AI gets the "right" answer, but to systematically analyze *how and why* it fails (Gap Analysis) compared to deterministic tools.
+All models are called through **OpenRouter**, one endpoint with one key for every provider. `editio_bench/translate.py` sends requests with `httpx`. It retries with backoff and records the cost in US dollars reported for each call.
 
-### 2.1 Dataset Preparation (The "Ground Truth")
-*   Format the Ground Truth texts (Aramaic Dead Sea Scrolls, Greek *Lives of the Prophets*, etc.) into a consistent schema (e.g., TEI/XML or structured JSON).
-*   Include the "anomalies" (e.g., scribal errors, high-variance spelling) explicitly in the metadata, as these are the exact features LLMs tend to "normalize" or erase (Formal Stuckness).
+* **Credentials.** The key is read from the `OPENROUTER_API_KEY` environment variable and is never stored in the repository.
+* **Generation settings** (`config.yaml`):
+  * `temperature: 0.0`
+  * `max_tokens: 65536`, because reasoning models can use their whole budget thinking before they answer.
+* **Reasoning effort.** Each target model runs at `none`, `low` or `high` (`--reasoning`). Some models refuse `none`. For those, the runner retries once at the next level up and records the effort actually used.
+* **Images.** Transcription tasks send the manuscript crop as a base64 JPEG in the same message as the prompt.
+* **Cache.** Answers and scores are cached in SQLite (`.editio_cache.sqlite`), so an interrupted run can resume without paying twice. A run made mostly of cached answers replays an earlier run, so the clean suite excludes it (see §4).
 
-### 2.2 The Human-in-the-Loop (HITL) Evaluation Rubric
-When the Undergraduate RAs evaluate the LLM outputs blindly, they will use a standardized rubric scoring the following dimensions (e.g., on a 1-5 scale or Pass/Fail):
+## 2. The task suite
 
-1.  **Lexical Accuracy:** Did the model translate or transcribe the root word correctly?
-2.  **Morphological Correctness:** Did the model correctly identify and segment the morphology? (e.g., correctly distinguishing between *aphel* and *pael* stems in Aramaic).
-3.  **Handling of Uncertainty (Hallucination Index):** When faced with a lacuna (missing text), did the model confidently hallucinate a grammatically perfect but historically impossible reading, or did it express uncertainty/offer plausible alternatives?
-4.  **Formal Stuckness Penalty:** Did the model silently "correct" a valid historical scribal anomaly into a standardized modern spelling?
+`data/benchmarks.json` defines **13 tasks** on three manuscripts:
 
-### 2.3 Prompt Engineering Test Sequences (Phase 4 Prep)
-The benchmarking pipeline must support rapid iteration of prompt variations. We will test:
-*   **Zero-Shot vs. Few-Shot:** Testing if providing the LLM with 2-3 examples of standard philological annotations improves accuracy.
-*   **Reasoning-Focused Prompts (Chain-of-Thought):** Forcing the model to explicitly state its morphological and syntactical reasoning (a "translator's notepad") *before* generating the final translation or transcription. This is critical for reducing hallucinations.
-*   **Context Injection (RAG):** Passing excerpts from standard scholarly lexicons (e.g., BDB for Hebrew, LSJ for Greek) directly into the system prompt to overcome the model's struggle with rare terminology (tokenization tax).
-*   **Negative Constraints:** Utilizing explicit system prompts such as: *"You are a strict philologist. Do NOT normalize spelling variations. Preserve all scribal anomalies exactly as transcribed."*
+* Codex Marchalianus (Vat. gr. 2125), in Greek
+* Vat.lat.629, in Latin
+* 4Q530, the Aramaic Book of Giants
 
----
+| Phase | Greek | Latin | Aramaic |
+| :--- | :--- | :--- | :--- |
+| Transcription (from an image) | p. 11, lines 1–4 | f. 3v, lines 1–4 | col. ii, frg. 6 (infrared) |
+| Collation | *Lives of the Prophets* | Isidore | Giants parallels |
+| Translation | Siloam | Seraphim | — |
+| Lacuna handling | — | — | Tree vision |
+| Annotation | TEI morphosyntax | Abbreviations | Morphology |
+| Encoding | TEI header | — | — |
 
-## 3. Recommended Technology Stack
-*   **Programming Language:** Python 3.11+
-*   **API Management:** `openai` Python package (pointed to the OpenRouter endpoint)
-*   **Environment Management:** `uv` or `poetry` (to ensure identical software versions for the PI, PhD student, and URAs).
-*   **Data Analysis:** `pandas` and `Jupyter Notebooks` for the PhD student to run the Gap Analysis on the grading data.
-*   **Collaboration & File Sharing:** **Google Drive** (for sharing manuscript datasets, student grading sheets, and evaluation rubrics collaboratively with Undergraduate RAs).
-*   **Version Control & Codebase:** **GitHub** (to store the python code, prompt libraries, and version-control the evolving "Methodological Blueprint" for open dissemination).
-*   **Agentic Orchestration & Management:** **Google Antigravity** or **Hermes Desktop**. Use these agent managers as command centers to run, orchestrate, and trace parallel, long-running agentic tasks (such as batching runs across multiple target datasets) and monitoring execution histories.
+Each task carries:
+
+* a prompt
+* a ground truth
+* a source citation
+* a list of scribal anomalies the answer should preserve
+* a verification status: `ESTABLISHED_GT` (from a published edition or a checked project transcription) or `SELF_CONTAINED_GT` (derived from material given in the prompt)
+
+The Greek and Latin images are Vatican Library crops, included with attribution. The Israel Antiquities Authority's 4Q530 image is not redistributed. The task's `image_source` gives the Leon Levy Dead Sea Scrolls Digital Library URL and a crop box, and the runner downloads and crops the image on first use.
+
+## 3. Prompts
+
+Every task is sent with the same system prompt:
+
+> You are a strict philologist working on ancient manuscript texts (Dead Sea Scrolls, Septuagint, Latin parabiblica). Do NOT normalize spelling variations. Preserve all scribal anomalies exactly as transcribed. When text is broken (lacuna), say so explicitly and never present a conjectural restoration as certain.
+
+The user message is the task's prompt from `benchmarks.json`. Transcription prompts ask for a diplomatic layer that follows the DJD sigla conventions.
+
+`prompts/protocols.yaml` also defines three prompt protocols for the separate translation track (`editio_bench.cli run`): baseline, chain-of-thought and negative constraints. The RESAC results come from the workflow suite (`editio_bench.cli phase`), which does not vary the prompt.
+
+## 4. Scoring
+
+* **Judge panel.** Two models score each answer from 0 to 100 against the ground truth, using the rubric for the task's phase in `benchmarks.json`:
+  * `minimax/minimax-m3`
+  * `google/gemini-3.8-flash`
+
+  If the two disagree by more than 10 points, a third model (`deepseek/deepseek-v4-flash`) also scores the answer, and the final score is the median of the three. Otherwise it is the mean of the two. The judges read text only; they do not see the image.
+* **Transcription rubric.** Five dimensions:
+  * diplomatic fidelity
+  * no silent normalization
+  * marking lacunae and uncertain letters
+  * keeping the diplomatic and normalized layers distinct
+  * epigraphic restraint
+* **Character error rate.** On the three image tasks, `scripts/score_visual_cer.py` adds a deterministic character error rate beside the judges, because the judges proved unreliable there.
+* **Eligibility for the clean suite.** A configuration enters the clean suite (`resac2026_clean_sweep.json`) only if:
+  * at least 90% of its tasks are scored
+  * it is not mostly a replay of cached answers
+
+  An answer claiming that no image was attached counts as declined, not as epigraphic restraint. `resac2026/PROVENANCE.md` records these gates and every figure withdrawn under them.
+
+## 5. Outputs
+
+Each run writes one CSV to `results/`, named `phase_<model>_<effort>_<timestamp>.csv`, with one row per task. The columns include:
+
+* the answer, its status, and whether it came from the cache
+* cost and latency
+* each judge's raw output, score, error and cost
+* the consensus score, and whether a tie-break was triggered
+
+The CSVs behind the paper are in `editio-bench/results/`, and `resac2026_clean_sweep.json` indexes them.
+
+## 6. Running it
+
+```bash
+cd editio-bench
+python -m editio_bench.cli phase --dry-run                                  # offline: list runnable tasks
+python -m editio_bench.cli phase --model openai/gpt-5.5 --reasoning low     # one model, whole suite
+python -m editio_bench.cli phase --phase transcription --phase collation    # selected phases, all config models
+python -m pytest tests -q
+```
+
+Hosted models change without notice, so re-runs will drift from the published results. To reproduce the published numbers exactly, rebuild the scores and charts from the archived CSVs (see the Replication page).

@@ -15,7 +15,7 @@ Collation evaluates whether vision and language models can act as reliable schol
 
 ## 2. Benchmark Tasks in Suite
 The active collation benchmarks are maintained in [`editio-bench/data/benchmarks.json`](../editio-bench/data/benchmarks.json):
-- `coll-greek-three-witnesses`: Three-witness Septuagint clause alignment (Gen 1:4 LXX template; substitution $\Theta\mathrm{EO}\Sigma/\mathrm{K}\Upsilon\mathrm{PIO}\Sigma$, omission of $\mathrm{OTI}$).
+- `coll-greek-three-witnesses`: Three-witness Septuagint clause alignment (Gen 1:4 LXX template; substitution ΘΕΟΣ/ΚΥΡΙΟΣ, omission of ΟΤΙ).
 - `coll-latin-two-witnesses`: Two-witness Latin clause alignment (Gen 1:5 Vetus Latina/Vulgate; omission of *uespere et*, substitution *unus*/*primus*).
 
 ---

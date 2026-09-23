@@ -15,8 +15,8 @@ Annotation and encoding evaluate whether LLMs can perform rigorous morphosyntact
 
 ## 2. Benchmark Tasks in Suite
 Maintained in [`editio-bench/data/benchmarks.json`](../editio-bench/data/benchmarks.json):
-- `annot-greek-jn1-1-parse`: Word-by-word morphosyntactic and syntactic parse of John 1:1a ($\mathrm{E}\nu\ \dot{\alpha}\rho\chi\tilde{\eta}\ \tilde{\eta}\nu\ \dot{o}\ \lambda\acute{o}\gamma\mathrm{os}$).
-- `annot-greek-dan353-theodotion-firstword`: Precision identification of first word in Theodotion Dan 3:53 ($\epsilon\dot{\upsilon}\lambda\mathrm{o}\gamma\eta\mu\acute{\epsilon}\nu\mathrm{os}$ vs $\epsilon\dot{\upsilon}\lambda\mathrm{o}\gamma\eta\tau\acute{\mathrm{o}}\mathrm{s}$).
+- `annot-greek-jn1-1-parse`: Word-by-word morphosyntactic and syntactic parse of John 1:1a (Ἐν ἀρχῇ ἦν ὁ λόγος).
+- `annot-greek-dan353-theodotion-firstword`: Precision identification of first word in Theodotion Dan 3:53 (εὐλογημένος vs εὐλογητός).
 - `annot-greek-tei-lemma-msd-b54k3v81`: Full TEI XML `<ab>` element annotation with `lemma` and `msd` attributes, Nomina Sacra expansion, and syntax explanation.
 - `encode-greek-teiheader-marchalianus`: Production of schema-valid TEI P5 `<teiHeader>` with complete manuscript metadata for *Codex Marchalianus* (Vat. gr. 2125).
 

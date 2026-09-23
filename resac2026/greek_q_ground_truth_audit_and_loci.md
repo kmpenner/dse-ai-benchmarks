@@ -10,7 +10,7 @@
 
 ## 1. Loci Requiring Visual Inspection by Demarquis
 
-Following the **Human-in-the-Loop (HITL) Convergent Disagreement Protocol** (Policy §4), whenever $\ge 3$ independent vision models agree on a reading that departs from the human transcription, the locus must be surfaced for physical re-examination against the high-resolution digital facsimile.
+Following the **Human-in-the-Loop (HITL) Convergent Disagreement Protocol** (Policy §4), whenever ≥ 3 independent vision models agree on a reading that departs from the human transcription, the locus must be surfaced for physical re-examination against the high-resolution digital facsimile.
 
 ### Codex Marchalianus (*Vat. gr. 2125*, Page 11 — Greek Q)
 Below are the **30 flagged consensus loci** (accounting for 36 characters / 2.8% of the text surface) that Demarquis needs to inspect under high magnification on `transcription/Vat.gr.2125_0029_pa_0011_m.jpg`.

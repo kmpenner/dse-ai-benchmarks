@@ -1,8 +1,7 @@
 # Paper and slides
 
 - [Read the paper online](resac2026/RESAC_2026_paper.md)
-- [Slides (PDF)](resac2026/RESAC_2026_From_Author_to_Editor.pdf) · [PowerPoint](resac2026/RESAC_2026_From_Author_to_Editor.pptx)
-- [Slide text](resac2026/RESAC_2026_slides.md)
+- [Slides (PDF)](resac2026/RESAC_2026_From_Author_to_Editor.pdf) · [PowerPoint, with the full speaker script in the notes](resac2026/RESAC_2026_From_Author_to_Editor.pptx)
 
 Every figure the paper cites is tracked in the [provenance register](resac2026/PROVENANCE.md).
 

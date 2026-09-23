@@ -182,7 +182,7 @@ Ground Truth TEI ───────────────┘               
   ──> Update TEI XML Ground Truth (v2)                              ──> Retain Ground Truth; Document in Apparatus
 ```
 
-1. **Trigger Threshold:** Any locus where **$\ge 3$ independent vision models** agree on a reading that differs from the Ground Truth must be surfaced in a collation worksheet (`build_collation_worksheet.py`).
+1. **Trigger Threshold:** Any locus where **≥ 3 independent vision models** agree on a reading that differs from the Ground Truth must be surfaced in a collation worksheet (`build_collation_worksheet.py`).
 2. **Visual Inspection Requirement:** The editor re-examines the high-resolution digital facsimile (under infrared for DSS) specifically at the flagged coordinates.
 3. **Ground Truth Correction:** If the models identified a genuine transcription slip (e.g., `ΕΙϹΟΔΟΝ` vs `ΕΙϹΟΛΟΝ`, `ierlm` vs `iertin`), the TEI XML file is updated with a version increment and documented in the revision history.
 
@@ -193,7 +193,7 @@ Ground Truth TEI ───────────────┘               
 1. **Parser Automation (`parse_tei_*.py`):**
    * Benchmark ingestion scripts must automatically extract both `diplomatic_ground_truth` and `normalized_ground_truth` directly from `<choice>` structures.
 2. **Allograph Folding in Evaluation:**
-   * **Letter Identification CER (Headline):** Folds case, diacritics/tituli, long-s (`ſ` $\rightarrow$ `s`), u/v, i/j, and lunate sigmas (`Ϲ` $\rightarrow$ `Σ`).
+   * **Letter Identification CER (Headline):** Folds case, diacritics/tituli, long-s (`ſ` → `s`), u/v, i/j, and lunate sigmas (`Ϲ` → `Σ`).
    * **Abbreviation Strict CER:** Preserves all abbreviation marks (`ā`, `p̄`, `q;`, `ΘϹ`), measuring the model's abbreviation fidelity.
    * **Normalized WER:** Evaluates the model's segmented normalized edition against the scholarly normalized edition.
 3. **Categorical Handling of Non-Transcriptions:**

@@ -52,7 +52,7 @@ Following human-in-the-loop (HITL) collation and error reconciliation against th
 ## 3. Key Philological & Technical Findings
 
 1. **Impact of v2 Ground Truth Correction:**
-   * Aligning the benchmark target to Demarquis's corrected TEI standard eliminated artificial OCR shape-confusion discrepancies (e.g. `ΕΙΣΟΛΟΝ` $\rightarrow$ `ΕΙΣΟΔΟΝ`, `ΠΟΛΕΩΟΙ` $\rightarrow$ `ΠΟΛΕΜΙΟΙ`, `ΙΟΥΛΑΙΟΙ` $\rightarrow$ `ΙΟΥΔΑΙΟΙ`).
+   * Aligning the benchmark target to Demarquis's corrected TEI standard eliminated artificial OCR shape-confusion discrepancies (e.g. `ΕΙΣΟΛΟΝ` → `ΕΙΣΟΔΟΝ`, `ΠΟΛΕΩΟΙ` → `ΠΟΛΕΜΙΟΙ`, `ΙΟΥΛΑΙΟΙ` → `ΙΟΥΔΑΙΟΙ`).
    * Consequently, the normalized Word Error Rate (WER) improved significantly: **Claude Opus 4.8 dropped from 0.370 to 0.281**, and **Grok 4.6 achieved 0.310**.
 
 2. **Emergence of `x-ai/grok-4.6` as a Tier-1 Vision Performer:**

@@ -21,7 +21,6 @@ nav:
   - Paper and slides:
       - Overview: paper.md
       - Paper (text): resac2026/RESAC_2026_paper.md
-      - Slides (text): resac2026/RESAC_2026_slides.md
   - Results: results.md
   - Tests and ground truth:
       - Overview: tests.md
