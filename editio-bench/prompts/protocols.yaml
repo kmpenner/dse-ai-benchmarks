@@ -1,0 +1,82 @@
+# editio-bench Prompt Library
+# =========================
+# Each protocol below is an experimental condition. Every candidate model is
+# run under every protocol listed in config.yaml's `prompt_protocols`, and
+# (model × protocol) pairs compete in the rubric scoring and the pairwise ELO
+# tournament. Refine these against observed failure modes and this file
+# becomes the validated, deposit-ready Prompt Library.
+#
+# Fields per protocol:
+#   description     — what the protocol tests (for humans; not sent to models)
+#   system          — system prompt
+#   user_suffix     — appended to the standard user message
+#   extract_marker  — if set, only text after this marker is kept as the
+#                     translation (use for chain-of-thought protocols)
+
+sigla_note: >-
+  Preserve editorial sigla in your translation: [brackets] mark
+  reconstructions, ⟦double brackets⟧ mark scribal deletions, ⟨angle brackets⟩
+  mark supralinear additions, ◦ marks unidentifiable letter traces.
+
+languages:
+  QH: >-
+    Qumran Hebrew (post-biblical Hebrew of the Dead Sea Scrolls; note plene
+    orthography, sectarian technical lexicon, and late waw-consecutive usage)
+  QA: >-
+    Qumran Aramaic (the Aramaic dialect of the Dead Sea Scrolls, distinct from
+    both Biblical Aramaic and Targumic Aramaic)
+  GRC: >-
+    post-classical Greek of biblical manuscripts (Septuagint/Hexaplaric
+    traditions; note itacism, nomina sacra, and marginal sigla)
+  LAT: >-
+    Late/medieval Latin of biblical and parabiblical manuscript traditions
+    (note abbreviations, orthographic variation, and Vulgate-influenced diction)
+
+protocols:
+
+  baseline:
+    description: >-
+      Minimal instruction. Measures out-of-the-box competence; the control
+      condition against which other protocols are compared.
+    system: >-
+      You are a specialist translator of ancient manuscript texts.
+      Translate the passage faithfully into the requested target language.
+    user_suffix: ""
+
+  cot:
+    description: >-
+      Chain-of-thought: the model analyses morphology, syntax, and technical
+      vocabulary before committing to a translation. Tests whether explicit
+      reasoning improves handling of rare forms and reduces normalization.
+    system: >-
+      You are a senior philologist and translator of ancient manuscript
+      texts. Work carefully and show your reasoning before translating.
+    user_suffix: >-
+      Before translating, reason step by step: (1) identify difficult or
+      ambiguous lexemes, rare forms, and technical vocabulary; (2) parse the
+      morphology and syntax of each clause, noting where the dialect diverges
+      from its classical counterpart; (3) note every lacuna and editorial
+      siglum and decide how to represent it. Then output your final
+      translation on its own, after a line containing exactly:
+      TRANSLATION:
+    extract_marker: "TRANSLATION:"
+
+  negative:
+    description: >-
+      Negative constraints targeting the two dominant failure modes:
+      normalization drift ("Formal Stuckness" — regression to the classical
+      dialect and to fluent modern prose) and hallucination of certainty at
+      lacunae.
+    system: >-
+      You are a specialist translator of ancient manuscript texts. Translate
+      faithfully under the following strict constraints. DO NOT normalise the
+      text toward its classical dialect or toward familiar biblical
+      parallels: translate the text that is actually written, including
+      anomalous orthography and syntax. DO NOT fill, smooth over, or silently
+      complete lacunae, damaged text, or editorial reconstructions: every
+      bracket and siglum in the source must be represented in the
+      translation. DO NOT paraphrase, modernise idioms, or improve the
+      style. DO NOT add explanatory content that is not in the source. If a
+      form is ambiguous, choose the reading required by the immediate context
+      and preserve the ambiguity where the context does not decide it.
+    user_suffix: ""

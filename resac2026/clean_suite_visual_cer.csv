@@ -1,0 +1,226 @@
+config,Model,Effort,task,script,answer_status,cer,cer_strict,gt_chars,hyp_chars,hyp_ratio,declined,claims_no_image,judge_score
+anthropic/claude-opus-5 (none),anthropic/claude-opus-5,none,trans-greek-marchalianus-p11,Greek,ok,0.576,,125,54,0.43,False,False,10
+anthropic/claude-opus-5 (none),anthropic/claude-opus-5,none,trans-latin-vatlat629-f3v,Latin,ok,0.7164,0.7391,134,490,3.66,False,False,2.5
+anthropic/claude-opus-5 (none),anthropic/claude-opus-5,none,trans-aramaic-4q530-f2ii,Aramaic,failed,,,64,0,0.0,False,False,N/A
+anthropic/claude-sonnet-4.5 (none),anthropic/claude-sonnet-4.5,none,trans-greek-marchalianus-p11,Greek,ok,0.096,,125,177,1.42,False,False,25
+anthropic/claude-sonnet-4.5 (none),anthropic/claude-sonnet-4.5,none,trans-latin-vatlat629-f3v,Latin,ok,0.0373,0.0797,134,655,4.89,False,False,40
+anthropic/claude-sonnet-4.5 (none),anthropic/claude-sonnet-4.5,none,trans-aramaic-4q530-f2ii,Aramaic,ok,0.8594,0.875,64,19,0.3,False,False,10
+anthropic/claude-opus-4.8 (none),anthropic/claude-opus-4.8,none,trans-greek-marchalianus-p11,Greek,ok,0.024,,125,127,1.02,False,False,40
+anthropic/claude-opus-4.8 (none),anthropic/claude-opus-4.8,none,trans-latin-vatlat629-f3v,Latin,ok,0.1418,0.2391,134,1591,11.87,False,False,65
+anthropic/claude-opus-4.8 (none),anthropic/claude-opus-4.8,none,trans-aramaic-4q530-f2ii,Aramaic,ok,1.0,1.0,64,0,0.0,True,False,20
+anthropic/claude-fable-5 (none),anthropic/claude-fable-5,none,trans-greek-marchalianus-p11,Greek,ok,0.008,,125,229,1.83,False,False,65
+anthropic/claude-fable-5 (none),anthropic/claude-fable-5,none,trans-latin-vatlat629-f3v,Latin,ok,0.0,0.0435,134,504,3.76,False,False,50
+anthropic/claude-fable-5 (none),anthropic/claude-fable-5,none,trans-aramaic-4q530-f2ii,Aramaic,failed,,,64,0,0.0,False,False,N/A
+google/gemini-3.7-flash (none),google/gemini-3.7-flash,none,trans-greek-marchalianus-p11,Greek,ok,0.0,,125,152,1.22,False,False,72
+google/gemini-3.7-flash (none),google/gemini-3.7-flash,none,trans-latin-vatlat629-f3v,Latin,ok,0.0,0.0435,134,380,2.84,False,False,75
+google/gemini-3.7-flash (none),google/gemini-3.7-flash,none,trans-aramaic-4q530-f2ii,Aramaic,ok,0.7031,0.7031,64,52,0.81,False,False,8.5
+google/gemini-2.5-flash (none),google/gemini-2.5-flash,none,trans-greek-marchalianus-p11,Greek,ok,0.248,,125,137,1.1,False,False,5
+google/gemini-2.5-flash (none),google/gemini-2.5-flash,none,trans-latin-vatlat629-f3v,Latin,ok,0.1567,0.1957,134,665,4.96,False,False,45
+google/gemini-2.5-flash (none),google/gemini-2.5-flash,none,trans-aramaic-4q530-f2ii,Aramaic,ok,0.75,0.75,64,38,0.59,False,False,6
+anthropic/claude-3-haiku (none),anthropic/claude-3-haiku,none,trans-greek-marchalianus-p11,Greek,ok,0.52,,125,121,0.97,False,False,0
+anthropic/claude-3-haiku (none),anthropic/claude-3-haiku,none,trans-latin-vatlat629-f3v,Latin,ok,0.1194,0.1739,134,304,2.27,False,False,15
+anthropic/claude-3-haiku (none),anthropic/claude-3-haiku,none,trans-aramaic-4q530-f2ii,Aramaic,ok,0.8125,0.8125,64,819,12.8,False,False,0
+openai/gpt-5.5 (none),openai/gpt-5.5,none,trans-greek-marchalianus-p11,Greek,ok,0.104,,125,127,1.02,False,False,18
+openai/gpt-5.5 (none),openai/gpt-5.5,none,trans-latin-vatlat629-f3v,Latin,ok,0.0,0.087,134,589,4.4,False,False,55
+openai/gpt-5.5 (none),openai/gpt-5.5,none,trans-aramaic-4q530-f2ii,Aramaic,ok,0.8281,0.8281,64,27,0.42,False,False,10
+anthropic/claude-opus-4.7 (none),anthropic/claude-opus-4.7,none,trans-greek-marchalianus-p11,Greek,ok,0.016,,125,126,1.01,False,False,40
+anthropic/claude-opus-4.7 (none),anthropic/claude-opus-4.7,none,trans-latin-vatlat629-f3v,Latin,ok,0.0149,0.0507,134,2548,19.01,False,False,40
+anthropic/claude-opus-4.7 (none),anthropic/claude-opus-4.7,none,trans-aramaic-4q530-f2ii,Aramaic,ok,1.0,1.0,64,0,0.0,False,False,2.5
+google/gemini-3.1-pro-preview (none),google/gemini-3.1-pro-preview,none,trans-greek-marchalianus-p11,Greek,ok,0.0,,125,141,1.13,False,False,82
+google/gemini-3.1-pro-preview (none),google/gemini-3.1-pro-preview,none,trans-latin-vatlat629-f3v,Latin,ok,0.0075,0.0797,134,254,1.9,False,False,70
+google/gemini-3.1-pro-preview (none),google/gemini-3.1-pro-preview,none,trans-aramaic-4q530-f2ii,Aramaic,ok,0.6875,0.7031,64,68,1.06,False,False,5
+openai/gpt-5.6-luna (none),openai/gpt-5.6-luna,none,trans-greek-marchalianus-p11,Greek,ok,0.872,,125,17,0.14,False,False,5
+openai/gpt-5.6-luna (none),openai/gpt-5.6-luna,none,trans-latin-vatlat629-f3v,Latin,ok,0.0896,0.1739,134,252,1.88,False,False,35
+openai/gpt-5.6-luna (none),openai/gpt-5.6-luna,none,trans-aramaic-4q530-f2ii,Aramaic,ok,1.0,1.0,64,0,0.0,True,False,10
+google/gemini-2.5-pro (none),google/gemini-2.5-pro,none,trans-greek-marchalianus-p11,Greek,ok,1.0,,125,0,0.0,False,False,0
+google/gemini-2.5-pro (none),google/gemini-2.5-pro,none,trans-latin-vatlat629-f3v,Latin,ok,0.0075,0.0435,134,894,6.67,False,False,55
+google/gemini-2.5-pro (none),google/gemini-2.5-pro,none,trans-aramaic-4q530-f2ii,Aramaic,ok,1.0,1.0,64,0,0.0,False,False,1
+google/gemma-4-31b-it:free (none),google/gemma-4-31b-it:free,none,trans-greek-marchalianus-p11,Greek,OpenRouter call failed after 6 retries: retryable 429: Provider returned error,,,125,0,0.0,False,False,N/A
+google/gemma-4-31b-it:free (none),google/gemma-4-31b-it:free,none,trans-latin-vatlat629-f3v,Latin,OpenRouter call failed after 6 retries: retryable 429: Provider returned error,,,134,0,0.0,False,False,N/A
+google/gemma-4-31b-it:free (none),google/gemma-4-31b-it:free,none,trans-aramaic-4q530-f2ii,Aramaic,OpenRouter call failed after 6 retries: retryable 429: Provider returned error,,,64,0,0.0,False,False,N/A
+openai/gpt-5.6-terra (none),openai/gpt-5.6-terra,none,trans-greek-marchalianus-p11,Greek,ok,0.44,,125,99,0.79,False,False,12
+openai/gpt-5.6-terra (none),openai/gpt-5.6-terra,none,trans-latin-vatlat629-f3v,Latin,ok,0.0224,0.087,134,724,5.4,False,False,40
+openai/gpt-5.6-terra (none),openai/gpt-5.6-terra,none,trans-aramaic-4q530-f2ii,Aramaic,ok,0.9062,0.9062,64,10,0.16,False,False,15
+openai/gpt-4o-mini (none),openai/gpt-4o-mini,none,trans-greek-marchalianus-p11,Greek,ok,0.352,,125,127,1.02,False,False,1
+openai/gpt-4o-mini (none),openai/gpt-4o-mini,none,trans-latin-vatlat629-f3v,Latin,ok,0.1269,0.1667,134,1096,8.18,False,False,0
+openai/gpt-4o-mini (none),openai/gpt-4o-mini,none,trans-aramaic-4q530-f2ii,Aramaic,ok,1.0,1.0,64,0,0.0,False,False,0
+x-ai/grok-4.5 (none),x-ai/grok-4.5,none,trans-greek-marchalianus-p11,Greek,ok,0.112,,125,122,0.98,False,False,18
+x-ai/grok-4.5 (none),x-ai/grok-4.5,none,trans-latin-vatlat629-f3v,Latin,ok,0.0,0.0797,134,574,4.28,False,False,55
+x-ai/grok-4.5 (none),x-ai/grok-4.5,none,trans-aramaic-4q530-f2ii,Aramaic,ok,0.7656,0.7656,64,32,0.5,False,False,2.5
+openai/gpt-5 (none),openai/gpt-5,none,trans-greek-marchalianus-p11,Greek,ok,0.28,,125,122,0.98,False,False,20
+openai/gpt-5 (none),openai/gpt-5,none,trans-latin-vatlat629-f3v,Latin,ok,0.0075,0.0942,134,251,1.87,False,False,67
+openai/gpt-5 (none),openai/gpt-5,none,trans-aramaic-4q530-f2ii,Aramaic,ok,1.0,1.0,64,0,0.0,False,False,5
+openai/gpt-5.6-sol (none),openai/gpt-5.6-sol,none,trans-greek-marchalianus-p11,Greek,ok,0.216,,125,153,1.22,False,False,15
+openai/gpt-5.6-sol (none),openai/gpt-5.6-sol,none,trans-latin-vatlat629-f3v,Latin,ok,0.0373,0.058,134,659,4.92,False,False,42
+openai/gpt-5.6-sol (none),openai/gpt-5.6-sol,none,trans-aramaic-4q530-f2ii,Aramaic,ok,0.9375,0.9375,64,9,0.14,False,False,10
+openai/gpt-4o (none),openai/gpt-4o,none,trans-greek-marchalianus-p11,Greek,ok,0.456,,125,143,1.14,False,False,3
+openai/gpt-4o (none),openai/gpt-4o,none,trans-latin-vatlat629-f3v,Latin,ok,0.0,0.0725,134,577,4.31,False,False,50
+openai/gpt-4o (none),openai/gpt-4o,none,trans-aramaic-4q530-f2ii,Aramaic,ok,1.0,1.0,64,0,0.0,True,False,0
+meta-llama/llama-3.3-70b-instruct (none),meta-llama/llama-3.3-70b-instruct,none,trans-greek-marchalianus-p11,Greek,skipped: model has no vision support,,,125,0,0.0,False,False,N/A
+meta-llama/llama-3.3-70b-instruct (none),meta-llama/llama-3.3-70b-instruct,none,trans-latin-vatlat629-f3v,Latin,skipped: model has no vision support,,,134,0,0.0,False,False,N/A
+meta-llama/llama-3.3-70b-instruct (none),meta-llama/llama-3.3-70b-instruct,none,trans-aramaic-4q530-f2ii,Aramaic,skipped: model has no vision support,,,64,0,0.0,False,False,N/A
+meta/muse-spark-1.2 (none),meta/muse-spark-1.2,none,trans-greek-marchalianus-p11,Greek,ok,0.056,,125,123,0.98,False,False,35
+meta/muse-spark-1.2 (none),meta/muse-spark-1.2,none,trans-latin-vatlat629-f3v,Latin,ok,0.0075,0.029,134,515,3.84,False,False,55
+meta/muse-spark-1.2 (none),meta/muse-spark-1.2,none,trans-aramaic-4q530-f2ii,Aramaic,ok,0.7969,0.8125,64,26,0.41,False,False,14
+meta-llama/llama-4-maverick (none),meta-llama/llama-4-maverick,none,trans-greek-marchalianus-p11,Greek,ok,0.576,,125,94,0.75,False,False,0
+meta-llama/llama-4-maverick (none),meta-llama/llama-4-maverick,none,trans-latin-vatlat629-f3v,Latin,ok,0.0373,0.1014,134,900,6.72,False,False,35
+meta-llama/llama-4-maverick (none),meta-llama/llama-4-maverick,none,trans-aramaic-4q530-f2ii,Aramaic,ok,0.7656,0.7656,64,25,0.39,False,False,0
+x-ai/grok-4.6 (none),x-ai/grok-4.6,none,trans-greek-marchalianus-p11,Greek,ok,0.048,,125,125,1.0,False,False,25
+x-ai/grok-4.6 (none),x-ai/grok-4.6,none,trans-latin-vatlat629-f3v,Latin,ok,0.0,0.0725,134,560,4.18,False,False,82
+x-ai/grok-4.6 (none),x-ai/grok-4.6,none,trans-aramaic-4q530-f2ii,Aramaic,ok,0.7344,0.75,64,43,0.67,False,False,0
+deepseek/deepseek-v3.2 (none),deepseek/deepseek-v3.2,none,trans-greek-marchalianus-p11,Greek,skipped: model has no vision support,,,125,0,0.0,False,False,N/A
+deepseek/deepseek-v3.2 (none),deepseek/deepseek-v3.2,none,trans-latin-vatlat629-f3v,Latin,skipped: model has no vision support,,,134,0,0.0,False,False,N/A
+deepseek/deepseek-v3.2 (none),deepseek/deepseek-v3.2,none,trans-aramaic-4q530-f2ii,Aramaic,skipped: model has no vision support,,,64,0,0.0,False,False,N/A
+deepseek/deepseek-v4-flash (none),deepseek/deepseek-v4-flash,none,trans-greek-marchalianus-p11,Greek,skipped: model has no vision support,,,125,0,0.0,False,False,N/A
+deepseek/deepseek-v4-flash (none),deepseek/deepseek-v4-flash,none,trans-latin-vatlat629-f3v,Latin,skipped: model has no vision support,,,134,0,0.0,False,False,N/A
+deepseek/deepseek-v4-flash (none),deepseek/deepseek-v4-flash,none,trans-aramaic-4q530-f2ii,Aramaic,skipped: model has no vision support,,,64,0,0.0,False,False,N/A
+mistralai/mistral-large-2512 (none),mistralai/mistral-large-2512,none,trans-greek-marchalianus-p11,Greek,ok,0.368,,125,131,1.05,False,False,5
+mistralai/mistral-large-2512 (none),mistralai/mistral-large-2512,none,trans-latin-vatlat629-f3v,Latin,ok,0.0597,0.087,134,820,6.12,False,False,25
+mistralai/mistral-large-2512 (none),mistralai/mistral-large-2512,none,trans-aramaic-4q530-f2ii,Aramaic,ok,0.7188,0.7188,64,71,1.11,False,False,7
+mistralai/mistral-small-3.2-24b-instruct (none),mistralai/mistral-small-3.2-24b-instruct,none,trans-greek-marchalianus-p11,Greek,ok,0.288,,125,128,1.02,False,False,10
+mistralai/mistral-small-3.2-24b-instruct (none),mistralai/mistral-small-3.2-24b-instruct,none,trans-latin-vatlat629-f3v,Latin,ok,0.0448,0.1159,134,247,1.84,False,False,22
+mistralai/mistral-small-3.2-24b-instruct (none),mistralai/mistral-small-3.2-24b-instruct,none,trans-aramaic-4q530-f2ii,Aramaic,ok,0.8594,0.8594,64,1454,22.72,False,False,0
+qwen/qwen3.8-max-0902 (none),qwen/qwen3.8-max-0902,none,trans-greek-marchalianus-p11,Greek,ok,0.056,,125,220,1.76,False,False,28
+qwen/qwen3.8-max-0902 (none),qwen/qwen3.8-max-0902,none,trans-latin-vatlat629-f3v,Latin,ok,0.0,0.0362,134,2832,21.13,False,False,50
+qwen/qwen3.8-max-0902 (none),qwen/qwen3.8-max-0902,none,trans-aramaic-4q530-f2ii,Aramaic,ok,0.7969,0.7969,64,33,0.52,False,False,10
+qwen/qwen3-vl-235b-a22b-thinking (none),qwen/qwen3-vl-235b-a22b-thinking,none,trans-greek-marchalianus-p11,Greek,ok,0.224,,125,130,1.04,False,False,5
+qwen/qwen3-vl-235b-a22b-thinking (none),qwen/qwen3-vl-235b-a22b-thinking,none,trans-latin-vatlat629-f3v,Latin,ok,0.0299,0.1014,134,971,7.25,False,False,35
+qwen/qwen3-vl-235b-a22b-thinking (none),qwen/qwen3-vl-235b-a22b-thinking,none,trans-aramaic-4q530-f2ii,Aramaic,ok,0.9688,0.9688,64,3,0.05,False,False,4
+deepseek/deepseek-r1 (none),deepseek/deepseek-r1,none,trans-greek-marchalianus-p11,Greek,skipped: model has no vision support,,,125,0,0.0,False,False,N/A
+deepseek/deepseek-r1 (none),deepseek/deepseek-r1,none,trans-latin-vatlat629-f3v,Latin,skipped: model has no vision support,,,134,0,0.0,False,False,N/A
+deepseek/deepseek-r1 (none),deepseek/deepseek-r1,none,trans-aramaic-4q530-f2ii,Aramaic,skipped: model has no vision support,,,64,0,0.0,False,False,N/A
+minimax/minimax-m3 (none),minimax/minimax-m3,none,trans-greek-marchalianus-p11,Greek,ok,0.12,,125,134,1.07,False,False,10
+minimax/minimax-m3 (none),minimax/minimax-m3,none,trans-latin-vatlat629-f3v,Latin,ok,0.0448,0.0652,134,689,5.14,False,False,38
+minimax/minimax-m3 (none),minimax/minimax-m3,none,trans-aramaic-4q530-f2ii,Aramaic,ok,1.0,1.0,64,0,0.0,True,False,15
+z-ai/glm-5.3-flash (none),z-ai/glm-5.3-flash,none,trans-greek-marchalianus-p11,Greek,ok,0.128,,125,142,1.14,False,False,15
+z-ai/glm-5.3-flash (none),z-ai/glm-5.3-flash,none,trans-latin-vatlat629-f3v,Latin,ok,0.0746,0.1232,134,1986,14.82,False,False,25
+z-ai/glm-5.3-flash (none),z-ai/glm-5.3-flash,none,trans-aramaic-4q530-f2ii,Aramaic,ok,0.7344,0.75,64,42,0.66,False,False,10
+openai/gpt-6-astra (none),openai/gpt-6-astra,none,trans-greek-marchalianus-p11,Greek,ok,0.008,,125,136,1.09,False,False,58
+openai/gpt-6-astra (none),openai/gpt-6-astra,none,trans-latin-vatlat629-f3v,Latin,ok,0.0149,0.0652,134,1091,8.14,False,False,65
+openai/gpt-6-astra (none),openai/gpt-6-astra,none,trans-aramaic-4q530-f2ii,Aramaic,ok,1.0,1.0,64,0,0.0,True,False,35
+openai/gpt-6-astra (low),openai/gpt-6-astra,low,trans-greek-marchalianus-p11,Greek,ok,0.008,,125,136,1.09,False,False,58
+openai/gpt-6-astra (low),openai/gpt-6-astra,low,trans-latin-vatlat629-f3v,Latin,ok,0.0149,0.0652,134,1091,8.14,False,False,65
+openai/gpt-6-astra (low),openai/gpt-6-astra,low,trans-aramaic-4q530-f2ii,Aramaic,ok,1.0,1.0,64,0,0.0,True,False,35
+deepseek/deepseek-r1 (low),deepseek/deepseek-r1,low,trans-greek-marchalianus-p11,Greek,skipped: model has no vision support,,,125,0,0.0,False,False,N/A
+deepseek/deepseek-r1 (low),deepseek/deepseek-r1,low,trans-latin-vatlat629-f3v,Latin,skipped: model has no vision support,,,134,0,0.0,False,False,N/A
+deepseek/deepseek-r1 (low),deepseek/deepseek-r1,low,trans-aramaic-4q530-f2ii,Aramaic,skipped: model has no vision support,,,64,0,0.0,False,False,N/A
+openai/gpt-4o (low),openai/gpt-4o,low,trans-greek-marchalianus-p11,Greek,ok,0.352,,125,145,1.16,False,False,0
+openai/gpt-4o (low),openai/gpt-4o,low,trans-latin-vatlat629-f3v,Latin,ok,0.0299,0.0652,134,592,4.42,False,False,38
+openai/gpt-4o (low),openai/gpt-4o,low,trans-aramaic-4q530-f2ii,Aramaic,ok,1.0,1.0,64,0,0.0,True,False,0
+google/gemini-3.7-flash (low),google/gemini-3.7-flash,low,trans-greek-marchalianus-p11,Greek,ok,0.0,,125,170,1.36,False,False,85
+google/gemini-3.7-flash (low),google/gemini-3.7-flash,low,trans-latin-vatlat629-f3v,Latin,ok,0.0,0.0797,134,334,2.49,False,False,75
+google/gemini-3.7-flash (low),google/gemini-3.7-flash,low,trans-aramaic-4q530-f2ii,Aramaic,ok,0.7188,0.7188,64,69,1.08,False,False,1
+google/gemini-2.5-flash (low),google/gemini-2.5-flash,low,trans-greek-marchalianus-p11,Greek,ok,0.184,,125,133,1.06,False,False,10
+google/gemini-2.5-flash (low),google/gemini-2.5-flash,low,trans-latin-vatlat629-f3v,Latin,ok,0.0373,0.0652,134,250,1.87,False,False,30
+google/gemini-2.5-flash (low),google/gemini-2.5-flash,low,trans-aramaic-4q530-f2ii,Aramaic,ok,0.7031,0.7188,64,37,0.58,False,False,5.5
+deepseek/deepseek-v4-flash (low),deepseek/deepseek-v4-flash,low,trans-greek-marchalianus-p11,Greek,skipped: model has no vision support,,,125,0,0.0,False,False,N/A
+deepseek/deepseek-v4-flash (low),deepseek/deepseek-v4-flash,low,trans-latin-vatlat629-f3v,Latin,skipped: model has no vision support,,,134,0,0.0,False,False,N/A
+deepseek/deepseek-v4-flash (low),deepseek/deepseek-v4-flash,low,trans-aramaic-4q530-f2ii,Aramaic,skipped: model has no vision support,,,64,0,0.0,False,False,N/A
+google/gemma-4-31b-it:free (low),google/gemma-4-31b-it:free,low,trans-greek-marchalianus-p11,Greek,OpenRouter call failed after 6 retries: retryable 429: Provider returned error,,,125,0,0.0,False,False,N/A
+google/gemma-4-31b-it:free (low),google/gemma-4-31b-it:free,low,trans-latin-vatlat629-f3v,Latin,ok,0.0522,0.1014,134,567,4.23,False,False,32
+google/gemma-4-31b-it:free (low),google/gemma-4-31b-it:free,low,trans-aramaic-4q530-f2ii,Aramaic,OpenRouter call failed after 6 retries: retryable 429: Provider returned error,,,64,0,0.0,False,False,N/A
+google/gemini-3.7-flash (high),google/gemini-3.7-flash,high,trans-greek-marchalianus-p11,Greek,ok,0.008,,125,125,1.0,False,False,45
+google/gemini-3.7-flash (high),google/gemini-3.7-flash,high,trans-latin-vatlat629-f3v,Latin,ok,0.0224,0.1522,134,365,2.72,False,False,60
+google/gemini-3.7-flash (high),google/gemini-3.7-flash,high,trans-aramaic-4q530-f2ii,Aramaic,ok,0.7031,0.7031,64,72,1.12,False,False,2.5
+openai/gpt-6-astra (high),openai/gpt-6-astra,high,trans-greek-marchalianus-p11,Greek,ok,0.024,,125,167,1.34,False,False,40
+openai/gpt-6-astra (high),openai/gpt-6-astra,high,trans-latin-vatlat629-f3v,Latin,ok,0.0075,0.0217,134,1223,9.13,False,False,70
+openai/gpt-6-astra (high),openai/gpt-6-astra,high,trans-aramaic-4q530-f2ii,Aramaic,ok,0.9844,0.9844,64,1,0.02,False,False,5
+google/gemma-4-31b-it (none),google/gemma-4-31b-it,none,trans-greek-marchalianus-p11,Greek,ok,0.168,,125,133,1.06,False,False,10
+google/gemma-4-31b-it (none),google/gemma-4-31b-it,none,trans-latin-vatlat629-f3v,Latin,ok,0.0224,0.087,134,577,4.31,False,False,35
+google/gemma-4-31b-it (none),google/gemma-4-31b-it,none,trans-aramaic-4q530-f2ii,Aramaic,ok,0.75,0.7656,64,29,0.45,False,False,5
+google/gemini-3.8-flash (none),google/gemini-3.8-flash,none,trans-greek-marchalianus-p11,Greek,ok,0.0,,125,174,1.39,False,False,58
+google/gemini-3.8-flash (none),google/gemini-3.8-flash,none,trans-latin-vatlat629-f3v,Latin,ok,0.0,0.1014,134,683,5.1,False,False,60
+google/gemini-3.8-flash (none),google/gemini-3.8-flash,none,trans-aramaic-4q530-f2ii,Aramaic,ok,0.6562,0.6875,64,87,1.36,False,False,6
+anthropic/claude-fable-5.1 (none),anthropic/claude-fable-5.1,none,trans-greek-marchalianus-p11,Greek,ok,0.0,,125,205,1.64,False,False,70
+anthropic/claude-fable-5.1 (none),anthropic/claude-fable-5.1,none,trans-latin-vatlat629-f3v,Latin,ok,0.0,0.0145,134,2147,16.02,False,False,96
+anthropic/claude-fable-5.1 (none),anthropic/claude-fable-5.1,none,trans-aramaic-4q530-f2ii,Aramaic,failed,,,64,0,0.0,False,False,N/A
+meta/muse-spark-1.3 (none),meta/muse-spark-1.3,none,trans-greek-marchalianus-p11,Greek,ok,0.032,,125,124,0.99,False,False,35
+meta/muse-spark-1.3 (none),meta/muse-spark-1.3,none,trans-latin-vatlat629-f3v,Latin,ok,0.0075,0.087,134,447,3.34,False,False,40
+meta/muse-spark-1.3 (none),meta/muse-spark-1.3,none,trans-aramaic-4q530-f2ii,Aramaic,ok,0.9531,0.9531,64,3,0.05,False,False,17.5
+qwen/qwen3.8-27b (none),qwen/qwen3.8-27b,none,trans-greek-marchalianus-p11,Greek,ok,0.112,,125,126,1.01,False,False,15
+qwen/qwen3.8-27b (none),qwen/qwen3.8-27b,none,trans-latin-vatlat629-f3v,Latin,ok,0.0597,0.1087,134,250,1.87,False,False,N/A
+qwen/qwen3.8-27b (none),qwen/qwen3.8-27b,none,trans-aramaic-4q530-f2ii,Aramaic,ok,0.9688,0.9688,64,4,0.06,False,False,0
+anthropic/claude-fable-5.1 (low),anthropic/claude-fable-5.1,low,trans-greek-marchalianus-p11,Greek,ok,0.0,,125,205,1.64,False,False,70
+anthropic/claude-fable-5.1 (low),anthropic/claude-fable-5.1,low,trans-latin-vatlat629-f3v,Latin,ok,0.0,0.0145,134,2147,16.02,False,False,96
+anthropic/claude-fable-5.1 (low),anthropic/claude-fable-5.1,low,trans-aramaic-4q530-f2ii,Aramaic,failed,,,64,0,0.0,False,False,N/A
+google/gemma-4-31b-it (low),google/gemma-4-31b-it,low,trans-greek-marchalianus-p11,Greek,ok,0.168,,125,133,1.06,False,False,10
+google/gemma-4-31b-it (low),google/gemma-4-31b-it,low,trans-latin-vatlat629-f3v,Latin,ok,0.0224,0.087,134,577,4.31,False,False,30
+google/gemma-4-31b-it (low),google/gemma-4-31b-it,low,trans-aramaic-4q530-f2ii,Aramaic,ok,0.75,0.7656,64,29,0.45,False,False,5
+google/gemma-4-31b-it (high),google/gemma-4-31b-it,high,trans-greek-marchalianus-p11,Greek,ok,0.168,,125,133,1.06,False,False,10
+google/gemma-4-31b-it (high),google/gemma-4-31b-it,high,trans-latin-vatlat629-f3v,Latin,ok,0.0224,0.087,134,577,4.31,False,False,30
+google/gemma-4-31b-it (high),google/gemma-4-31b-it,high,trans-aramaic-4q530-f2ii,Aramaic,ok,0.75,0.7656,64,29,0.45,False,False,5
+anthropic/claude-fable-5.1 (high),anthropic/claude-fable-5.1,high,trans-greek-marchalianus-p11,Greek,ok,1.0,,125,0,0.0,False,False,0
+anthropic/claude-fable-5.1 (high),anthropic/claude-fable-5.1,high,trans-latin-vatlat629-f3v,Latin,ok,0.0075,0.0217,134,1930,14.4,False,False,94
+anthropic/claude-fable-5.1 (high),anthropic/claude-fable-5.1,high,trans-aramaic-4q530-f2ii,Aramaic,failed,,,64,0,0.0,False,False,N/A
+google/gemini-3.5-flash-lite (none),google/gemini-3.5-flash-lite,none,trans-greek-marchalianus-p11,Greek,ok,0.16,,125,224,1.79,False,False,5
+google/gemini-3.5-flash-lite (none),google/gemini-3.5-flash-lite,none,trans-latin-vatlat629-f3v,Latin,ok,0.0,0.0507,134,895,6.68,False,False,90
+google/gemini-3.5-flash-lite (none),google/gemini-3.5-flash-lite,none,trans-aramaic-4q530-f2ii,Aramaic,ok,0.7344,0.75,64,37,0.58,False,False,0
+moonshotai/kimi-k3 (none),moonshotai/kimi-k3,none,trans-greek-marchalianus-p11,Greek,ok,0.024,,125,126,1.01,False,False,40
+moonshotai/kimi-k3 (none),moonshotai/kimi-k3,none,trans-latin-vatlat629-f3v,Latin,ok,0.0,0.058,134,251,1.87,False,False,85
+moonshotai/kimi-k3 (none),moonshotai/kimi-k3,none,trans-aramaic-4q530-f2ii,Aramaic,ok,0.7031,0.7031,64,63,0.98,False,False,5
+xiaomi/mimo-v2.5 (none),xiaomi/mimo-v2.5,none,trans-greek-marchalianus-p11,Greek,ok,0.056,,125,128,1.02,False,False,20
+xiaomi/mimo-v2.5 (none),xiaomi/mimo-v2.5,none,trans-latin-vatlat629-f3v,Latin,ok,0.0448,0.1449,134,788,5.88,False,False,30
+xiaomi/mimo-v2.5 (none),xiaomi/mimo-v2.5,none,trans-aramaic-4q530-f2ii,Aramaic,ok,1.0,1.0,64,0,0.0,False,False,0
+google/gemini-3.5-flash-lite (low),google/gemini-3.5-flash-lite,low,trans-greek-marchalianus-p11,Greek,ok,0.16,,125,224,1.79,False,False,5
+google/gemini-3.5-flash-lite (low),google/gemini-3.5-flash-lite,low,trans-latin-vatlat629-f3v,Latin,ok,0.0,0.0507,134,895,6.68,False,False,90
+google/gemini-3.5-flash-lite (low),google/gemini-3.5-flash-lite,low,trans-aramaic-4q530-f2ii,Aramaic,ok,0.7344,0.75,64,37,0.58,False,False,0
+google/gemini-3.5-flash-lite (high),google/gemini-3.5-flash-lite,high,trans-greek-marchalianus-p11,Greek,ok,0.088,,125,131,1.05,False,False,30
+google/gemini-3.5-flash-lite (high),google/gemini-3.5-flash-lite,high,trans-latin-vatlat629-f3v,Latin,ok,0.0149,0.0507,134,716,5.34,False,False,20
+google/gemini-3.5-flash-lite (high),google/gemini-3.5-flash-lite,high,trans-aramaic-4q530-f2ii,Aramaic,ok,0.7031,0.7344,64,48,0.75,False,False,2.5
+openrouter/fusion (none),openrouter/fusion,none,trans-greek-marchalianus-p11,Greek,provider error (404): No endpoints found that support image input,,,125,0,0.0,False,False,N/A
+openrouter/fusion (none),openrouter/fusion,none,trans-latin-vatlat629-f3v,Latin,provider error (404): No endpoints found that support image input,,,134,0,0.0,False,False,N/A
+openrouter/fusion (none),openrouter/fusion,none,trans-aramaic-4q530-f2ii,Aramaic,provider error (404): No endpoints found that support image input,,,64,0,0.0,False,False,N/A
+deepseek/deepseek-v4.1-flash (low),deepseek/deepseek-v4.1-flash,low,trans-greek-marchalianus-p11,Greek,ok,0.168,,125,244,1.95,False,False,15
+deepseek/deepseek-v4.1-flash (low),deepseek/deepseek-v4.1-flash,low,trans-latin-vatlat629-f3v,Latin,ok,0.0299,0.1014,134,2062,15.39,False,False,30
+deepseek/deepseek-v4.1-flash (low),deepseek/deepseek-v4.1-flash,low,trans-aramaic-4q530-f2ii,Aramaic,ok,1.0,1.0,64,0,0.0,True,False,5
+nex-agi/nex-n2.5-mini:free (low),nex-agi/nex-n2.5-mini:free,low,trans-greek-marchalianus-p11,Greek,ok,0.376,,125,142,1.14,False,False,8.5
+nex-agi/nex-n2.5-mini:free (low),nex-agi/nex-n2.5-mini:free,low,trans-latin-vatlat629-f3v,Latin,ok,0.0821,0.1594,134,87016,649.37,False,False,0
+nex-agi/nex-n2.5-mini:free (low),nex-agi/nex-n2.5-mini:free,low,trans-aramaic-4q530-f2ii,Aramaic,ok,0.625,0.6719,64,12738,199.03,False,False,0
+nex-agi/nex-n2.5-pro:free (low),nex-agi/nex-n2.5-pro:free,low,trans-greek-marchalianus-p11,Greek,ok,0.096,,125,3009,24.07,False,False,2.5
+nex-agi/nex-n2.5-pro:free (low),nex-agi/nex-n2.5-pro:free,low,trans-latin-vatlat629-f3v,Latin,ok,0.6791,0.6957,134,3106,23.18,False,False,10
+nex-agi/nex-n2.5-pro:free (low),nex-agi/nex-n2.5-pro:free,low,trans-aramaic-4q530-f2ii,Aramaic,ok,0.6719,0.6875,64,158,2.47,False,False,0
+unbiased/pareto (none),unbiased/pareto,none,trans-greek-marchalianus-p11,Greek,ok,0.344,,125,289,2.31,False,False,7.5
+unbiased/pareto (none),unbiased/pareto,none,trans-latin-vatlat629-f3v,Latin,ok,0.0672,0.1087,134,36945,275.71,False,False,0.0
+unbiased/pareto (none),unbiased/pareto,none,trans-aramaic-4q530-f2ii,Aramaic,ok,0.6875,0.7188,64,556,8.69,False,False,13.5
+z-ai/glm-5.3-flashx (low),z-ai/glm-5.3-flashx,low,trans-greek-marchalianus-p11,Greek,ok,0.288,,125,216,1.73,False,False,22
+z-ai/glm-5.3-flashx (low),z-ai/glm-5.3-flashx,low,trans-latin-vatlat629-f3v,Latin,ok,0.0672,0.1232,134,2579,19.25,False,False,20
+z-ai/glm-5.3-flashx (low),z-ai/glm-5.3-flashx,low,trans-aramaic-4q530-f2ii,Aramaic,ok,0.75,0.7656,64,42,0.66,False,False,5
+prism-ml/ternary-bonsai-2-27b (low),prism-ml/ternary-bonsai-2-27b,low,trans-greek-marchalianus-p11,Greek,ok,0.28,,125,125,1.0,False,False,10
+prism-ml/ternary-bonsai-2-27b (low),prism-ml/ternary-bonsai-2-27b,low,trans-latin-vatlat629-f3v,Latin,ok,0.0746,0.1449,134,335,2.5,False,False,20
+prism-ml/ternary-bonsai-2-27b (low),prism-ml/ternary-bonsai-2-27b,low,trans-aramaic-4q530-f2ii,Aramaic,ok,1.0,1.0,64,0,0.0,True,False,0
+x-ai/grok-4.7 (low),x-ai/grok-4.7,low,trans-greek-marchalianus-p11,Greek,ok,0.04,,125,126,1.01,False,False,35
+x-ai/grok-4.7 (low),x-ai/grok-4.7,low,trans-latin-vatlat629-f3v,Latin,ok,0.0224,0.0797,134,683,5.1,False,False,20
+x-ai/grok-4.7 (low),x-ai/grok-4.7,low,trans-aramaic-4q530-f2ii,Aramaic,ok,0.9688,0.9688,64,2,0.03,False,False,12.5
+xiaomi/mimo-v2.6-pro (low),xiaomi/mimo-v2.6-pro,low,trans-greek-marchalianus-p11,Greek,provider error (400): Upstream error from Xiaomi: Invalid request parameters,,,125,0,0.0,False,False,N/A
+xiaomi/mimo-v2.6-pro (low),xiaomi/mimo-v2.6-pro,low,trans-latin-vatlat629-f3v,Latin,ok,0.9179,0.9203,134,5834,43.54,False,False,10
+xiaomi/mimo-v2.6-pro (low),xiaomi/mimo-v2.6-pro,low,trans-aramaic-4q530-f2ii,Aramaic,ok,0.7656,0.7812,64,39,0.61,False,False,20
+xiaomi/mimo-v2.6-flash (low),xiaomi/mimo-v2.6-flash,low,trans-greek-marchalianus-p11,Greek,ok,0.128,,125,118,0.94,False,False,15
+xiaomi/mimo-v2.6-flash (low),xiaomi/mimo-v2.6-flash,low,trans-latin-vatlat629-f3v,Latin,ok,0.0373,0.1232,134,1192,8.9,False,False,30
+xiaomi/mimo-v2.6-flash (low),xiaomi/mimo-v2.6-flash,low,trans-aramaic-4q530-f2ii,Aramaic,ok,0.8438,0.8594,64,20,0.31,False,False,10
+xiaomi/mimo-v2.6-pro-ultraspeed (low),xiaomi/mimo-v2.6-pro-ultraspeed,low,trans-greek-marchalianus-p11,Greek,ok,0.12,,125,154,1.23,False,False,15
+xiaomi/mimo-v2.6-pro-ultraspeed (low),xiaomi/mimo-v2.6-pro-ultraspeed,low,trans-latin-vatlat629-f3v,Latin,ok,0.6567,0.6957,134,3684,27.49,False,False,35
+xiaomi/mimo-v2.6-pro-ultraspeed (low),xiaomi/mimo-v2.6-pro-ultraspeed,low,trans-aramaic-4q530-f2ii,Aramaic,ok,0.7812,0.7812,64,71,1.11,False,False,5
+anthropic/claude-opus-5.5 (low),anthropic/claude-opus-5.5,low,trans-greek-marchalianus-p11,Greek,ok,0.0,,125,210,1.68,False,False,82
+anthropic/claude-opus-5.5 (low),anthropic/claude-opus-5.5,low,trans-latin-vatlat629-f3v,Latin,ok,0.0,0.0145,134,621,4.63,False,False,70
+anthropic/claude-opus-5.5 (low),anthropic/claude-opus-5.5,low,trans-aramaic-4q530-f2ii,Aramaic,ok,0.7344,0.7656,64,34,0.53,False,False,9
+xiaomi/mimo-v2.6-pro-ultraspeed (none),xiaomi/mimo-v2.6-pro-ultraspeed,none,trans-greek-marchalianus-p11,Greek,ok,0.12,,125,114,0.91,False,False,30
+xiaomi/mimo-v2.6-pro-ultraspeed (none),xiaomi/mimo-v2.6-pro-ultraspeed,none,trans-latin-vatlat629-f3v,Latin,ok,0.0672,0.1087,134,248,1.85,False,False,68
+xiaomi/mimo-v2.6-pro-ultraspeed (none),xiaomi/mimo-v2.6-pro-ultraspeed,none,trans-aramaic-4q530-f2ii,Aramaic,ok,1.0,1.0,64,0,0.0,True,False,0
+openai/gpt-6-sol (none),openai/gpt-6-sol,none,trans-greek-marchalianus-p11,Greek,ok,0.248,,125,115,0.92,False,False,5
+openai/gpt-6-sol (none),openai/gpt-6-sol,none,trans-latin-vatlat629-f3v,Latin,ok,0.0075,0.0435,134,864,6.45,False,False,55
+openai/gpt-6-sol (none),openai/gpt-6-sol,none,trans-aramaic-4q530-f2ii,Aramaic,ok,1.0,1.0,64,0,0.0,True,False,10
+x-ai/grok-4.7 (none),x-ai/grok-4.7,none,trans-greek-marchalianus-p11,Greek,ok,0.104,,125,147,1.18,False,False,15
+x-ai/grok-4.7 (none),x-ai/grok-4.7,none,trans-latin-vatlat629-f3v,Latin,ok,0.2836,0.3043,134,950,7.09,False,False,10
+x-ai/grok-4.7 (none),x-ai/grok-4.7,none,trans-aramaic-4q530-f2ii,Aramaic,ok,0.8906,0.8906,64,10,0.16,False,False,15
+xiaomi/mimo-v2.6-flash (none),xiaomi/mimo-v2.6-flash,none,trans-greek-marchalianus-p11,Greek,ok,0.08,,125,129,1.03,False,False,15
+xiaomi/mimo-v2.6-flash (none),xiaomi/mimo-v2.6-flash,none,trans-latin-vatlat629-f3v,Latin,ok,0.0597,0.1087,134,1320,9.85,False,False,25
+xiaomi/mimo-v2.6-flash (none),xiaomi/mimo-v2.6-flash,none,trans-aramaic-4q530-f2ii,Aramaic,declined: claims no image attached,,,64,0,0.0,True,True,0.0
+xiaomi/mimo-v2.6-pro (none),xiaomi/mimo-v2.6-pro,none,trans-greek-marchalianus-p11,Greek,ok,0.128,,125,126,1.01,False,False,5
+xiaomi/mimo-v2.6-pro (none),xiaomi/mimo-v2.6-pro,none,trans-latin-vatlat629-f3v,Latin,OpenRouter call failed after 4 retries: retryable provider error (504): Provider timed out after 11674ms,,,134,0,0.0,False,False,N/A
+xiaomi/mimo-v2.6-pro (none),xiaomi/mimo-v2.6-pro,none,trans-aramaic-4q530-f2ii,Aramaic,ok,1.0,1.0,64,0,0.0,True,False,0
+openai/gpt-6-luna (none),openai/gpt-6-luna,none,trans-greek-marchalianus-p11,Greek,ok,1.0,,125,0,0.0,True,False,0
+openai/gpt-6-luna (none),openai/gpt-6-luna,none,trans-latin-vatlat629-f3v,Latin,ok,0.0522,0.1449,134,539,4.02,False,False,25
+openai/gpt-6-luna (none),openai/gpt-6-luna,none,trans-aramaic-4q530-f2ii,Aramaic,ok,1.0,1.0,64,0,0.0,True,False,10
+openai/gpt-6-luna (low),openai/gpt-6-luna,low,trans-greek-marchalianus-p11,Greek,ok,0.896,,125,15,0.12,False,False,5
+openai/gpt-6-luna (low),openai/gpt-6-luna,low,trans-latin-vatlat629-f3v,Latin,ok,0.0821,0.1377,134,421,3.14,False,False,30
+openai/gpt-6-luna (low),openai/gpt-6-luna,low,trans-aramaic-4q530-f2ii,Aramaic,ok,1.0,1.0,64,0,0.0,True,False,20

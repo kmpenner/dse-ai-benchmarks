@@ -1,0 +1,19 @@
+model,effort,status,latency_s,cost_usd,chars,file
+anthropic/claude-fable-5.1,high,empty,80.9,0,0,anthropic_claude-fable-5.1__high.xml
+anthropic/claude-fable-5.1,low,ok,162.4,0.49471,6792,anthropic_claude-fable-5.1__low.xml
+openai/gpt-6-astra,high,ok,521.6,1.2796675,5586,openai_gpt-6-astra__high.xml
+openai/gpt-6-astra,low,ok,65.0,0.2667675,5178,openai_gpt-6-astra__low.xml
+google/gemini-3.7-flash,high,ok,179.9,0.12088275,2078,google_gemini-3.7-flash__high.xml
+google/gemini-3.7-flash,low,ok,24.9,0.0142065,5379,google_gemini-3.7-flash__low.xml
+deepseek/deepseek-v4-flash,none,ok,102.1,0.01936215,50673,deepseek_deepseek-v4-flash__none.xml
+deepseek/deepseek-v4-flash,low,empty,144.5,0.01936605,0,deepseek_deepseek-v4-flash__low.xml
+google/gemma-4-31b-it:free,none,error: Provider returned error,0.6,0,0,google_gemma-4-31b-it_free__none.xml
+google/gemma-4-31b-it:free,low,error: Provider returned error,1.0,0,0,google_gemma-4-31b-it_free__low.xml
+google/gemini-3.5-flash-lite,high,empty,60.9,0,0,google_gemini-3.5-flash-lite__high.xml
+google/gemini-3.5-flash-lite,low,ok,9.7,0,4634,google_gemini-3.5-flash-lite__low.xml
+openai/gpt-6-luna,none,ok,48.2,0.003487675,6222,openai_gpt-6-luna__none.xml
+openai/gpt-6-luna,low,ok,19.7,0.001815675,4784,openai_gpt-6-luna__low.xml
+google/gemini-2.5-flash,none,ok,20.1,0.0086198,6725,google_gemini-2.5-flash__none.xml
+google/gemini-2.5-flash,low,ok,58.4,0.0232423,4571,google_gemini-2.5-flash__low.xml
+google/gemma-4-31b-it,none,ok,12.5,0.0034495,5336,google_gemma-4-31b-it__none.xml
+google/gemma-4-31b-it,low,empty,109.8,0.03228875,0,google_gemma-4-31b-it__low.xml

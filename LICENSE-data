@@ -1,0 +1,12 @@
+Data, documentation, paper, slides and charts in this repository (everything
+that is not source code) are licensed under the Creative Commons Attribution
+4.0 International License (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/
+
+Exceptions:
+- Manuscript image crops of Vat. lat. 629 and Vat. gr. 2125 (Codex
+  Marchalianus) are reproduced for non-commercial scholarly use with the
+  permission terms of the Biblioteca Apostolica Vaticana (© BAV); they are not
+  covered by CC BY 4.0.
+- Ground-truth readings derived from published editions (e.g. DJD) are
+  provided for scholarly replication; cite the original editions.

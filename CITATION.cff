@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this benchmark or data, please cite it as below."
+title: "editio-bench: AI benchmarks for digital scholarly editing of ancient religious texts (RESAC 2026 replication package)"
+authors:
+  - family-names: Penner
+    given-names: Ken M.
+    affiliation: St. Francis Xavier University
+  - family-names: Moss
+    given-names: Demarquis
+    affiliation: St. Francis Xavier University
+version: 1.0.0
+date-released: 2026-09-26
+license: [MIT, CC-BY-4.0]
+repository-code: "https://github.com/kmpenner/dse-ai-benchmarks"
+url: "https://kmpenner.github.io/dse-ai-benchmarks/"

@@ -1,0 +1,105 @@
+# editio-bench v0.3 configuration
+# Verify model slugs at https://openrouter.ai/models and pin versions.
+
+target_language: "English"
+
+candidate_models:
+  # Anthropic Frontier & Historical
+  - anthropic/claude-opus-5
+  - anthropic/claude-opus-4.8
+  - anthropic/claude-opus-4.7
+  - anthropic/claude-sonnet-4.5
+  - anthropic/claude-3-haiku
+  - anthropic/claude-fable-5
+  # Google Frontier & Flash
+  - google/gemini-3.1-pro-preview
+  - google/gemini-3.7-flash
+  - google/gemini-2.5-pro
+  - google/gemini-2.5-flash
+  - google/gemma-4-31b-it:free
+  # OpenAI Frontier & Reasoning
+  - openai/gpt-5.5
+  - openai/gpt-5
+  - openai/gpt-5.6-luna
+  - openai/gpt-5.6-sol
+  - openai/gpt-5.6-terra
+  - openai/gpt-4o
+  - openai/gpt-4o-mini
+  # xAI
+  - x-ai/grok-4.7
+  - x-ai/grok-4.6
+  - x-ai/grok-4.5
+  # Xiaomi
+  - xiaomi/mimo-v2.6-pro
+  - xiaomi/mimo-v2.6-flash
+  - xiaomi/mimo-v2.6-pro-ultraspeed
+  # Meta & Open-Weights
+  - meta/muse-spark-1.2
+  - meta-llama/llama-4-maverick
+  - meta-llama/llama-3.3-70b-instruct
+  # DeepSeek
+  - deepseek/deepseek-v3.2
+  - deepseek/deepseek-v4-flash
+  - deepseek/deepseek-r1
+  # Mistral
+  - mistralai/mistral-small-3.2-24b-instruct
+  - mistralai/mistral-large-2512
+  # Qwen
+  - qwen/qwen3.8-max-0902
+  - qwen/qwen3-vl-235b-a22b-thinking
+  # GLM / Zhipu
+  - z-ai/glm-5.3-flash
+  # Minimax
+  - minimax/minimax-m3
+
+# Prompt protocols (experimental variable). Every model runs under every
+# protocol listed here; (model x protocol) pairs compete as candidates.
+# Protocols are defined in the Prompt Library:
+prompt_library: "prompts/protocols.yaml"
+prompt_protocols:
+  - baseline
+  - cot
+  - negative
+
+# External baselines: outputs of deterministic tools or published translations,
+# injected as candidates without API calls. JSONL lines:
+#   {"passage_id": "1QS_1_1", "translation": "..."}
+external_baselines: []
+#  - name: deterministic-v1
+#    path: baselines/deterministic_v1.jsonl
+
+# Judge: stronger than the candidates; when scrutinising a family, judge from
+# a different family. Override per-run with `pairwise --judge ...`.
+judge_model: "anthropic/claude-opus-4.8"
+
+metrics:
+  chrf: true
+  bleu: true
+  bertscore: false        # pip install bert-score
+  judge: true
+
+bertscore_lang: "en"
+
+concurrency: 4
+temperature: 0.0
+max_tokens: 65536         # Deep reasoning models (GLM, R1, Qwen-thinking, MiMo) need substantial token headroom
+cache_path: ".editio_cache.sqlite"
+
+# --- Workflow suite (`editio-bench phase`) ---------------------------------
+# transcription/collation/translation/annotation/encoding, all defined in
+# data/benchmarks.json, grades targets 0-100 against per-task ground truth.
+# Scorer panel (defaults to judge_model if unset):
+phase_scorers:
+  - minimax/minimax-m3
+  - google/gemini-3.8-flash
+
+# When the two phase_scorers disagree on a task by more than
+# phase_bench.TIEBREAK_THRESHOLD (10 points), this third judge is called and
+# the final score becomes the median of all three, instead of trusting
+# whichever of the two happened to be harsher or more lenient. Defaults to
+# judge_model if unset. Only called on tasks that actually disagree, so pick
+# something cheap: deepseek-v4-flash cost ~$0.0001/task grading the whole
+# suite. (It's also a candidate_models entry, i.e. it grades some of its own
+# answers -- not a problem since scoring is against ground truth, not
+# against the other candidates.)
+phase_tiebreaker_scorer: "deepseek/deepseek-v4-flash"

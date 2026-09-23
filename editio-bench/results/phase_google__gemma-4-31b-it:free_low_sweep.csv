@@ -1,0 +1,156 @@
+benchmark,siglum,task_type,verification_status,model,answer_status,answer_cached,answer_cost_usd,answer_latency_s,answer,score::minimax/minimax-m3,score::google/gemini-3.8-flash,score::deepseek/deepseek-v4-flash (tiebreak),score_consensus,tiebreak_triggered,score_raw::minimax/minimax-m3,score_raw::google/gemini-3.8-flash,score_raw::deepseek/deepseek-v4-flash (tiebreak),score_error::minimax/minimax-m3,score_error::google/gemini-3.8-flash,score_error::deepseek/deepseek-v4-flash (tiebreak),score_cost_usd::minimax/minimax-m3,score_cost_usd::google/gemini-3.8-flash,score_cost_usd::deepseek/deepseek-v4-flash (tiebreak)
+trans-greek-marchalianus-p11,Vat. gr. 2125 p. 11 (Marchalianus),transcription,ESTABLISHED_GT,google/gemma-4-31b-it:free,OpenRouter call failed after 6 retries: retryable 429: Provider returned error,False,0.0,186.71,,N/A,N/A,N/A,N/A,False,,,,not_scored,not_scored,not_scored,0.0,0.0,0.0
+coll-greek-marchalianus-vitae,Vat. gr. 2125 p. 11 vs. Schermann 1907,collation,SELF_CONTAINED_GT,google/gemma-4-31b-it:free,OpenRouter call failed after 6 retries: retryable 429: Provider returned error,False,0.0,186.96,,N/A,N/A,N/A,N/A,False,,,,not_scored,not_scored,not_scored,0.0,0.0,0.0
+translat-greek-marchalianus-siloam,Vat. gr. 2125 p. 11 (Siloam Miracle),translation,ESTABLISHED_GT,google/gemma-4-31b-it:free,OpenRouter call failed after 6 retries: retryable 429: Provider returned error,False,0.0,185.76,,N/A,N/A,N/A,N/A,False,,,,not_scored,not_scored,not_scored,0.0,0.0,0.0
+annot-greek-marchalianus-tei-msd,Vat. gr. 2125 p. 11 (TEI MSD & Lemma),annotation,ESTABLISHED_GT,google/gemma-4-31b-it:free,OpenRouter call failed after 6 retries: retryable 429: Provider returned error,False,0.0,185.94,,N/A,N/A,N/A,N/A,False,,,,not_scored,not_scored,not_scored,0.0,0.0,0.0
+encode-greek-marchalianus-teiheader,Vat. gr. 2125 (Codex Marchalianus Header),encoding,ESTABLISHED_GT,google/gemma-4-31b-it:free,ok,False,0.0,37.21,"```xml
+<teiHeader>
+  <fileDesc>
+    <titleStmt>
+      <title>Codex Marchalianus</title>
+    </titleStmt>
+    <publicationStmt>
+      <p>Digital transcription for philological analysis.</p>
+    </publicationStmt>
+    <sourceDesc>
+      <msDesc>
+        <msIdentifier>
+          <repository>Biblioteca Apostolica Vaticana</repository>
+          <settlement>Vatican City</settlement>
+          <country>Vatican</country>
+          <idno>Vat. gr. 2125</idno>
+        </msIdentifier>
+        <msContents>
+          <summary>Lives of the Prophets (Vitae Prophetarum) - Isaiah</summary>
+          <language xml:lang=""grc"">Ancient Greek</language>
+        </msContents>
+        <physDesc>
+          <codex>
+            <dimensions>
+              <height>295</height>
+              <width>179</width>
+              <unit>mm</unit>
+            </dimensions>
+            <layout>
+              <columns>1</columns>
+            </layout>
+          </codex>
+          <hand>
+            <desc>Greek Uncial / Majuscule with lunate sigmas and Nomina Sacra</desc>
+          </hand>
+        </physDesc>
+        <history>
+          <origin>
+            <place>Egypt</place>
+            <date notBefore=""0500-01-01"" notAfter=""0699-12-31"">6th to 7th century</date>
+          </origin>
+        </history>
+      </msDesc>
+    </sourceDesc>
+  </fileDesc>
+</teiHeader>
+```",35,72,30,35,True,"```markdown
+35
+```","The candidate makes several severe TEI P5 schema errors:
+- Missing `xmlns=""http://www.tei-c.org/ns/1.0""`
+- In `<msIdentifier>`, missed `<msName>` (given in prompt)
+- `<msContents>`: `<summary>` is valid TEI, but `<language>` is not valid directly under `<msContents>` (in TEI P5, text language inside `msContents`/`msItem` is `<textLang>`, whereas `<langUsage>/<language>` belongs in `<profileDesc>`).
+- `<physDesc>`: Invented non-TEI elements! `<codex>` does not exist in TEI P5 (it should be `<objectDesc form=""codex"">`). `<unit>` under `<dimensions>` is invalid (unit is an attribute `@unit=""mm""`). `<columns>` under `<layout>` is invalid (columns is an attribute `@columns=""1""`).
+- `<hand>` is invalid TEI P5 (should be `<handDesc>` containing `<handNote>` or `<p>`).
+- `<history>/<origin>`: `<place>` is invalid under origin (must be `<origPlace>`), `<date>` is invalid directly under origin without text/parent or should be `<origDate>`.
+
+These are extensive schema violations in the core TEI msDesc module, creating completely invalid XML against the TEI P5 schema, even though the metadata textual values are largely preserved.
+
+```72
+```","```xml
+30
+```",,,,0.0033798,0.0022725,0.00048972
+trans-latin-vatlat629-f3v,Vat. lat. 629 f. 3v (§37 Esaias),transcription,SELF_CONTAINED_GT,google/gemma-4-31b-it:free,ok,False,0.0,188.67,"(1) DIPLOMATIC LAYER
+
+E Sarai filiuf amos. non illiuf
+pphe. sed alteriuf qui simile nuncupat ē no
+mine. Ille enum exnumero paſtoꝃ fuit. de oppido
+thecue. Hic autē genere nobili ortuſ ē ierl̄m.
+Quē etiā hebrei aiunt ſocrū fuifſe manaſſe. Inquo
+tanta fuit ſcitas. qvuta exccellentia. ut unam
+tantū diceret habuifſe tunicā cilicinā. Quamq:
+
+(2) NORMALIZED CRITICAL LAYER
+
+Esaias filius Amos non illius
+propheta sed alterius qui simile nuncupatus est no-
+mine. Ille enim ex numero pastorum fuit. de oppido
+Thecue. Hic autem genere nobili ortus est Hierusalem.
+Quem etiam hebrei aiunt socrum fuisse Manasse. Inquo
+tanta fuit scitas quota excellentia ut unam
+tantum diceret habuisse tunicam cilicinam. Quamque",32,78,20,32,True,"Looking at this carefully, I need to evaluate the candidate's transcription against the ground truth across both layers.
+
+**Diplomatic Layer Issues:**
+1. **""Sarai"" vs ""Saias""** — significant reading error in line 1
+2. **Long-s (ſ) normalized to ""f""** — pervasive throughout (filiuf, amos, illiuf, alteriuf, etc.) instead of preserving ſ; this is silent normalization of a scribal feature
+3. **Missing abbreviation marks**: ""pphe"" lacks macron (should be p̄phe); ""nuncupat"" lacks macron (should be nuncupat̄); ""diceret"" lacks macron
+4. **""enum"" for ""enim""** — reading error
+5. **""exnumero"" for ""ex numero""** — missing space
+6. **""paſtoꝃ"" for ""paſtoꝝ""** — wrong abbreviation symbol
+7. **""qvuta exccellentia"" for ""& uite excellentia""** — major misreading of Tironian et and following words
+8. **""Inquo"" for ""In quo""** — missing space
+9. Missing terminal periods in several lines
+
+**Normalized Layer Issues:**
+1. **""nobili"" for ""nobilis""** — grammatical error
+2. **""ortus est"" for ""ortus in""** — substantive textual error
+3. **""scitas quota excellentia""** — completely wrong expansion of ""scītas & uite excellentia""
+
+The candidate demonstrates awareness of the two-layer structure and preserves some abbreviations correctly (autē, ierl̄m, ſocrū), but the pervasive long-s normalization, multiple reading errors, and substantive normalized-layer mistakes significantly undermine the transcription's reliability.
+
+```json
+32
+```","```json
+78
+```",```20```,,,,0.0086358,0.00090525,0.00138623
+coll-latin-vatlat629-isidore,Vat. lat. 629 f. 3v vs. Chaparro Gómez 1985,collation,SELF_CONTAINED_GT,google/gemma-4-31b-it:free,ok,False,0.0,37.49,"[ille] Hic V ; (substitution)
+[hic] Hic V ; (orthographic)
+[ ] autem V ; (addition)
+[nobilis] nobili V ; (substitution)
+[ortus] ortus est V ; (addition)
+[in Hierusalem] Hierusalem V ; (omission)
+[atrocique] atroque V ; (orthographic)
+[extincxit] extinxit V ; (orthographic)",65,95,65,65,True,"Looking at the candidate answer against the ground truth:
+
+**Variant 1:** Correctly identified [ille] Hic V as substitution. ✓
+
+**Variant 2:** 
+- [hic] Hic V as orthographic — this is an *invented* variant (mere capitalization, not a real textual variant). ✗
+- [ ] autem V as addition ✓
+- [nobilis] nobili V as substitution ✓
+- [ortus] ortus est V as addition — correctly identifies a real variant the ground truth omits ✓
+- [in Hierusalem] Hierusalem V as omission ✓
+- Apparatus is fragmented into many entries rather than the elegant single combined entry of the ground truth.
+
+**Variant 3:**
+- [atrocique] atroque V as orthographic — **typology error**: ground truth classifies this as SUBSTITUTION (loss of -ci- changes the morphological form), not orthographic. ✗
+- [extincxit] extinxit V as orthographic ✓
+
+**Summary of issues:**
+- One invented variant (capitalization)
+- One typology misclassification (atrocique/atroque)
+- Apparatus over-fragmented
+- Correctly finds ""est"" addition (a real variant missed by ground truth)
+
+```markdown
+65
+```","```json
+{
+  ""score"": 95
+}
+```","```markdown
+65
+```",,,,0.00762675,0.0017415,0.000927976
+translat-latin-vatlat629-seraphim,Vat. lat. 629 f. 3v (Seraphim Vision & Martyrdom),translation,ESTABLISHED_GT,google/gemma-4-31b-it:free,ok,False,0.0,166.88,"The Hebrews, however, relate that Isaiah was put to death for two reasons: one, that he called them princes of Sodom and the people of Gomorrah; the other, that, while the Lord had testified to Moses « you shall not be able to see my face », this man dared to exclaim: « I saw the Lord sitting upon a high throne [lacuna] », the Jews, blinded in mind, not considering that in the following [passages] he had narrated that the Seraphim had covered the face and feet of God and that he wrote to have seen only the middle part of him. He lies under the oak of Rogel near the courses of the waters.",85,90,N/A,87.5,False,```\n85\n```,"```json
+90
+```",,,,not_needed,0.00414675,0.000549,0.0
+annot-latin-vatlat629-abbreviations,Vat. lat. 629 f. 3v (Scribal Abbreviation Encoding),annotation,ESTABLISHED_GT,google/gemma-4-31b-it:free,OpenRouter call failed after 6 retries: retryable 429: Provider returned error,False,0.0,185.2,,N/A,N/A,N/A,N/A,False,,,,not_scored,not_scored,not_scored,0.0,0.0,0.0
+trans-aramaic-4q530-f2ii,4Q530 col. 2 (Frag. 6 / lines 6-9),transcription,ESTABLISHED_GT,google/gemma-4-31b-it:free,OpenRouter call failed after 6 retries: retryable 429: Provider returned error,False,0.0,186.74,,N/A,N/A,N/A,N/A,False,,,,not_scored,not_scored,not_scored,0.0,0.0,0.0
+coll-aramaic-4q530-giants-parallels,4Q530 2 ii vs. 4Q531 1 & 6Q8 1,collation,ESTABLISHED_GT,google/gemma-4-31b-it:free,OpenRouter call failed after 6 retries: retryable 429: Provider returned error,False,0.0,187.01,,N/A,N/A,N/A,N/A,False,,,,not_scored,not_scored,not_scored,0.0,0.0,0.0
+translat-aramaic-4q530-tree-vision,4Q530 2 ii (+ 6-12),lacuna_handling,ESTABLISHED_GT,google/gemma-4-31b-it:free,OpenRouter call failed after 6 retries: retryable 429: Provider returned error,False,0.0,185.3,,N/A,N/A,N/A,N/A,False,,,,not_scored,not_scored,not_scored,0.0,0.0,0.0
+annot-aramaic-4q530-morphology,4Q530 (Morphological Parsing),annotation,ESTABLISHED_GT,google/gemma-4-31b-it:free,OpenRouter call failed after 6 retries: retryable 429: Provider returned error,False,0.0,185.37,,N/A,N/A,N/A,N/A,False,,,,not_scored,not_scored,not_scored,0.0,0.0,0.0

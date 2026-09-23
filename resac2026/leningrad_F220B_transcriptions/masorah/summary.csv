@@ -1,0 +1,6 @@
+model,effort,status,latency_s,cost_usd,chars,file
+anthropic/claude-fable-5.1,low,ok,213.0,0.69337,11840,anthropic_claude-fable-5.1__low.txt
+openai/gpt-6-astra,low,ok,82.8,0.30408,7702,openai_gpt-6-astra__low.txt
+google/gemini-3.7-flash,low,ok,37.2,0.02373075,8439,google_gemini-3.7-flash__low.txt
+google/gemini-3.8-flash,high,ok,185.5,0.12094575,2283,google_gemini-3.8-flash__high.txt
+google/gemini-3.8-flash,low,ok,33.9,0.0199245,8794,google_gemini-3.8-flash__low.txt

@@ -1,0 +1,48 @@
+ְלֹ֤ם מי מואס׃ לֵרָאוֹת ג̇ לעלות ג̇ עֲלוֹת כָּל־זְכוּרְךָ כׇּל־יִשְׂרָאֵל כִּי־יֵֽרָאֶה׃`
+
+Line 2:
+`ועל לֵבָ֖ב מבלועינו כי רבות אסוזון ׃ ס ׃ טורח ל' לוחחמזול טרחיו מכף רגל ׃ ם מלועו ה' קליעין ואמיר לוע עוד שליד כרעפע לֹא רְשָׁעִ֥ים ׃ ס ׃`
+
+Let's look at the individual Masorah Magna notes in the Bottom Margin:
+1. `וְחַזְקוּנִי ח̇ וסימנהון...`
+Wait, "וְחִזְקִיָּהוּ"? In Isaiah 1:1: "בִּימֵי עֻזִּיָּהוּ יוֹתָם אָחָז יְחִזְקִיָּהוּ"!
+2. `וַיִּשְׂבְּעוּ ד̇` (or on שָׂבַעְתִּי, Isaiah 1:17).
+3. `כסדם ד̇ וסימנהון...`:
+Look at Isaiah 1:9: "כִּסְדֹם הָיִינוּ"!
+The Masorah parva on כִּסְדֹם (col 2, line 12) says `ד̇` (four times כִּסְדֹם)!
+And the Masorah Magna here lists the four:
+"כסדם ד̇ וסימנהון ... כִּסְדֹ֤ם ..."!
+What are the four occurrences of כִּסְדֹם?
+- Isaiah 1:9: כִּסְדֹ֤ם הָיִ֙ינוּ֙
+- Isaiah 13:19: כְּמַהְפֵּכַ֣ת אֱלֹהִ֔ים אֶת־סְדֹ֖ם וְאֶת־עֲמֹרָֽה (or similar)
+- Jeremiah 50:40: כְּמַהְפֵּכַ֧ת אֱלֹהִ֛ים אֶת־סְדֹ֥ם
+- Lamentations 4:6: כְּחַטַּ֣את סְדֹ֔ם
+4. `לֵרָאוֹת ג̇`:
+Look at Isaiah 1:12 (col 2, line 20): "כִּ֣י תָבֹ֗אוּ לֵרָאוֹת֙ פָּנָ֔י"!
+The Masorah parva on לֵרָאוֹת says `ג̇`!
+And the Masorah Magna here says:
+"לֵרָאוֹת ג̇ לעלות ג̇ עֲלוֹת כָּל־זְכוּרְךָ כׇּל־יִשְׂרָאֵל כִּי־יֵֽרָאֶה׃"
+Exodus 34:24 ("לַעֲלוֹת לֵרָאוֹת אֶת־פְּנֵי יְהוָה"), Deut 31:11 ("בְּבוֹא כָל־יִשְׂרָאֵל לֵרָאוֹת אֶת־פְּנֵי יְהוָה"), and Isaiah 1:12 ("כִּי תָבֹאוּ לֵרָאוֹת פָּנָי")!
+That is exactly what it is: "לֵרָאוֹת ג̇: לעלות, כׇּל־יִשְׂרָאֵל, כִּי תָבֹאוּ"!
+This is 100% established Masorah!
+5. `ועל לֵבָ֖ב...`:
+In Isaiah 1:5 (col 1, line 23): "וְכׇל־לֵבָ֖ב דַּוָּֽי"!
+Masorah parva has `ד̇`!
+And the Mm explains `ועל לבב...`.
+6. `טורח ל'`:
+In Isaiah 1:14 (col 2, line 27): "הָי֥וּ עָלַ֖י לָטֹ֑רַח"!
+Masorah parva has `ל̇`!
+And the Mm comments on `טורח`!
+7. `מכף רגל`:
+In Isaiah 1:6 (col 1, line 23): "מִכַּף־רֶ֤גֶל וְעַד־רֹאשׁ"!
+Masorah parva/magna on "מכף רגל"!
+
+This confirms every single note and its connection to the text.
+
+---
+### TEI P5 Document Structure:
+The user specifies:
+- "complete, well-formed TEI P5 XML document (teiHeader plus text)"
+- "Preserve consonants, vowel points, and accents as written."
+- "Encode columns with `<cb n="N"/>` and lines with `<lb n="M"/>`"
+- "mark illegible letters with `<gap reason="illegible"/>` and doubtful ones with `<unclear>`"

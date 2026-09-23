@@ -1,0 +1,17 @@
+file,layer,chars,mean_cer_vs_others,cer_vs_medoid,medoid
+anthropic_claude-fable-5.1__low,consonants,1314,0.464,0.0301,google_gemini-3.7-flash__low
+google_gemini-2.5-flash__low,consonants,984,0.7479,0.7764,google_gemini-3.7-flash__low
+google_gemini-2.5-flash__none,consonants,1025,0.6709,0.6461,google_gemini-3.7-flash__low
+google_gemini-3.7-flash__low,consonants,1275,0.457,0.0,google_gemini-3.7-flash__low
+google_gemma-4-31b-it__none,consonants,1015,0.8531,0.8245,google_gemini-3.7-flash__low
+openai_gpt-6-astra__high,consonants,1275,0.457,0.0,google_gemini-3.7-flash__low
+openai_gpt-6-astra__low,consonants,1275,0.457,0.0,google_gemini-3.7-flash__low
+openai_gpt-6-luna__none,consonants,2084,0.963,0.9217,google_gemini-3.7-flash__low
+anthropic_claude-fable-5.1__low,pointed,2677,0.5613,0.0659,openai_gpt-6-astra__low
+google_gemini-2.5-flash__low,pointed,1786,0.8595,0.9059,openai_gpt-6-astra__low
+google_gemini-2.5-flash__none,pointed,1807,0.781,0.7525,openai_gpt-6-astra__low
+google_gemini-3.7-flash__low,pointed,2655,0.5425,0.0144,openai_gpt-6-astra__low
+google_gemma-4-31b-it__none,pointed,1914,0.9271,0.9134,openai_gpt-6-astra__low
+openai_gpt-6-astra__high,pointed,2635,0.5711,0.1139,openai_gpt-6-astra__low
+openai_gpt-6-astra__low,pointed,2634,0.5393,0.0,openai_gpt-6-astra__low
+openai_gpt-6-luna__none,pointed,4449,1.0703,1.0092,openai_gpt-6-astra__low

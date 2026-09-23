@@ -1,0 +1,486 @@
+benchmark,siglum,task_type,verification_status,model,answer_status,answer_cached,answer_cost_usd,answer_latency_s,answer,score::minimax/minimax-m3,score::google/gemini-3.8-flash,score::deepseek/deepseek-v4-flash (tiebreak),score_consensus,tiebreak_triggered,score_raw::minimax/minimax-m3,score_raw::google/gemini-3.8-flash,score_raw::deepseek/deepseek-v4-flash (tiebreak),score_error::minimax/minimax-m3,score_error::google/gemini-3.8-flash,score_error::deepseek/deepseek-v4-flash (tiebreak),score_cost_usd::minimax/minimax-m3,score_cost_usd::google/gemini-3.8-flash,score_cost_usd::deepseek/deepseek-v4-flash (tiebreak)
+trans-greek-marchalianus-p11,Vat. gr. 2125 p. 11 (Marchalianus),transcription,ESTABLISHED_GT,openai/gpt-4o,ok,False,0.00507,7.06,"Sure, here are the transcriptions:
+
+**(1) DIPLOMATIC Layer:**
+
+```
+ⲰΝΟΜΑΤΑΠΡΟΦΗΤⲱΝΚΑΙΠΡΟΘΕΝΕΙϹΙΚΑΙΤΟΥ
+ⲰΤΕϹϹΑΛΟΝΙΚΑΙΤⲰΝΚΑΙΠΡΟΚΕΙΝΤΑΙ⸖
+
+ⲰΗϹΑΪΑϹΠΡΟΦΗΤΕΥϹΑϹΕΝΗΙΕΡΟΥϹΑΛΗΜΕΝΗΚΕΙΤΑΙΥΠΤΩΜΑΝΑϹ
+ΕΝΙΠΡΩΙΕΙϹΕΙϹΑΥΟΚΙΕΤΕΘΗΗΥΠΟΚΑΤⲰ
+```
+
+**(2) NORMALIZED Critical Layer:**
+
+```
+ὀνόματα προφητῶν καὶ προθένεισί καὶ τοῦ
+ὠ τεσσαλονίκαι τῶν καὶ προκεῖνται.
+
+Ἠσαΐας προφητεύσας ἐν Ἱερουσαλήμ ἐνίκεῖται ὑπὸ Μανάς
+ἐνιπρωίεἰς εἰς αὐὸ καὶ ἐτέθη ὑπὸ κάτω.
+```
+
+This transcription preserves the original script features and provides a normalized version for easier reading.",0,35,0,0,True,"```json
+0
+```","```
+35
+```",```0```,,,,0.0030678,0.000924,0.00036078
+coll-greek-marchalianus-vitae,Vat. gr. 2125 p. 11 vs. Schermann 1907,collation,SELF_CONTAINED_GT,openai/gpt-4o,ok,False,0.0018975,1.42,"1. [ἔχει] ἥτις ἔχει M ; (addition)
+2. [ἠρώτων γὰρ οἱ πολέμιοι] ἠρώτων γὰρ οἱ πολέμιοι πόθεν πίνουσιν M ; (addition)
+3. [καὶ ἐδόθη αὐτοῖς χρησμὸς] ὅτι καὶ χρησμὸς ἐδόθη αὐτοῖς M ; (transposition)",40,70,50,50,True,"```markdown
+40
+```","```markdown
+70
+```","```markdown
+50
+```",,,,0.0127248,0.00160275,0.00074466
+translat-greek-marchalianus-siloam,Vat. gr. 2125 p. 11 (Siloam Miracle),translation,ESTABLISHED_GT,openai/gpt-4o,ok,False,0.001735,1.43,"And God performed the sign of Siloam through the prophet; for before dying, having neglected, he prayed to drink water, and immediately it was sent to him from it. Therefore, it was called Siloam, which is interpreted as ""Sent."" If then the Jews came, water would flow out; but if foreigners, it would not. Therefore, until today, it suddenly flows out, in order that the mystery might be shown.",70,82,80,80,True,"Looking at the candidate answer against the ground truth:
+
+**Lexical accuracy:**
+- ""διὰ τὸν προφήτην"" rendered as ""through the prophet"" vs. ground truth ""for the sake of the prophet"" — both are valid readings of διά + accusative, but the candidate's choice is less contextually appropriate.
+- ""ὀλιγωρήσας"" rendered as ""having neglected"" vs. ground truth ""having grown faint"" — this is a notable lexical error. ὀλιγωρέω in this context (fainting before death) means ""to grow faint/feeble,"" not ""to neglect."" The candidate's rendering distorts the sense.
+
+**Morphological correctness:**
+- ""ἐξήρχετο"" rendered as ""water would flow out"" vs. ground truth ""water flowed out"" — this is a significant error. The Greek imperfect indicative ἐξήρχετο denotes past habitual action, not a conditional. The candidate has incorrectly shifted to a conditional mood (""would""), changing the meaning substantially.
+
+**Handling of uncertainty:** No lacunae present in this passage, so not applicable.
+
+**Formal stuckness:** No scribal anomalies to normalize here.
+
+**Summary of deductions:**
+- ~12 points for the mistranslation of ὀλιγωρήσας
+- ~15 points for the tense/mood error on ἐξήρχετο
+- ~3 points for the ""through"" vs. ""for the sake of"" choice
+
+```\n70\n```","```
+82
+```",```80```,,,,0.0044454,0.0005085,0.00036652
+annot-greek-marchalianus-tei-msd,Vat. gr. 2125 p. 11 (TEI MSD & Lemma),annotation,ESTABLISHED_GT,openai/gpt-4o,ok,False,0.011065,5.85,"As a strict philologist, I will preserve the original text without regularizing any spelling variations. Here is the morphosyntactic parse and TEI XML encoding for each word:
+
+1. Ἠσαΐας
+   - Lemma: Ἠσαΐας
+   - POS: Proper noun
+   - Case: Nominative
+   - Number: Singular
+   - Gender: Masculine
+   - TEI: `<w lemma='Ἠσαΐας' msd='n-pn-n-s-m'>Ἠσαΐας</w>`
+
+2. ἀπὸ
+   - Lemma: ἀπό
+   - POS: Preposition
+   - TEI: `<w lemma='ἀπό' msd='r'>ἀπὸ</w>`
+
+3. Ἱερουσαλὴμ
+   - Lemma: Ἱερουσαλήμ
+   - POS: Proper noun
+   - Case: Genitive
+   - Number: Singular
+   - Gender: Feminine
+   - TEI: `<w lemma='Ἱερουσαλήμ' msd='n-pn-g-s-f'>Ἱερουσαλὴμ</w>`
+
+4. θνῄσκει
+   - Lemma: θνῄσκω
+   - POS: Verb
+   - Tense: Present
+   - Voice: Active
+   - Mood: Indicative
+   - Person: Third
+   - Number: Singular
+   - TEI: `<w lemma='θνῄσκω' msd='v-pia-3s'>θνῄσκει</w>`
+
+5. ὑπὸ
+   - Lemma: ὑπό
+   - POS: Preposition
+   - TEI: `<w lemma='ὑπό' msd='r'>ὑπὸ</w>`
+
+6. Μανασσῆ
+   - Lemma: Μανασσῆς
+   - POS: Proper noun
+   - Case: Genitive
+   - Number: Singular
+   - Gender: Masculine
+   - TEI: `<w lemma='Μανασσῆς' msd='n-pn-g-s-m'>Μανασσῆ</w>`
+
+7. ἐν
+   - Lemma: ἐν
+   - POS: Preposition
+   - TEI: `<w lemma='ἐν' msd='r'>ἐν</w>`
+
+8. πρίσει
+   - Lemma: πρίσις
+   - POS: Noun
+   - Case: Dative
+   - Number: Singular
+   - Gender: Feminine
+   - TEI: `<w lemma='πρίσις' msd='n-d-s-f'>πρίσει</w>`
+
+9. εἰς
+   - Lemma: εἰς
+   - POS: Preposition
+   - TEI: `<w lemma='εἰς' msd='r'>εἰς</w>`
+
+10. δύο
+    - Lemma: δύο
+    - POS: Numeral
+    - Case: Accusative
+    - Number: Plural
+    - TEI: `<w lemma='δύο' msd='m-a-p'>δύο</w>`
+
+11. καὶ
+    - Lemma: καί
+    - POS: Conjunction
+    - TEI: `<w lemma='καί' msd='c'>καὶ</w>`
+
+12. ἐτέθη
+    - Lemma: τίθημι
+    - POS: Verb
+    - Tense: Aorist
+    - Voice: Passive
+    - Mood: Indicative
+    - Person: Third
+    - Number: Singular
+    - TEI: `<w lemma='τίθημι' msd='v-aip-3s'>ἐτέθη</w>`
+
+13. ὑποκάτω
+    - Lemma: ὑποκάτω
+    - POS: Adverb
+    - TEI: `<w lemma='ὑποκάτω' msd='d'>ὑποκάτω</w>`
+
+14. δρυὸς
+    - Lemma: δρυς
+    - POS: Noun
+    - Case: Genitive
+    - Number: Singular
+    - Gender: Feminine
+    - TEI: `<w lemma='δρυς' msd='n-g-s-f'>δρυὸς</w>`
+
+15. Ῥωγήλ
+    - Lemma: Ῥωγήλ
+    - POS: Proper noun
+    - Case: Genitive
+    - Number: Singular
+    - Gender: Masculine
+    - TEI: `<w lemma='Ῥωγήλ' msd='n-pn-g-s-m'>Ῥωγήλ</w>`",58,95,75,75,True,"Looking at the candidate answer against the ground truth:
+
+**Correct parses:**
+- Ἠσαΐας, ἀπό, θνῄσκει, ὑπό, Μανασσῆ, ἐν, πρίσει, εἰς, καί, ἐτέθη, δρυός — all morphologically correct.
+
+**Errors:**
+1. **Ἱερουσαλήμ**: Candidate marks as genitive singular feminine (n-pn-g-s-f), but ground truth correctly identifies it as indeclinable (NIDF). The form itself is not genitive — it's an indeclinable proper noun functioning with ἀπό. Significant morphological error.
+2. **δύο**: Candidate marks as accusative plural (m-a-p), but ground truth marks simply as numeral (M). δύο is indeclinable; the candidate incorrectly assigns case/number.
+3. **ὑποκάτω**: Candidate marks as adverb (d), but ground truth marks as improper preposition (P) governing genitive. This is a syntactic role error — ὑποκάτω δρυός requires it to function as a preposition.
+4. **Ῥωγήλ**: Candidate marks as genitive singular masculine (n-pn-g-s-m), but ground truth correctly identifies it as indeclinable (NIDF). Same type of error as Ἱερουσαλήμ.
+
+**Other issues:**
+- No regularized text provided (task explicitly requested it).
+- Different tagset used (e.g., 'r' for preposition vs. 'P'), but this is acceptable as long as meanings align.
+
+**Deductions:**
+- 4 significant morphological/syntactic errors out of 15 words
+- Failure to flag indeclinable forms as such
+- Missing regularized text
+
+```markdown
+58
+```","```markdown
+95
+```","```markdown
+75
+```",,,,0.0058404,0.00168075,0.000837032
+encode-greek-marchalianus-teiheader,Vat. gr. 2125 (Codex Marchalianus Header),encoding,ESTABLISHED_GT,openai/gpt-4o,ok,False,0.004615,2.91,"```xml
+<teiHeader>
+  <fileDesc>
+    <titleStmt>
+      <title>Codex Marchalianus</title>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Biblioteca Apostolica Vaticana</publisher>
+      <pubPlace>Vatican City, Vatican</pubPlace>
+    </publicationStmt>
+    <sourceDesc>
+      <msDesc>
+        <msIdentifier>
+          <repository>Biblioteca Apostolica Vaticana</repository>
+          <idno>Vat. gr. 2125</idno>
+          <settlement>Vatican City</settlement>
+          <country>Vatican</country>
+        </msIdentifier>
+        <msContents>
+          <textLang mainLang=""grc""/>
+          <summary>Lives of the Prophets (Vitae Prophetarum) - Isaiah</summary>
+        </msContents>
+        <physDesc>
+          <objectDesc>
+            <supportDesc>
+              <support>Codex</support>
+            </supportDesc>
+            <layoutDesc>
+              <layout columns=""1""/>
+            </layoutDesc>
+            <objectDimensions>
+              <height unit=""mm"">295</height>
+              <width unit=""mm"">179</width>
+            </objectDimensions>
+          </objectDesc>
+          <handDesc>
+            <handNote>Greek Uncial / Majuscule with lunate sigmas and Nomina Sacra</handNote>
+          </handDesc>
+        </physDesc>
+        <history>
+          <origin>
+            <origPlace>Egypt</origPlace>
+            <origDate notBefore=""0500-01-01"" notAfter=""0699-12-31"">6th to 7th century</origDate>
+          </origin>
+        </history>
+      </msDesc>
+    </sourceDesc>
+  </fileDesc>
+</teiHeader>
+```",38,75,65,65,True,"```markdown
+38
+```","```markdown
+75
+```","```markdown
+65
+```",,,,0.0031236,0.00289125,0.00062104
+trans-latin-vatlat629-f3v,Vat. lat. 629 f. 3v (§37 Esaias),transcription,SELF_CONTAINED_GT,openai/gpt-4o,ok,False,0.004095,5.21,"Sure, here are the transcriptions:
+
+(1) DIPLOMATIC layer:
+```
+Eſaias filius amos. non illum
+p̄phe. ſed alterum qui ſimile nuncupat̄ ē no
+mine. Ille enim ex numero paſtoꝝ fuit. de oppido
+thecue. Hic autē genere nobili ortus ē. ierl̄m.
+Quē etia hebrei aiunt ſocium fuisse manasſe. Inquo
+tanta fuit ſcitas. et uita excellentia. ut unam
+tantū diceret habuisse tunica cilicina. Quamq;
+```
+
+(2) NORMALIZED critical layer:
+```
+Esaias filius Amos. Non illum
+prophetae, sed alterum qui simile nuncupatus est no
+mine. Ille enim ex numero pastorum fuit, de oppido
+Thecue. Hic autem genere nobili ortus est, Hierusalem.
+Quem etiam Hebrei aiunt socium fuisse Manasse. In quo
+tanta fuit scitas, et vita excellentia, ut unam
+tantum diceret habuisse tunica cilicina. Quamque
+```",38,78,35,38,True,"Looking at the candidate answer against the ground truth, I need to check both layers carefully.
+
+**Diplomatic Layer Errors:**
+1. ""non illum"" vs ground truth ""non illius"" — significant misreading
+2. ""alterum"" vs ground truth ""alterius"" — significant misreading
+3. ""ſocium"" vs ground truth ""socrū"" — wrong word entirely
+4. ""manasſe"" vs ground truth ""manasse"" — added long-s
+5. ""Inquo"" vs ground truth ""In quo"" — joined two words
+6. ""ſcitas"" vs ground truth ""scītas"" — missing abbreviation macron
+7. ""et uita"" vs ground truth ""& uite"" — normalized ampersand in diplomatic layer
+8. ""tunica"" vs ground truth ""tunicā"" — missing macron
+9. ""diceret"" vs ground truth ""diceret̄"" — missing abbreviation mark
+10. ""Quamq;"" vs ground truth ""Quamq:"" — wrong punctuation
+
+**Normalized Layer Errors:**
+1. ""Non illum"" vs ground truth ""non illius"" — wrong case ending
+2. ""alterum"" vs ground truth ""alterius"" — wrong case ending
+3. ""Hic autem"" vs ground truth ""hic"" — added word
+4. ""ortus est, Hierusalem"" vs ground truth ""ortus in Hierusalem"" — wrong preposition
+5. ""socium"" vs ground truth ""socrum"" — wrong word
+6. ""scitas"" vs ground truth ""scītas"" — missing expansion
+7. ""Quamque"" vs ground truth ""Quamq:"" — wrong ending
+
+The candidate has multiple significant misreadings of the manuscript (illius→illum, alterius→alterum, socrum→socium), fails to preserve several abbreviation marks in the diplomatic layer, and introduces errors in the normalized layer that don't match the diplomatic layer. While the general structure is preserved, the errors are too numerous and substantive for a passing diplomatic transcription.
+
+```\n38\n```","```json
+78
+```","```markdown
+35
+```",,,,0.0076368,0.003576,0.0007692404
+coll-latin-vatlat629-isidore,Vat. lat. 629 f. 3v vs. Chaparro Gómez 1985,collation,SELF_CONTAINED_GT,openai/gpt-4o,ok,False,0.0015175,1.09,"1. [ille] Hic V ; substitution  
+2. [hic] Hic autem V ; addition  
+3. [nobilis] nobili V ; orthographic  
+4. [ortus in] ortus est V ; substitution  
+5. [Hierusalem] Hierusalem V ; omission  
+6. [atrocique] atroque V ; orthographic  
+7. [extincxit] extinxit V ; orthographic",35,55,45,45,True,"Looking at the candidate answer against the ground truth:
+
+**Variant detection:**
+- Correctly identifies ille→Hic, autem addition, nobili, ortus est, atroque, extinxit
+- **INVENTS a variant** at entry 5: ""Hierusalem"" is identical in both C and V — this is a hallucinated reading and should be heavily penalized
+- Misses the omission of ""in"" as a distinct omission (buried inside entry 4 as ""substitution"")
+
+**Correct alignment:**
+- Individual word alignments are mostly correct, but the apparatus fragments sentence 2 into 4 separate entries instead of grouping them with ""..."" notation as the ground truth does
+
+**Variant typology (significant errors):**
+- [nobilis]→nobili: classified as **orthographic**, but this is a grammatical case change (ablative for genitive) → should be **substitution**
+- [ortus in]→ortus est: classified as **substitution**, but this is actually an **addition** (est) + **omission** (in)
+- [atrocique]→atroque: classified as **orthographic**, but removal of the enclitic -que is a **substitution/lexical variant**, not orthography
+- Only the extinxit/extincxit pair is correctly typed as orthographic
+
+**Apparatus discipline:**
+- Format is well-formed (lemma, reading, siglum)
+- But fragmentation of sentence 2 violates standard practice
+- The invented Hierusalem entry is a serious editorial failure
+
+**Summary of issues:**
+- 1 invented variant (serious)
+- 3 misclassifications of variant type
+- Fragmentation of grouped variants
+- Missed omission of ""in""
+
+```markdown
+35
+```","```markdown
+55
+```","```markdown
+45
+```",,,,0.004218,0.00160425,0.00138376
+translat-latin-vatlat629-seraphim,Vat. lat. 629 f. 3v (Seraphim Vision & Martyrdom),translation,ESTABLISHED_GT,openai/gpt-4o,ok,False,0.0018875,1.97,"The Hebrews, however, report that Isaiah was killed for two reasons: one, because he called them ""rulers of Sodom"" and ""people of Gomorrah""; the other, because, despite the Lord testifying to Moses ""you cannot see my face,"" he dared to exclaim, ""I saw the Lord sitting upon a high throne..."" The Jews, blinded in mind, did not consider that in the following passages he narrated that the Seraphim covered the face and feet of God and that he wrote of seeing only the middle part of Him. He lies under the oak of Rogel near the flowing waters.",88,96,N/A,92,False,"```88
+```","```
+96
+```",,,,not_needed,0.00359775,0.00083325,0.0
+annot-latin-vatlat629-abbreviations,Vat. lat. 629 f. 3v (Scribal Abbreviation Encoding),annotation,ESTABLISHED_GT,openai/gpt-4o,ok,False,0.0041275,2.67,"(1) The expanded normalized Latin text:
+iuxta imperium domini nudo corpore. nudoque vestigio in conventu populi conversatus est.
+
+(2) Grammatical parse:
+- imp̃ium (imperium): neuter singular accusative, noun, ""imperium"" meaning ""command"" or ""authority.""
+- dn̄i (domini): masculine singular genitive, noun, ""dominus"" meaning ""of the lord"" or ""of the master.""
+- ppl̄i (populi): masculine singular genitive, noun, ""populus"" meaning ""of the people.""
+- conuerſatuſ ē (conversatus est): perfect passive indicative, third person singular, verb, ""conversor"" meaning ""he/she/it has been engaged"" or ""he/she/it has conducted oneself.""
+
+(3) TEI P5 XML encoding:
+```xml
+<text>
+  <body>
+    <p>
+      iuxta <choice><abbr>imp̃ium</abbr><expan>imperium</expan></choice> 
+      <choice><abbr>dn̄i</abbr><expan>domini</expan></choice> 
+      nudo corpore. nudoque 
+      <choice><abbr>ueſtigio</abbr><expan>vestigio</expan></choice> 
+      in conuentu 
+      <choice><abbr>ppl̄i</abbr><expan>populi</expan></choice> 
+      <choice><abbr>conuerſatuſ ē</abbr><expan>conversatus est</expan></choice>.
+    </p>
+  </body>
+</text>
+```",55,85,75,75,True,"```markdown
+55
+```","```format
+85
+```","```markdown
+75
+```",,,,0.0050307,0.000795,0.000585956
+trans-aramaic-4q530-f2ii,4Q530 col. 2 (Frag. 6 / lines 6-9),transcription,ESTABLISHED_GT,openai/gpt-4o,ok,False,0.00251,2.19,"I'm unable to transcribe text from images. However, I can help with information about the Dead Sea Scrolls or the Book of Giants. Let me know how I can assist you!",0,0,N/A,0,False,"```json
+0
+```","```
+0
+```",,,,not_needed,0.001023,0.00077175,0.0
+coll-aramaic-4q530-giants-parallels,4Q530 2 ii vs. 4Q531 1 & 6Q8 1,collation,ESTABLISHED_GT,openai/gpt-4o,ok,False,0.0058925,3.81,"(a) **Speakers and Their Roles Across the Fragments:**
+
+- **Witness 1 (4Q530 2 ii:4):** The speakers are the Nephilim, who are recounting their dreams in the assembly of their companions. The role of the Nephilim here is as dream narrators within a communal setting.
+
+- **Witness 2 (6Q8 1:1-2):** The speaker is unidentified initially, but the text mentions Ohya and Barakel. Ohya is addressed directly, indicating he is a recipient of the message, while Barakel is mentioned as the father of the speaker, suggesting a familial relationship. The role of the speaker is as a dream narrator, with Ohya as the listener.
+
+- **Witness 3 (4Q531 1:6):** The speaker is Ohya, who is recounting a dream that has been forced upon him. Ohya's role here is as a dream narrator, expressing a sense of compulsion or urgency in the dream's revelation.
+
+(b) **Common Formula for Dream Narration:**
+
+The common formula across these fragments involves the recounting or narration of dreams, often within a communal or familial context. The formula typically includes:
+- The act of recounting or narrating the dream (e.g., ""ואשתעיו חלמיהון"" - ""they recounted their dreams"").
+- The presence of an audience or recipient (e.g., ""בקהל חבריהון"" - ""in the assembly of their companions"", ""אמר לאוהיא"" - ""said to Ohya"").
+- The expression of the dream as a significant or forced experience (e.g., ""אנס עלי חלם"" - ""a dream has been forced upon me"").
+
+(c) **Comparative Apparatus Table for Giant Names:**
+
+| Fragment | Name(s) Mentioned | Context/Role |
+|----------|-------------------|--------------|
+| 4Q530 2 ii:4 | Nephilim | Dream narrators in assembly |
+| 6Q8 1:1-2 | Ohya, Barakel | Ohya as recipient, Barakel as father |
+| 4Q531 1:6 | Ohya | Dream narrator, expressing compulsion |
+
+Note: The name Mahway and Gilgamesh do not appear in the provided fragments, thus they are not included in this table. If they appear in other parts of the tradition, their roles and contexts would need to be collated separately.",62,95,100,95,True,"Looking at the candidate answer against the ground truth:
+
+**Variant Detection:** The candidate correctly identifies the key differences between witnesses — different dream formulas (ואשתעיו חלמיהון vs. אנס עלי חלם), different speakers (plural Nephilim vs. unnamed speaker vs. Ohya), and different addressees. No variants are invented. Mahway/Gilgamesh are honestly noted as absent from the supplied fragments (correct).
+
+**Correct Alignment:** Witnesses are properly aligned at parallel elements — Ohya in 6Q8 and 4Q531, Barakel as father in 6Q8, Nephilim as collective in 4Q530. The dream formulas are correctly paired as parallel traditions.
+
+**Variant Typology:** The candidate does not formally classify variants as omissions, additions, substitutions, or orthographic variants. Differences are described narratively rather than analytically.
+
+**Apparatus Discipline:** The comparative table is a useful summary but is not a proper critical apparatus with lemma, sigla, and variant readings in standard format. It lacks formal apparatus conventions.
+
+**Content Accuracy:** Speakers, roles, and formulas are correctly identified and match the ground truth. The honest acknowledgment that Mahway/Gilgamesh don't appear in the supplied witnesses is appropriate.
+
+```markdown
+62
+```","```markdown
+95
+```",```100```,,,,0.0045354,0.0011025,0.000647444
+translat-aramaic-4q530-tree-vision,4Q530 2 ii (+ 6-12),lacuna_handling,ESTABLISHED_GT,openai/gpt-4o,ok,False,0.0043075,3.62,"Translation of the fragmentary Aramaic text from 4Q530 col. 2:
+
+""[...] Then they both dreamed dreams and the sleep of their eyes fled from them, and they arose and came [...] and they recounted their dreams in the assembly [of their companions], the Nephilim. In my dream, I was seeing in the night this [and behold, a garden ...] gardens and they were watering [... a hundred trees and great roots emerged] from their base [...] all water and fire burning in all [the garden ...]""
+
+Explanation of symbolic elements:
+
+- **Garden**: In ancient texts, gardens often symbolize a place of divine presence or a paradisiacal realm. They can represent fertility, life, and the nurturing aspect of creation. In this context, the garden may symbolize a divine or otherworldly realm where significant events or revelations occur.
+
+- **Trees**: Trees are frequently symbolic of life, growth, and stability. They can represent individuals or communities, with their roots signifying deep connections or origins. The mention of ""great roots"" suggests a strong foundation or deep-seated influence.
+
+- **Water**: Water is a common symbol for life, purification, and sustenance. It can represent spiritual nourishment or the flow of divine wisdom. In this vision, water may symbolize the sustaining force within the garden, essential for the life of the trees.
+
+- **Fire**: Fire often symbolizes transformation, purification, or divine presence. It can represent destruction or renewal, depending on the context. The fire burning in the garden might indicate a process of purification or a divine presence that transforms the environment.
+
+The text is fragmentary, and the symbolic meanings are interpretations based on common themes in ancient literature. The exact significance may vary depending on the broader context of the manuscript and its intended message.",35,75,45,45,True,"```markdown
+35
+```","```markdown
+75
+```","```markdown
+45
+```",,,,0.0025386,0.00072075,0.00044394
+annot-aramaic-4q530-morphology,4Q530 (Morphological Parsing),annotation,ESTABLISHED_GT,openai/gpt-4o,ok,False,0.00384,2.12,"1. **נ֯דת (4Q530 2 ii:3)**
+   - **Root:** נדד
+   - **Verbal Stem/Binyan:** Peal
+   - **Tense/Aspect:** Perfect
+   - **Person-Number-Gender:** 3rd person feminine singular
+   - **Translation Gloss:** ""departed"" or ""wandered""
+
+2. **ואשתעיו (4Q530 2 ii:4)**
+   - **Root:** שׁעי
+   - **Verbal Stem/Binyan:** Ithpeel
+   - **Tense/Aspect:** Perfect
+   - **Person-Number-Gender:** 3rd person masculine plural
+   - **Translation Gloss:** ""were interpreted"" or ""were explained""
+
+3. **משקין (4Q530 2 ii:7)**
+   - **Root:** שׁקה
+   - **Verbal Stem/Binyan:** Aphel
+   - **Tense/Aspect:** Participle
+   - **Person-Number-Gender:** Masculine plural
+   - **Translation Gloss:** ""giving drink"" or ""watering""
+
+4. **דלקת (4Q530 2 ii:10)**
+   - **Root:** דלק
+   - **Verbal Stem/Binyan:** Peal
+   - **Tense/Aspect:** Perfect
+   - **Person-Number-Gender:** 3rd person feminine singular
+   - **Translation Gloss:** ""burned"" or ""flamed""",72,85,68,72,True,"Looking at each form against the ground truth:
+
+**Form 1 (נ֯דת):** Root, stem, tense, PNG all correct. Gloss ""departed"" matches; ""wandered"" is acceptable. Excellent.
+
+**Form 2 (ואשתעיו):** Major issues. Gloss ""were interpreted/were explained"" is passive, while ground truth is active ""they recounted/reported"" — a fundamental lexical/semantic error. Stem analysis ""Ithpeel"" differs from ground truth's ""Pael (or Ithpaal with metathesis/assimilation)."" The form is genuinely ambiguous per ground truth, but candidate asserts a single parse with wrong gloss.
+
+**Form 3 (משקין):** Root given as שׁקה vs. ground truth שׁקי — a notable lexical difference. Stem, tense, PNG correct. Gloss ""watering"" matches; ""giving drink"" is a different nuance.
+
+**Form 4 (דלקת):** Root, stem, tense, PNG all correct. Gloss ""burned"" matches; ""flamed"" is acceptable. Excellent.
+
+**Deductions:**
+- Form 2: Heavy deduction for confidently wrong gloss (passive vs. active) and different stem analysis without flagging ambiguity (~−50)
+- Form 3: Moderate deduction for different root (~−20)
+- Forms 1 & 4: Minor gloss variations (~−5 each)
+
+```markdown
+72
+```","```markdown
+85
+```","```68
+```",,,,0.004239,0.00077475,0.000389116

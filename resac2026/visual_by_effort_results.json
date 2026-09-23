@@ -1,0 +1,98 @@
+{
+  "google/gemini-3.8-flash (low)": {
+    "Model": "google/gemini-3.8-flash",
+    "Slug": "google/gemini-3.8-flash",
+    "Reasoning_Effort": "low",
+    "Task_Scores": {
+      "trans-greek-marchalianus-p11": 79.0,
+      "trans-latin-vatlat629-f3v": 76.5,
+      "trans-aramaic-4q530-f2ii": 6.0
+    },
+    "Total Cost ($)": 0.0209,
+    "Errors": {}
+  },
+  "google/gemini-3.8-flash (high)": {
+    "Model": "google/gemini-3.8-flash",
+    "Slug": "google/gemini-3.8-flash",
+    "Reasoning_Effort": "high",
+    "Task_Scores": {
+      "trans-greek-marchalianus-p11": 70.0,
+      "trans-latin-vatlat629-f3v": 82.5,
+      "trans-aramaic-4q530-f2ii": 9.0
+    },
+    "Total Cost ($)": 0.2398,
+    "Errors": {}
+  },
+  "qwen/qwen3.8-max (low)": {
+    "Model": "qwen/qwen3.8-max",
+    "Slug": "qwen/qwen3.8-max-0902",
+    "Reasoning_Effort": "low",
+    "Task_Scores": {
+      "trans-greek-marchalianus-p11": 41.0,
+      "trans-latin-vatlat629-f3v": 67.0,
+      "trans-aramaic-4q530-f2ii": 7.5
+    },
+    "Total Cost ($)": 0.0764,
+    "Errors": {}
+  },
+  "qwen/qwen3.8-max (high)": {
+    "Model": "qwen/qwen3.8-max",
+    "Slug": "qwen/qwen3.8-max-0902",
+    "Reasoning_Effort": "high",
+    "Task_Scores": {
+      "trans-greek-marchalianus-p11": 44.0,
+      "trans-latin-vatlat629-f3v": 75.0,
+      "trans-aramaic-4q530-f2ii": 10.0
+    },
+    "Total Cost ($)": 0.2265,
+    "Errors": {}
+  },
+  "x-ai/grok-4.6 (low)": {
+    "Model": "x-ai/grok-4.6",
+    "Slug": "x-ai/grok-4.6",
+    "Reasoning_Effort": "low",
+    "Task_Scores": {
+      "trans-greek-marchalianus-p11": 55.5,
+      "trans-latin-vatlat629-f3v": 77.0,
+      "trans-aramaic-4q530-f2ii": 5.0
+    },
+    "Total Cost ($)": 0.0479,
+    "Errors": {}
+  },
+  "x-ai/grok-4.6 (high)": {
+    "Model": "x-ai/grok-4.6",
+    "Slug": "x-ai/grok-4.6",
+    "Reasoning_Effort": "high",
+    "Task_Scores": {
+      "trans-greek-marchalianus-p11": 55.0,
+      "trans-latin-vatlat629-f3v": 83.5,
+      "trans-aramaic-4q530-f2ii": 2.5
+    },
+    "Total Cost ($)": 0.1398,
+    "Errors": {}
+  },
+  "openai/gpt-5.6-terra (low)": {
+    "Model": "openai/gpt-5.6-terra",
+    "Slug": "openai/gpt-5.6-terra",
+    "Reasoning_Effort": "low",
+    "Task_Scores": {
+      "trans-greek-marchalianus-p11": 25.0,
+      "trans-latin-vatlat629-f3v": 61.5,
+      "trans-aramaic-4q530-f2ii": 15.0
+    },
+    "Total Cost ($)": 0.0895,
+    "Errors": {}
+  },
+  "openai/gpt-5.6-terra (high)": {
+    "Model": "openai/gpt-5.6-terra",
+    "Slug": "openai/gpt-5.6-terra",
+    "Reasoning_Effort": "high",
+    "Task_Scores": {
+      "trans-greek-marchalianus-p11": 22.5,
+      "trans-latin-vatlat629-f3v": 66.5,
+      "trans-aramaic-4q530-f2ii": 22.5
+    },
+    "Total Cost ($)": 0.2289,
+    "Errors": {}
+  }
+}

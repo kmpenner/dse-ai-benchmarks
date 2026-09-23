@@ -1,0 +1,49 @@
+site_name: DSE AI Benchmarks
+site_description: Replication package for "From Author to Editor" (RESAC 2026)
+site_url: https://kmpenner.github.io/dse-ai-benchmarks/
+repo_url: https://github.com/kmpenner/dse-ai-benchmarks
+docs_dir: pages
+theme:
+  name: material
+  features: [navigation.sections, navigation.top, content.code.copy]
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle: {icon: material/weather-night, name: Dark mode}
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle: {icon: material/weather-sunny, name: Light mode}
+markdown_extensions: [tables, admonition, attr_list, toc: {permalink: true}]
+validation:
+  links: {not_found: info, unrecognized_links: info}
+nav:
+  - Home: index.md
+  - Paper and slides:
+      - Overview: paper.md
+      - Paper (text): resac2026/RESAC_2026_paper.md
+      - Slides (text): resac2026/RESAC_2026_slides.md
+  - Results: results.md
+  - Tests and ground truth:
+      - Overview: tests.md
+      - Benchmarking protocols: docs/benchmarking_protocols.md
+      - Ground-truth policies: docs/GROUND_TRUTH_POLICIES.md
+      - Transcription phase guide: docs/transcription_phase_guide.md
+      - Consensus transcriptions: docs/consensus_transcriptions.md
+      - Greek ground-truth decision memo: resac2026/greek_gt_decision_memo.md
+      - Greek ground-truth audit and loci: resac2026/greek_q_ground_truth_audit_and_loci.md
+      - Phase READMEs:
+          - Transcription: docs/transcription_readme.md
+          - Annotation: docs/annotation_readme.md
+          - Collation: docs/collation_readme.md
+          - Translation: docs/translation_readme.md
+  - Scoring:
+      - Overview: scoring.md
+      - Benchmarks and scoring report: docs/benchmarks_and_scoring_report.md
+      - Number provenance: resac2026/PROVENANCE.md
+  - Findings:
+      - Greek (Marchalianus): resac2026/findings_greek_q.md
+      - Latin (Isidore): resac2026/findings_latin_isidore.md
+      - Aramaic (4Q530): resac2026/findings_aramaic_4q530.md
+      - Leningrad Codex case study: leningrad.md
+  - Replication: replication.md
+  - Limitations: limitations.md

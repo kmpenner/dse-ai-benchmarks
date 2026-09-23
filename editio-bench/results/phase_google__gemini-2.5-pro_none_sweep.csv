@@ -1,0 +1,621 @@
+benchmark,siglum,task_type,verification_status,model,answer_status,answer_cached,answer_cost_usd,answer_latency_s,answer,score::minimax/minimax-m3,score::google/gemini-3.8-flash,score::deepseek/deepseek-v4-flash (tiebreak),score_consensus,tiebreak_triggered,score_raw::minimax/minimax-m3,score_raw::google/gemini-3.8-flash,score_raw::deepseek/deepseek-v4-flash (tiebreak),score_error::minimax/minimax-m3,score_error::google/gemini-3.8-flash,score_error::deepseek/deepseek-v4-flash (tiebreak),score_cost_usd::minimax/minimax-m3,score_cost_usd::google/gemini-3.8-flash,score_cost_usd::deepseek/deepseek-v4-flash (tiebreak)
+trans-greek-marchalianus-p11,Vat. gr. 2125 p. 11 (Marchalianus),transcription,ESTABLISHED_GT,google/gemini-2.5-pro,ok,False,0.0,153.7,"**Analyzing Philological Nuances**
+
+I'm currently immersed in the intricate details of ancient manuscript analysis. My focus is on discerning subtle linguistic shifts and textual variations, aiming for an exceptionally precise understanding of the core meaning within the Dead Sea Scrolls and Septuagint texts.
+
+**Deciphering Textual Details**
+
+My current focus involves meticulously transcribing the opening lines from Codex Marchalianus p. 11. I am prioritizing accuracy in rendering majuscules and employing `scriptio continua`, paying close attention to the authentic use of lunate sigmas and omegas as they appear within the text.
+
+**Transcribing Manuscript Fragments**
+
+My current focus is on a meticulous diplomatic transcription of the opening four lines from Codex Marchalianus p. 11. I am carefully preserving all original features, including majuscules, `scriptio continua`, specific lunate sigmas, and any scribal marks, ensuring absolute fidelity to the manuscript's presentation.
+
+**Analyzing Manuscript Variations**
+
+I am currently focused on the precise diplomatic transcription of Codex Marchalianus p. 11. My emphasis is on capturing every detail of the original script, including majuscules, `scriptio continua`, and the distinct forms of lunate sigmas and omegas, ensuring absolute fidelity to the manuscript's unique presentation.
+
+**Analyzing Manuscript Variations**
+
+I am currently focused on the precise diplomatic transcription of Codex Marchalianus p. 11. My emphasis is on capturing every detail of the original script, including majuscules, `scriptio continua`, and the distinct forms of lunate sigmas and omegas, ensuring absolute fidelity to the manuscript's unique presentation.
+
+**Transcribing Manuscript Text**
+
+I'm currently focused on the precise diplomatic transcription of the opening four visible lines from Codex Marchalianus p. 11. My task involves meticulously rendering all original features, including majuscules, `scriptio continua`, distinct lunate sigmas, and scribal marks, ensuring absolute fidelity to the manuscript's unique presentation and avoiding any conjectural restorations.
+
+**Transcribing Manuscript Text**
+
+My current focus is on the precise diplomatic transcription of the opening four visible lines from Codex Marchalianus p. 11. I'm meticulously rendering all original features, including majuscules, `scriptio continua`, distinct lunate sigmas, and scribal marks, ensuring absolute fidelity to the manuscript's unique presentation without conjectural restorations.
+
+**Refining Philological Transcription**
+
+I am currently focused on the precise diplomatic transcription of Codex Marchalianus p. 11. My emphasis is on capturing every detail of the original script, including majuscules, `scriptio continua`, and the distinct forms of lunate sigmas and omegas, ensuring absolute fidelity to the manuscript's unique presentation.
+
+**Transcribing Manuscript Text**
+
+My current focus is on the precise diplomatic transcription of the opening four visible lines from Codex Marchalianus p. 11. I'm meticulously rendering all original features, including majuscules, `scriptio continua`, distinct lunate sigmas, and scribal marks, ensuring absolute fidelity to the manuscript's unique presentation without conjectural restorations.
+
+**Refining Philological Transcription**
+
+I am currently focused on the precise diplomatic transcription of Codex Marchalianus p. 11. My emphasis is on capturing every detail of the original script, including majuscules, `scriptio continua`, and the distinct forms of lunate sigmas and omegas, ensuring absolute fidelity to the manuscript's unique presentation.
+
+**Transcribing Manuscript Text**
+
+My current focus is on the precise diplomatic transcription of the opening four visible lines from Codex Marchalianus p. 11. I'm meticulously rendering all original features, including majuscules, `scriptio continua`, distinct lunate sigmas, and scribal marks, ensuring absolute fidelity to the manuscript's unique presentation without conjectural restorations.
+
+**Analyzing Manuscript Variations**
+
+I am currently focused on the precise diplomatic transcription of Codex Marchalianus p. 11. My emphasis is on capturing every detail of the original script, including majuscules, `scriptio continua`, and the distinct forms of lunate sigmas and omegas, ensuring absolute fidelity to the manuscript's unique presentation.
+
+**Transcribing Manuscript Fragments**
+
+My current focus is on a meticulous diplomatic transcription of the opening four lines from Codex Marchalianus p. 11. I am carefully preserving all original features, including majuscules, `scriptio continua`, specific lunate sigmas, and any scribal marks, ensuring absolute fidelity to the manuscript's presentation.
+
+**Deciphering Textual Details**
+
+My current focus involves meticulously transcribing the opening lines from Codex Marchalianus p. 11. I am prioritizing accuracy in rendering majuscules and employing `scriptio continua`, paying close attention to the authentic use of lunate sigmas and omegas as they appear within the text.
+
+**Analyzing Philological Nuances**
+
+I'm currently immersed in the intricate details of ancient manuscript analysis. My focus is on discerning subtle linguistic shifts and textual variations, aiming for an exceptionally precise understanding of the core meaning within the Dead Sea Scrolls and Septuagint texts.
+
+**Focusing on Textual Accuracy**
+
+My current work involves a meticulous diplomatic transcription of the opening four lines of Codex Marchalianus p. 11. I'm preserving every original feature—majuscules, `scriptio continua`, distinct lunate sigmas, and scribal marks—to ensure absolute fidelity to the manuscript's presentation.
+
+**Examining Manuscript Presentation**
+
+I'm focused on the precise diplomatic transcription of Codex Marchalianus p. 11. My aim is to capture every nuance of the original script, including majuscules, `scriptio continua`, and the specific forms of lunate sigmas and omegas, guaranteeing absolute fidelity to its unique presentation.
+
+**Transcribing Manuscript Content**
+
+I am focused on the diplomatic transcription of the initial four visible lines of Codex Marchalianus p. 11. My task is to meticulously reproduce all original elements, such as majuscules, `scriptio continua`, distinct lunate sigmas, and scribal notations, ensuring complete fidelity to the manuscript's presentation.
+
+**Detailing Manuscript Transcription**
+
+My current task is a diplomatic transcription of the first four visible lines from Codex Marchalianus p. 11. I am carefully preserving all original features, including majuscules, `scriptio continua`, specific lunate sigmas, and scribal marks, to ensure absolute fidelity to the manuscript's unique presentation.",0,0,N/A,0,False,"```json
+0
+```","```
+0
+```",,,,not_needed,0.0016332,0.00186225,0.0
+coll-greek-marchalianus-vitae,Vat. gr. 2125 p. 11 vs. Schermann 1907,collation,SELF_CONTAINED_GT,google/gemini-2.5-pro,ok,False,0.03238625,32.23,"The collation of the specified loci from Codex Marchalianus (M) against the base text of Schermann (S) is as follows. The apparatus is constructed according to standard conventions, noting the classification of each variant.
+
+***
+
+1.  **S:** ἔχει δὲ εἴσοδον ἀπὸ Γαβαών
+    **M:** ἥτις ἔχει εἴσοδον ἀπὸ Γαβαών
+
+    The phrase `ἔχει δὲ` in the base text is replaced in M by `ἥτις ἔχει`. This constitutes a substitution.
+
+    **Apparatus:**
+    `ἔχει δὲ] ἥτις ἔχει M ; (substitutio)`
+
+2.  **S:** ἠρώτων γὰρ οἱ πολέμιοι
+    **M:** ἠρώτων γὰρ οἱ πολέμιοι πόθεν πίνουσιν
+
+    Codex M contains the entire reading of the base text and adds the phrase `πόθεν πίνουσιν`. This is an addition.
+
+    **Apparatus:**
+    `πολέμιοι] add. πόθεν πίνουσιν M ; (additio)`
+
+3.  **S:** καὶ ἐδόθη αὐτοῖς χρησμὸς
+    **M:** ὅτι καὶ χρησμὸς ἐδόθη αὐτοῖς
+
+    The reading in M involves two distinct alterations from the base text: the addition of the conjunction `ὅτι` at the beginning of the clause, and the transposition of the words `χρησμὸς` and `ἐδόθη αὐτοῖς`.
+
+    **Apparatus:**
+    `καὶ ἐδόθη αὐτοῖς χρησμὸς] ὅτι καὶ χρησμὸς ἐδόθη αὐτοῖς M ; (additio et transpositio)`",92,100,N/A,96,False,"```markdown
+92
+```","```metric
+100
+```",,,,not_needed,0.003525,0.0012645,0.0
+translat-greek-marchalianus-siloam,Vat. gr. 2125 p. 11 (Siloam Miracle),translation,ESTABLISHED_GT,google/gemini-2.5-pro,ok,False,0.0,132.31,"**Considering Philological Context**
+
+My current focus is on rigorously analyzing the user's persona. I'm carefully dissecting the details of a ""strict philologist working on ancient manuscript texts"" to ensure my subsequent responses fully embody this specialized expertise and accurately reflect the nuances of that academic discipline.
+
+**Refining Lexical Precision**
+
+I'm now concentrating on the subtle distinctions within ancient vocabulary. My efforts are directed towards identifying the most precise scholarly English equivalents, eschewing common interpretations for those grounded in established philological scholarship.
+
+**Analyzing Textual Variants**
+
+I am now meticulously examining the specific orthographic variations present in the source material. My primary objective is to ensure absolute fidelity to the transcribed Greek, preserving every deviation from standardized spelling as a direct reflection of the manuscript's unique characteristics.
+
+**Analyzing Textual Variants**
+
+I am now meticulously examining the specific orthographic variations present in the source material. My primary objective is to ensure absolute fidelity to the transcribed Greek, preserving every deviation from standardized spelling as a direct reflection of the manuscript's unique characteristics.
+
+**Analyzing Textual Variants**
+
+I'm now meticulously examining the specific orthographic variations present in the source material. My primary objective is to ensure absolute fidelity to the transcribed Greek, preserving every deviation from standardized spelling as a direct reflection of the manuscript's unique characteristics.
+
+**Refining Lexical Precision**
+
+I'm now concentrating on the subtle distinctions within ancient vocabulary. My efforts are directed towards identifying the most precise scholarly English equivalents, eschewing common interpretations for those grounded in established philological scholarship.
+
+**Considering Philological Context**
+
+My current focus is on rigorously analyzing the user's persona. I'm carefully dissecting the details of a ""strict philologist working on ancient manuscript texts"" to ensure my subsequent responses fully embody this specialized expertise and accurately reflect the nuances of that academic discipline.
+
+**Interpreting Grammatical Structures**
+
+I am now dissecting the complex grammatical constructions within the provided passage. My aim is to accurately render the relationships between clauses and phrases, particularly the participial phrases and their connection to the main verbs, ensuring the translation reflects the original syntax without imposing modern linguistic assumptions.
+
+**Synthesizing Meaning and Etymology**
+
+I am now integrating the literal translation with the underlying etymological explanation. My focus is on clearly presenting the textual link between the name ""Siloam"" and the Greek verb ""apostello,"" reflecting the hermeneutical process evident in the ancient text.",0,0,N/A,0,False,"```json
+0
+```","```
+0
+```",,,,not_needed,0.0012564,0.00091725,0.0
+annot-greek-marchalianus-tei-msd,Vat. gr. 2125 p. 11 (TEI MSD & Lemma),annotation,ESTABLISHED_GT,google/gemini-2.5-pro,ok,False,0.03953,34.29,"Analysis of the designated text from Codex Marchalianus follows. The transcription is preserved without normalization.
+
+***
+
+### **1. Transcribed Text**
+
+Ἠσαΐας ἀπὸ Ἱερουσαλὴμ θνῄσκει ὑπὸ Μανασσῆ ἐν πρίσει εἰς δύο· καὶ ἐτέθη ὑποκάτω δρυὸς Ῥωγήλ.
+
+### **2. Philological Notes**
+
+*   **Ἱερουσαλήμ:** The text uses the indeclinable Hebraic form of the name, common in the Septuagint and New Testament, rather than the declinable Greek form Ἱεροσόλυμα. Its grammatical case is determined by the governing preposition, ἀπό, requiring the genitive.
+*   **πρίσει:** Dative singular of πρίσις, -εως, ἡ, meaning ""a sawing."" The text states Isaiah died ""by a sawing"" (instrumental dative), not ""with a saw"" (which would more likely be ἐν πρίονι). This abstract noun emphasizes the act of martyrdom.
+*   **Ῥωγήλ:** An indeclinable Semitic proper name, here functioning as a genitive in apposition to δρυὸς (""of the oak of Rogel""). This likely refers to the location known in Hebrew as עין רגל (*En Rogel*), translated in the Septuagint as πηγὴ Ῥωγήλ (e.g., 2 Samuel 17:17).
+
+### **3. Morphosyntactic Analysis**
+
+| Word | Lemma | Morphosyntactic Description |
+| :--- | :--- | :--- |
+| Ἠσαΐας | Ἠσαΐας | N-NSM (Noun, Nominative, Singular, Masculine) |
+| ἀπὸ | ἀπό | PREP (Preposition) + Genitive |
+| Ἱερουσαλὴμ | Ἱερουσαλήμ | N-GSF (Noun, Genitive, Singular, Feminine; indeclinable) |
+| θνῄσκει | θνῄσκω | V-PAI-3S (Verb, Present, Active, Indicative, 3rd Person, Singular) |
+| ὑπὸ | ὑπό | PREP (Preposition) + Genitive |
+| Μανασσῆ | Μανασσῆς | N-GSM (Noun, Genitive, Singular, Masculine) |
+| ἐν | ἐν | PREP (Preposition) + Dative |
+| πρίσει | πρίσις | N-DSF (Noun, Dative, Singular, Feminine) |
+| εἰς | εἰς | PREP (Preposition) + Accusative |
+| δύο | δύο | NU-APN (Numeral, Accusative, Plural, Neuter; indeclinable) |
+| καὶ | καί | CONJ (Conjunction, coordinating) |
+| ἐτέθη | τίθημι | V-API-3S (Verb, Aorist, Passive, Indicative, 3rd Person, Singular) |
+| ὑποκάτω | ὑποκάτω | ADV / PREP (Adverb / Improper Preposition) + Genitive |
+| δρυὸς | δρῦς | N-GSF (Noun, Genitive, Singular, Feminine) |
+| Ῥωγήλ | Ῥωγήλ | N-GSF (Noun, Genitive, Singular, Feminine; indeclinable) |
+
+### **4. TEI XML Encoding**
+
+```xml
+<p>
+<w lemma=""Ἠσαΐας"" msd=""N-NSM"">Ἠσαΐας</w>
+<w lemma=""ἀπό"" msd=""PREP"">ἀπὸ</w>
+<w lemma=""Ἱερουσαλήμ"" msd=""N-GSF"">Ἱερουσαλὴμ</w>
+<w lemma=""θνῄσκω"" msd=""V-PAI-3S"">θνῄσκει</w>
+<w lemma=""ὑπό"" msd=""PREP"">ὑπὸ</w>
+<w lemma=""Μανασσῆς"" msd=""N-GSM"">Μανασσῆ</w>
+<w lemma=""ἐν"" msd=""PREP"">ἐν</w>
+<w lemma=""πρίσις"" msd=""N-DSF"">πρίσει</w>
+<w lemma=""εἰς"" msd=""PREP"">εἰς</w>
+<w lemma=""δύο"" msd=""NU-APN"">δύο</w>
+<pc>·</pc>
+<w lemma=""καί"" msd=""CONJ"">καὶ</w>
+<w lemma=""τίθημι"" msd=""V-API-3S"">ἐτέθη</w>
+<w lemma=""ὑποκάτω"" msd=""ADV"">ὑποκάτω</w>
+<w lemma=""δρῦς"" msd=""N-GSF"">δρυὸς</w>
+<w lemma=""Ῥωγήλ"" msd=""N-GSF"">Ῥωγήλ</w>
+<pc>.</pc>
+</p>
+```",72,98,80,80,True,"```markdown
+72
+```","```cat
+98
+```","```markdown
+80
+```",,,,0.0044346,0.0017835,0.000868112
+encode-greek-marchalianus-teiheader,Vat. gr. 2125 (Codex Marchalianus Header),encoding,ESTABLISHED_GT,google/gemini-2.5-pro,ok,False,0.03044625,26.08,"```xml
+<?xml version=""1.0"" encoding=""UTF-8""?>
+<teiHeader>
+    <fileDesc>
+        <titleStmt>
+            <title>Codex Marchalianus: Vitae Prophetarum (Isaiah)</title>
+        </titleStmt>
+        <publicationStmt>
+            <publisher>Digital edition based on codicological record.</publisher>
+            <date when=""2024""/>
+            <availability>
+                <p>This metadata record is intended for scholarly use.</p>
+            </availability>
+        </publicationStmt>
+        <sourceDesc>
+            <msDesc>
+                <msIdentifier>
+                    <country>Vatican</country>
+                    <settlement>Vatican City</settlement>
+                    <repository>Biblioteca Apostolica Vaticana</repository>
+                    <idno>Vat. gr. 2125</idno>
+                    <msName>Codex Marchalianus</msName>
+                </msIdentifier>
+                <msContents>
+                    <msItem>
+                        <title xml:lang=""la"">Vitae Prophetarum</title>
+                        <note>The text concerns the life of the prophet Isaiah.</note>
+                        <textLang mainLang=""grc"">Ancient Greek</textLang>
+                    </msItem>
+                </msContents>
+                <physDesc>
+                    <objectDesc form=""codex"">
+                        <supportDesc>
+                            <support>
+                                <dimensions unit=""mm"">
+                                    <height>295</height>
+                                    <width>179</width>
+                                </dimensions>
+                            </support>
+                        </supportDesc>
+                        <layoutDesc>
+                            <layout columns=""1"">The text is written in a single column.</layout>
+                        </layoutDesc>
+                    </objectDesc>
+                    <handDesc>
+                        <handNote>
+                            <p>The script is a Greek Uncial / Majuscule hand, featuring lunate sigmas and the use of <term>Nomina Sacra</term>.</p>
+                        </handNote>
+                    </handDesc>
+                </physDesc>
+                <history>
+                    <origin>
+                        <origPlace>Egypt</origPlace>
+                        <origDate notBefore=""0500-01-01"" notAfter=""0699-12-31"">6th to 7th century</origDate>
+                    </origin>
+                </history>
+            </msDesc>
+        </sourceDesc>
+    </fileDesc>
+</teiHeader>
+```",60,95,60,60,True,"```markdown
+60
+```","```oid
+95
+```","```xml
+60
+```",,,,0.0030204,0.0012555,0.000601524
+trans-latin-vatlat629-f3v,Vat. lat. 629 f. 3v (§37 Esaias),transcription,SELF_CONTAINED_GT,google/gemini-2.5-pro,ok,False,0.061255,56.17,"As a philologist examining the provided folio, I present the following two transcription layers of the specified text from Vaticanus latinus 629, fol. 3v. All scribal features, including letter forms, abbreviations, and punctuation, are meticulously preserved in the diplomatic layer. The normalized layer expands these features into standard critical Latin orthography.
+
+***
+
+### (1) Diplomatic Transcription
+
+Eſaıas filius amos. non illuſ
+p̄phe. ſed alteriuſ qui ſimile nuncupat̄ ē no
+mine. Ille enim exnumero paſtoꝝ fuit. de oppido
+thecue, Hic autē genere nobili ortuſ ē. ierl̄m.
+Quē etıā hebrei aiunt ſocrū fuiſſe manaſſe. Inquo
+tanta fuit ſcı̄tas. ⁊ ulta excellentıa. ut unam
+tantū diceret habuiſſe tunicā cilicinā. Quamqƺ
+
+### (2) Normalized Critical Transcription
+
+Esaias filius Amos, non illum
+prophetae, sed alterius qui simile nuncupatus est no-
+mine. Ille enim ex numero pastorum fuit de oppido
+Thecue. Hic autem genere nobili ortus est Hierusalem.
+Quem etiam Hebraei aiunt socrum fuisse Manasse. In quo
+tanta fuit sanctitas et multa excellentia, ut unam
+tantum diceret habuisse tunicam ciliciam. Quamque",55,92,40,55,True,"Looking at the candidate's transcription against the ground truth, I need to evaluate both layers carefully.
+
+**Diplomatic Layer Issues:**
+- ""exnumero"" vs ""ex numero"" — missing space
+- ""ulta"" vs ""uite"" — significant misreading (changes ""vitae"" to ""multa"")
+- ""diceret"" vs ""diceret̄"" — missing abbreviation macron
+- ""thecue,"" vs ""thecue."" — punctuation difference
+- ""Inquo"" vs ""In quo"" — missing space
+- ""Quamqƺ"" vs ""Quamq:"" — different abbreviation symbol
+- Consistent use of ""ı"" (dotless i) where ground truth uses ""i"" — minor but systematic
+
+**Normalized Layer Issues:**
+- ""non illum"" vs ""non illius"" — significant normalization error (accusative vs genitive)
+- ""multa excellentia"" vs ""vitae excellentia"" — consequential error from diplomatic misreading
+- ""ortus est Hierusalem"" vs ""ortus in Hierusalem"" — differs from ground truth (candidate's reading may be more linguistically natural, but diverges)
+
+**Strengths:**
+- Preserves long-s (ſ) consistently
+- Preserves Tironian et (⁊)
+- Preserves abbreviations (p̄phe, nuncupat̄, ē, ierl̄m, autē)
+- Preserves line breaks
+- Provides both layers as requested
+- Good overall structure
+
+The ""ulta""/""uite"" misreading and the ""illum""/""illius"" normalization error are substantive textual errors that affect meaning. The missing abbreviation on ""diceret"" and missing spaces are moderate issues.
+
+```\n55\n```",```92```,"```40
+```",,,,0.012018,0.00096225,0.00153048
+coll-latin-vatlat629-isidore,Vat. lat. 629 f. 3v vs. Chaparro Gómez 1985,collation,SELF_CONTAINED_GT,google/gemini-2.5-pro,ok,False,0.02482625,24.2,"*   `ille] Hic V ; subst.`
+*   `hic] Hic autem V ; subst. et add.`
+*   `nobilis] nobili V ; subst.`
+*   `ortus] ortus est V ; add.`
+*   `in] om. V ;`
+*   `atrocique] atroque V ; subst.`
+*   `extincxit] extinxit V ; orth.`",80,100,80,80,True,"Looking at the candidate's apparatus against the ground truth:
+
+**Variant 1**: `[ille] Hic V ; subst.` — Correctly identified and classified. ✓
+
+**Variant 2**: The candidate breaks this into four entries:
+- `hic] Hic autem V ; subst. et add.` — The ""Hic"" for ""hic"" is just capitalization, not a real substitution; the autem addition is correct but the classification is slightly muddled.
+- `nobilis] nobili V ; subst.` — Correct. ✓
+- `ortus] ortus est V ; add.` — The ground truth does not classify ""est"" as an addition; it treats only ""in"" as omitted. This is an over-detection.
+- `in] om. V` — Correct. ✓
+
+The ground truth combines these into a single, more elegant entry with a spanning lemma.
+
+**Variant 3**: 
+- `atrocique] atroque V ; subst.` — Correct. ✓
+- `extincxit] extinxit V ; orth.` — Correct. ✓
+
+**Evaluation by dimension**:
+- *Variant detection*: All real variants found; ""est"" addition is arguably valid but not in ground truth. Minor over-detection.
+- *Correct alignment*: All lemmas aligned at correct words. ✓
+- *Variant typology*: Mostly correct; the ""Hic/hic"" capitalization treated as substitution is slightly off.
+- *Apparatus discipline*: Format deviates from requested (backticks, inline type labels); apparatus is fragmented into more entries than necessary, but well-formed.
+
+```
+80
+```",```100```,"```markdown
+80
+```",,,,0.00690525,0.00180525,0.0016191
+translat-latin-vatlat629-seraphim,Vat. lat. 629 f. 3v (Seraphim Vision & Martyrdom),translation,ESTABLISHED_GT,google/gemini-2.5-pro,ok,False,0.03593125,34.3,"The Hebrews, however, hand down the tradition that Isaiah was killed for two reasons: one, that he had called them princes of Sodom and the people of Gomorrah; the other, that, although the Lord testified to Moses, « you will not be able to see my face », this one dared to exclaim: « I have seen the Lord sitting upon a high throne... », the Jews, blinded in mind, not considering that in the following [passages] he had narrated that the Seraphin had covered the face and feet of God, and that he writes that he saw only His middle parts. He lies under the oak of Rogel, near the courses of the waters.",85,96,98,96,True,"```85
+```","```
+96
+```","```  
+98  
+```",,,,0.00315675,0.00054525,0.00024654
+annot-latin-vatlat629-abbreviations,Vat. lat. 629 f. 3v (Scribal Abbreviation Encoding),annotation,ESTABLISHED_GT,google/gemini-2.5-pro,ok,False,0.02995625,28.56,"Based on the diplomatic transcription from Vat. lat. 629, f. 3v, here are the requested annotations.
+
+### (1) Expanded Normalized Latin Text
+
+*iuxta imperium domini nudo corpore, nudoque vestigio in conventu populi conversatus est.*
+
+(Note: This normalization regularizes spelling, such as `ue` to `ve` and `ſ` to `s`, and resolves all scribal abbreviations.)
+
+### (2) Grammatical Parse
+
+*   **`imp̃ium` (imperium)**
+    *   **Form:** `imperium`
+    *   **Parse:** Noun, accusative singular neuter, from *imperium, -i, n.* It is the object of the preposition *iuxta*.
+
+*   **`dn̄i` (domini)**
+    *   **Form:** `domini`
+    *   **Parse:** Noun (*nomen sacrum*), genitive singular masculine, from *dominus, -i, m.* It is a genitive of possession modifying *imperium*.
+
+*   **`ppl̄i` (populi)**
+    *   **Form:** `populi`
+    *   **Parse:** Noun, genitive singular masculine, from *populus, -i, m.* It is a genitive of possession modifying *conventu*.
+
+*   **`conuerſatuſ ē` (conversatus est)**
+    *   **Form:** `conversatus est`
+    *   **Parse:** Verb, 3rd person singular, perfect indicative, deponent voice, from *conversor, conversari, conversatus sum*. The form is composed of the perfect participle (*conversatus*, nominative singular masculine) and the 3rd person singular present indicative of *sum* (*est*).
+
+### (3) TEI P5 XML Encoding
+
+This encoding preserves the exact diplomatic transcription, including abbreviation marks, within the `<abbr>` element while providing the resolution in the `<expan>` element.
+
+```xml
+<p>
+  iuxta <choice><abbr>imp̃ium</abbr><expan>imperium</expan></choice> 
+  <choice><abbr>dn̄i</abbr><expan>domini</expan></choice> 
+  nudo corpore<pc>.</pc> 
+  nudo<choice><abbr>q:</abbr><expan>que</expan></choice> 
+  ueſtigio in conuentu 
+  <choice><abbr>ppl̄i</abbr><expan>populi</expan></choice> 
+  conuerſatuſ 
+  <choice><abbr>ē</abbr><expan>est</expan></choice><pc>.</pc>
+</p>
+```",92,98,N/A,95,False,"```markdown
+92
+```","```markdown
+98
+```",,,,not_needed,0.0038217,0.0009735,0.0
+trans-aramaic-4q530-f2ii,4Q530 col. 2 (Frag. 6 / lines 6-9),transcription,ESTABLISHED_GT,google/gemini-2.5-pro,ok,False,0.0280125,25.1,"Based on a meticulous examination of the provided infrared photograph of fragment 4Q530, here is the diplomatic transcription of the visible text, adhering strictly to paleographical and epigraphical standards.
+
+1.  [...ח֯יו֯לתה...]
+2.  [...אבוא יסורא...]
+3.  [...ב֯איש ו֯נפלו...]
+4.  [...ימון סלקו֯ן ומן...]",1,15,0,1,True,"```json
+{
+  ""reasoning"": ""The candidate answer bears virtually no resemblance to the ground truth transcription. Every single word is wrong: Line 1 ground truth is נפיליא vs. candidate's חיולתה; Line 2 ground truth contains גננין/גנניא and משקין vs. candidate's אבוא יסורא; Line 3 ground truth has רברבין and נפקו מן vs. candidate's באיש ונפלו; Line 4 ground truth has לשנין די נור מן vs. candidate's ימון סלקון. This constitutes wholesale hallucination of text rather than diplomatic transcription. While the candidate does employ some correct conventions (square brackets for lacunae, occasional circellus marks), these are applied to entirely fabricated content. No credit can be awarded for diplomatic fidelity, and heavy deductions apply for hallucinating unrelated text."",
+  ""score"": 0
+}
+```","```
+15
+```",```0```,,,,0.0026616,0.0016815,0.00028112
+coll-aramaic-4q530-giants-parallels,4Q530 2 ii vs. 4Q531 1 & 6Q8 1,collation,ESTABLISHED_GT,google/gemini-2.5-pro,ok,False,0.0,143.17,"**Analyzing Scroll Fragments**
+
+I'm currently focused on meticulously collating the three Dead Sea Scroll fragments: 4Q530, 4Q531, and 6Q8. This involves a close examination of their textual content to identify any points of intersection or divergence, a crucial step for understanding their provenance and potential interrelationships.
+
+**Examining Dream Formulas**
+
+I'm now specifically analyzing the dream narration formulas across these fragments, noting their structural similarities and variations. This detailed comparative work is essential for understanding the literary conventions employed by the scribes.
+
+**Refining Fragment Comparisons**
+
+I'm now meticulously comparing the philological details across the fragments, focusing on the exact rendering of names and the structure of dream recounting. My current effort involves cross-referencing the specific mentions of the giants, noting any subtle variations in their portrayal or the surrounding textual context.
+
+**Refining Textual Analysis**
+
+I'm now meticulously examining the textual variations across the fragments concerning the giants' names. My focus is on the precise orthography and any appended genealogical or descriptive terms present, ensuring an uncompromised philological rendering.
+
+**Focusing on Dream Narration Formulas**
+
+My current work centers on the specific linguistic structures used to introduce dreams in each fragment. I'm detailing the exact verbs, pronouns, and locutions employed to convey the act of dream recounting and its commencement.
+
+**Comparing Giant Name Witnesses**
+
+I'm compiling a direct comparison of the orthographic representations of the specific giants – Ohya, Mahway, Gilgamesh, and Barakel – across the available textual witnesses. This involves detailing each instance precisely as it appears, noting any significant variations or lacunae.
+
+**Refining Speaker Roles**
+
+I am now meticulously detailing the speakers and their functions within each fragment. 4Q530 presents a plural ""they"" recounting dreams generally, while 6Q8 features an unnamed singular male addressing Ohya, and 4Q531 explicitly names Ohya as speaking to an unnamed male.
+
+**Detailing Textual Fragments**
+
+I'm meticulously compiling the specific textual data from the provided fragments. This involves noting the exact scriptural readings and identifying the individuals or groups performing the act of speech and dream narration within each witness. My current effort is to precisely delineate these roles as presented in the raw text.
+
+**Analyzing Giant Name Variants**
+
+I'm currently compiling a precise comparative apparatus of the orthographic representations for key figures like Ohya, Mahway, Gilgamesh, and Barakel across these specific fragments, noting every scribal variation.
+
+**Refining Speaker Attribution**
+
+I am now meticulously detailing the speakers and their roles as presented within each specific fragment. 4Q530 depicts a general plural recounting by Nephilim companions, while 6Q8 features an unnamed male addressing Ohya, and 4Q531 explicitly names Ohya as the speaker to an unidentified male.
+
+**Analyzing Dream Narration Formulas**
+
+My current focus is on the exact linguistic structures introducing dream reports. I am noting the specific verbs, pronouns, and phrases used to convey the act of dream recounting, distinguishing between narrative statements and direct speech introductions in each fragment.
+
+**Compiling Giant Name Variants**
+
+I am meticulously constructing a comparative apparatus for the orthographic representations of specific giants—Ohya, Mahway, Gilgamesh, and Barakel—across the provided textual witnesses, precisely documenting every scribal variation or lacuna.
+
+**Examining Textual Variants for Giants**
+
+I'm now examining the textual variations across the fragments specifically concerning the giants' names. My focus is on precise orthography and any associated genealogical or descriptive terms, ensuring accurate philological rendering.
+
+**Synthesizing Speaker and Addressee Roles**
+
+I am now delineating the specific individuals and groups acting as speakers and those receiving the dream narrations within each fragment. My current effort is focused on precisely mapping these interactive dynamics as presented in the raw textual data.
+
+**Detailing Textual Readings**
+
+I am compiling precise textual data from the provided fragments, noting scriptural readings and identifying the agents of speech and dream narration. My current effort is to delineate these roles as precisely as the raw text allows.
+
+**Comparing Giant Name Witnesses**
+
+I am compiling a direct comparison of the orthographic representations of specific giants—Ohya, Mahway, Gilgamesh, and Barakel—across the available textual witnesses. This involves detailing each instance precisely as it appears, noting any variations or lacunae.
+
+**Analyzing Giant Name Spellings**
+
+I am currently compiling a precise comparative apparatus of the orthographic representations for key figures like Ohya, Mahway, Gilgamesh, and Barakel across these specific fragments, noting every scribal variation.
+
+**Synthesizing Fragment Content**
+
+I am meticulously collating the textual content from the three Dead Sea Scroll fragments: 4Q530, 4Q531, and 6Q8. My focus is on identifying common threads and divergences in their narratives and linguistic features.
+
+**Analyzing Dream Structures**
+
+I am now specifically analyzing the dream narration structures within these fragments, noting similarities and differences in how dreams are introduced and described. This is crucial for understanding the literary conventions at play.
+
+**Refining Fragment Comparisons**
+
+I am now meticulously comparing the philological details across the fragments, focusing on the precise rendering of names and the structure of dream recounting. My current effort involves cross-referencing the specific mentions of the giants, noting any subtle variations.
+
+**Processing Textual Data**
+
+I am systematically processing the textual data from the fragments, noting specific readings and identifying thematic elements. My focus is on extracting and organizing the core information presented within each witness.",0,0,N/A,0,False,"```markdown
+0
+```","```lot
+0
+```",,,,not_needed,0.0017724,0.00159075,0.0
+translat-aramaic-4q530-tree-vision,4Q530 2 ii (+ 6-12),lacuna_handling,ESTABLISHED_GT,google/gemini-2.5-pro,ok,False,0.03789,36.66,"As requested, here is a translation of the Aramaic text from 4Q530, column 2, followed by an analysis of its symbolism, adhering to strict philological principles.
+
+### Text and Translation
+
+The transcribed Aramaic text is as follows:
+
+> '[... באדין תריהון חלמו חלמין ושנת עינהון נדת מנהון וקמו ואתו ...] ואשתעיו חלמיהון בקהל [חבריהון] נפיליא בחלמי חזה הוית בליליא דן [והא גנתא ...] גננין והוו משקין [... מאתן אילנין ונפקו] שרשין רברבין מן עקרהון [...] כול מיא ונורא דלקת בכול [גנתא ...]'
+
+**Translation:**
+
+""[...] Then the two of them dreamed dreams, and the sleep of their eyes fled from them. And they arose and came [...] and they related their dreams in the assembly of [their companions]. The Giants. In my dream I was seeing, in this night, [and behold, a garden ...] gardeners, and they were watering [... two hundred trees, and there came forth] great roots from their stump [...] all the water, and a fire was burning in all [the garden ...]""
+
+**Philological Notes:**
+
+*   The text is physically broken (a lacuna) at the beginning, end, and in several places internally, indicated by `[...]`.
+*   The reading `[חבריהון]` (""their companions"") is a scholarly restoration; the manuscript is damaged at this point.
+*   The term `נפיליא` (Niphilayya) is the Aramaic equivalent of the Hebrew *Nephilim* (נְפִלִים), the ""Giants"" or ""Fallen Ones"" of Genesis 6:4.
+*   The phrase `חזה הוית` (""I was seeing"") is a common periphrastic construction in Aramaic indicating continuous action in the past.
+*   The spelling is preserved exactly as provided, without normalization.
+
+### Analysis of Symbolism
+
+This dream vision, part of the ""Book of Giants"" literature found at Qumran, uses potent symbols common in ancient Near Eastern and Jewish apocalyptic thought. The vision allegorically recounts the story of the Watchers and their offspring, the Giants, and foretells their judgment.
+
+**1. The Garden (גנתא):**
+
+The garden is a multivalent symbol. Primarily, it represents the world, specifically the primordial earth, as a place of potential order and life. It evokes the Garden of Eden, a divinely established space that is subsequently corrupted by transgression. In this vision, the garden is the stage upon which the cosmic drama of the Watchers' sin unfolds. The ""gardeners"" (`גננין`) are the Watchers, the angelic beings who were meant to tend to the world but instead planted corruption within it.
+
+**2. The Trees (אילנין):**
+
+In biblical and apocalyptic literature, trees frequently symbolize powerful individuals, rulers, or entire nations (cf. Daniel 4; Ezekiel 31). Here, the **""two hundred trees""** are a clear allusion to the two hundred Watchers who, according to the Book of Enoch (1 Enoch 6), descended upon Mount Hermon. These trees, planted and watered by the gardeners (the Watchers themselves), represent their progeny: the Giants (`נפיליא`). The emergence of **""great roots from their stump""** (`שרשין רברבין מן עקרהון`) symbolizes the Giants' immense power, their deep and formidable establishment on the earth, and the pervasive, seemingly permanent nature of their corrupting influence.
+
+**3. The Water (מיא):**
+
+Water carries a dual meaning in this context.
+
+*   **Nourishment:** Initially, the act of the gardeners ""watering"" (`משקין`) the trees signifies the Watchers actively nurturing and sustaining their giant offspring, enabling their growth and power.
+*   **Judgment:** The subsequent mention of **""all the water""** (`כול מיא`), which floods the garden, is an unmistakable symbol of the Great Flood. This is the primary instrument of divine judgment sent to cleanse the earth of the Giants and the wickedness they wrought (Genesis 6-9; 1 Enoch 10). The water thus transforms from a life-giving element into an agent of total destruction.
+
+**4. The Fire (נורא):**
+
+Fire is a quintessential symbol of divine judgment, purification, and eschatological punishment. While the water (the Flood) represents a historical, terrestrial judgment, the **""fire...burning in all the garden""** points to a final, ultimate judgment. In Enochic tradition, the fallen Watchers are not destroyed by the Flood but are bound and cast into an abyss of fire to await their final sentence (1 Enoch 10:13, 21:7-10). The fire in this vision, therefore, symbolizes the ultimate, fiery damnation reserved for the angelic transgressors and, by extension, all that is corrupt and unholy. It complements the water judgment, representing a more permanent and spiritual form of destruction.",70,95,95,95,True,"```markdown
+70
+```","```markdown
+95
+```","```95
+```",,,,0.0082158,0.00128625,0.00079072
+annot-aramaic-4q530-morphology,4Q530 (Morphological Parsing),annotation,ESTABLISHED_GT,google/gemini-2.5-pro,ok,False,0.03311375,32.03,"Based on the provided transcriptions from 4Q530, the following philological analysis is offered.
+
+***
+
+1.  **נ֯דת** (4Q530 2 ii:3)
+    *   **Note on the text:** The initial *nun* is partially preserved, as indicated by the supralinear circle. The reading is based on the visible traces and the grammatical context.
+    *   **Root:** נ-ד-ד (to flee, depart, wander)
+    *   **Stem/Binyan:** Peal
+    *   **Tense/Aspect:** Perfect
+    *   **Person-Number-Gender:** 3rd feminine singular. The subject is שנת (sleep), a feminine noun.
+    *   **Gloss:** ""it fled""
+
+2.  **ואשתעיו** (4Q530 2 ii:4)
+    *   **Note on the text:** The initial *vav* is the conjunction ""and."" The verbal form is אשתעיו.
+    *   **Root:** ש-ע-י (to relate, tell, narrate)
+    *   **Stem/Binyan:** Ithpeel (reflexive/passive of Pael)
+    *   **Tense/Aspect:** Perfect
+    *   **Person-Number-Gender:** 3rd common plural
+    *   **Gloss:** ""and they related""
+
+3.  **משקין** (4Q530 2 ii:7)
+    *   **Note on the text:** This form appears in a periphrastic construction with הוו (""they were""), indicating a past continuous or iterative action.
+    *   **Root:** ש-ק-י (to give drink, water)
+    *   **Stem/Binyan:** Haphel (causative)
+    *   **Tense/Aspect:** Participle (Active)
+    *   **Person-Number-Gender:** Masculine plural
+    *   **Gloss:** ""giving drink,"" ""watering""
+
+4.  **דלקת** (4Q530 2 ii:10)
+    *   **Note on the text:** This form is morphologically ambiguous. It can be parsed as either a 3rd feminine singular Perfect or a feminine singular active Participle. In this narrative context, where it describes the state of the subject נורא (fire), the participial reading is often preferred.
+    *   **Root:** ד-ל-ק (to burn, be aflame)
+    *   **Stem/Binyan:** Peal
+    *   **Tense/Aspect:** Participle (Active)
+    *   **Person-Number-Gender:** Feminine singular
+    *   **Gloss:** ""burning""",78,90,72,78,True,"Looking at each form against the ground truth:
+
+**Form 1 (נדת):** Root, stem (Peal), tense (Perfect), PNG (3fs), and gloss all correct. Excellent.
+
+**Form 2 (ואשתעיו):** Root correct. Stem given as Ithpeel vs. ground truth's Pael/Ithpaal — close but not exact. Tense, PNG, gloss correct. Minor stem issue.
+
+**Form 3 (משקין):** Root correct. Stem given as Haphel vs. ground truth's Aphel/Pael — essentially the same causative stem (different naming traditions), acceptable. Tense, PNG, gloss correct.
+
+**Form 4 (דלקת):** Root and stem correct. **Tense wrong**: candidate chose Participle; ground truth is Perfect (qatal). Gloss ""burning"" vs. ""burned/kindled."" The candidate did flag the morphological ambiguity, which is good for the uncertainty dimension, but ultimately chose the wrong parse.
+
+**Scoring by dimension:**
+- Morphological correctness: Form 4's wrong tense is a notable error; Form 2's stem is slightly off. ~70%
+- Lexical accuracy: All roots and glosses accurate. ~95%
+- Syntactic role: All correctly identified. ~95%
+- Handling of uncertainty: Form 4 ambiguity noted (good), but Form 2's Pael/Ithpaal ambiguity not flagged. ~70%
+
+Weighted average ≈ 78.
+
+```markdown
+78
+```","```markdown
+90
+```","```score
+72
+```",,,,0.0046998,0.00097725,0.000749336

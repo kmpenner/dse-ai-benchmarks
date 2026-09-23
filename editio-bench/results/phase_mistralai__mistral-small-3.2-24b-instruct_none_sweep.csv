@@ -1,0 +1,1944 @@
+benchmark,siglum,task_type,verification_status,model,answer_status,answer_cached,answer_cost_usd,answer_latency_s,answer,score::minimax/minimax-m3,score::google/gemini-3.8-flash,score::deepseek/deepseek-v4-flash (tiebreak),score_consensus,tiebreak_triggered,score_raw::minimax/minimax-m3,score_raw::google/gemini-3.8-flash,score_raw::deepseek/deepseek-v4-flash (tiebreak),score_error::minimax/minimax-m3,score_error::google/gemini-3.8-flash,score_error::deepseek/deepseek-v4-flash (tiebreak),score_cost_usd::minimax/minimax-m3,score_cost_usd::google/gemini-3.8-flash,score_cost_usd::deepseek/deepseek-v4-flash (tiebreak)
+trans-greek-marchalianus-p11,Vat. gr. 2125 p. 11 (Marchalianus),transcription,ESTABLISHED_GT,mistralai/mistral-small-3.2-24b-instruct,ok,False,0.000102425,4.14,"### Diplomatic Transcription
+
+Line 1: ΟΝΗΣΑΤΤΗΡΟΦΗΤΩΝΚΑΙΤΤΟΦΕΝΕΙΣΙΚΑΙΤΤΟΥΑΤΤΗΣΑΝΟΝΚΑΙΤΤΩΣΚΑΙΤΤΟΥΚΕΙΝΤΑΙ
+
+Line 2: ΗΣΑΙΑΣΤΤΟΡΟΝΣΑΛΗΗΝΗΣΚΕΙΥΤΤΟΣΑΝΑΣΕΝΤΡΙΣΕΙΣΕΙΣΑΔΥΟΚΛΙΕΤΕΗΥΤΤΟΚΑΤΩ
+
+### Normalized Transcription
+
+Line 1: Onēsattēros prophēton kai tto pheneisi kai tto(u) attēsan on kai ttos kai tto(u) keintai
+
+Line 2: Ēsaïas ttoron salēēnhēs keiuttosas entris eisei sais adyo kliete ēyttokato",5,15,N/A,10,False,```\n5\n```,"```
+15
+```",,,,not_needed,0.0037488,0.001467,0.0
+coll-greek-marchalianus-vitae,Vat. gr. 2125 p. 11 vs. Schermann 1907,collation,SELF_CONTAINED_GT,mistralai/mistral-small-3.2-24b-instruct,ok,False,7.7575e-05,4.86,"1. Base S: ἔχει δὲ εἴσοδον ἀπὸ Γαβαών
+   M: ἥτις ἔχει εἴσοδον ἀπὸ Γαβαών
+   Apparatus: [ἔχει δὲ] ἥτις ἔχει M ; [ἔχει δὲ] om. M
+
+2. Base S: ἠρώτων γὰρ οἱ πολέμιοι
+   M: ἠρώτων γὰρ οἱ πολέμιοι πόθεν πίνουσιν
+   Apparatus: [πολέμιοι] πολέμιοι πόθεν πίνουσιν M ; [ποθέμιοι] addition M
+
+3. Base S: καὶ ἐδόθη αὐτοῖς χρησμὸς
+   M: ὅτι καὶ χρησμὸς ἐδόθη αὐτοῖς
+   Apparatus: [ἐδόθη αὐτοῖς] ἐδόθη αὐτοῖς ὅτι M ; [ἐδόθη αὐτοῖς] transposition M",25,35,N/A,30,False,"```markdown
+25
+```",```35```,,,,not_needed,0.0033966,0.00161625,0.0
+translat-greek-marchalianus-siloam,Vat. gr. 2125 p. 11 (Siloam Miracle),translation,ESTABLISHED_GT,mistralai/mistral-small-3.2-24b-instruct,ok,False,5.4625e-05,2.12,"Here is the accurate scholarly English translation of the passage from Codex Marchalianus, preserving all scribal anomalies and explicitly noting any lacunae:
+
+""And the god the sign of the Siloam through the prophet made; for before to die having neglected he prayed to drink water and immediately was sent to him from it; on account of this was called Siloam, which is interpreted sent... if then the Jews were coming, was going out water; if however foreigners, not; therefore even until today suddenly goes out, in order to be shown the mystery.""
+
+Note: The text appears to be complete with no lacunae. The spelling and grammatical anomalies have been preserved exactly as in the manuscript.",55,52,N/A,53.5,False,"Looking at the candidate translation against the ground truth:
+
+**Lexical accuracy issues:**
+- ""διὰ τὸν προφήτην"" rendered as ""through the prophet"" instead of ""for the sake of the prophet"" — significant mistranslation of the preposition's force in context
+- ""ὀλιγωρήσας"" rendered as ""having neglected"" instead of ""having grown faint"" — significant lexical error; the context (fainting before death, praying for water) clearly supports the ""faint/weak"" sense
+- ""ὁ θεὸς"" rendered as ""the god"" (lowercase) rather than ""God""
+
+**Morphological/structural issues:**
+- ""ἤρχοντο"" (imperfect) — candidate's ""were coming"" is actually more accurate than ground truth's ""came""
+- ""ἐξήρχετο ὕδωρ"" rendered as ""was going out water"" — awkward word order
+- ""ἀλλόφυλοι"" — candidate omits the implied verb ""(came)""
+- ""ἵνα δειχθῇ"" — candidate loses the modal ""might"" and changes the passive construction awkwardly
+
+**Handling of uncertainty:** No lacunae in the text, so the candidate's note is appropriate.
+
+**Formal stuckness:** No scribal anomalies appear to be silently normalized.
+
+The two major lexical errors (""through"" vs ""for the sake of"" and ""neglected"" vs ""grown faint"") substantially distort the meaning of the passage. The translation is wooden and contains multiple inaccuracies.
+
+```json
+55
+```","```
+52
+```",,,,not_needed,0.0046968,0.000984,0.0
+annot-greek-marchalianus-tei-msd,Vat. gr. 2125 p. 11 (TEI MSD & Lemma),annotation,ESTABLISHED_GT,mistralai/mistral-small-3.2-24b-instruct,ok,False,0.000185575,10.9,"Here is the annotation of the Greek sentence from Codex Marchalianus p. 11:
+
+Regularized Greek text:
+Ἠσαΐας ἀπὸ Ἱερουσαλὴμ θνῄσκει ὑπὸ Μανασσῆ ἐν πρίσει εἰς δύο· καὶ ἐτέθη ὑποκάτω δρυὸς Ῥωγήλ.
+
+Full morphosyntactic parse:
+1. Ἠσαΐας (noun, proper, masculine, genitive singular)
+2. ἀπὸ (preposition, genitive singular)
+3. Ἱερουσαλὴμ (noun, proper, feminine, genitive singular)
+4. θνῄσκει (verb, present, active, indicative, third person singular)
+5. ὑπὸ (preposition, genitive singular)
+6. Μανασσῆ (noun, proper, masculine, genitive singular)
+7. ἐν (preposition, dative singular)
+8. πρίσει (noun, feminine, dative singular)
+9. εἰς (preposition, accusative singular)
+10. δύο (noun, neuter, accusative plural)
+11. καὶ (conjunction)
+12. ἐτέθη (verb, aorist, passive, indicative, third person singular)
+13. ὑποκάτω (preposition, genitive singular)
+14. δρυὸς (noun, feminine, genitive singular)
+15. Ῥωγήλ (noun, proper, masculine, genitive singular)
+
+TEI XML encoding:
+```xml
+<text>
+  <p>
+    <w lemma=""Ἠσαΐας"" msd=""noun, proper, masculine, genitive singular"">Ἠσαΐας</w>
+    <w lemma=""ἀπό"" msd=""preposition, genitive singular"">ἀπὸ</w>
+    <w lemma=""Ἱερουσαλήμ"" msd=""noun, proper, feminine, genitive singular"">Ἱερουσαλὴμ</w>
+    <w lemma=""θνῄσκω"" msd=""verb, present, active, indicative, third person singular"">θνῄσκει</w>
+    <w lemma=""ὑπό"" msd=""preposition, genitive singular"">ὑπὸ</w>
+    <w lemma=""Μανασσῆς"" msd=""noun, proper, masculine, genitive singular"">Μανασσῆ</w>
+    <w lemma=""ἐν"" msd=""preposition, dative singular"">ἐν</w>
+    <w lemma=""πρίσις"" msd=""noun, feminine, dative singular"">πρίσει</w>
+    <w lemma=""εἰς"" msd=""preposition, accusative singular"">εἰς</w>
+    <w lemma=""δύο"" msd=""noun, neuter, accusative plural"">δύο</w>
+    <w lemma=""καί"" msd=""conjunction"">καὶ</w>
+    <w lemma=""τίθημι"" msd=""verb, aorist, passive, indicative, third person singular"">ἐτέθη</w>
+    <w lemma=""ὑποκάτω"" msd=""preposition, genitive singular"">ὑποκάτω</w>
+    <w lemma=""δρυς"" msd=""noun, feminine, genitive singular"">δρυὸς</w>
+    <w lemma=""Ῥωγήλ"" msd=""noun, proper, masculine, genitive singular"">Ῥωγήλ</w>.
+  </p>
+</text>
+```",45,62,50,50,True,"Looking at the candidate answer against the ground truth:
+
+**Errors identified:**
+
+1. **Ἠσαΐας**: Candidate says ""genitive singular"" — **WRONG**. Ground truth: NNSM (nominative, as it's the subject). This is a critical error.
+
+2. **Ἱερουσαλήμ**: Candidate says ""genitive singular"" — **WRONG**. Ground truth: NIDF (indeclinable). The name is indeclinable here.
+
+3. **δύο**: Candidate says ""noun, neuter, accusative plural"" — **WRONG**. Ground truth: M (numeral). δύο is a numeral, not a noun, and is indeclinable.
+
+4. **Ῥωγήλ**: Candidate says ""genitive singular masculine"" — **WRONG**. Ground truth: NIDF (indeclinable feminine).
+
+5. **δρυὸς lemma**: Candidate gives ""δρυς"" instead of ""δρῦς"" (missing smooth breathing).
+
+6. **TEI punctuation**: Candidate omits `<pc>` elements for the middle dot and period, placing the period outside the XML structure.
+
+**Correct elements:**
+- Regularized text matches
+- Verb parses (θνῄσκει, ἐτέθη) are correct
+- Prepositions correctly identified
+- Μανασσῆ, πρίσει, δρυὸς case/gender correct
+- Conjunction καί correct
+
+The case errors are significant (especially misidentifying the subject's case), and the failure to recognize indeclinable forms (Ἱερουσαλήμ, Ῥωγήλ) shows a lack of awareness of these specific proper nouns' inflection patterns.
+
+```markdown
+45
+```","```markdown
+62
+```","```markdown
+50
+```",,,,0.005388,0.00151125,0.000898352
+encode-greek-marchalianus-teiheader,Vat. gr. 2125 (Codex Marchalianus Header),encoding,ESTABLISHED_GT,mistralai/mistral-small-3.2-24b-instruct,ok,False,0.000112625,6.18,"```xml
+<teiHeader xmlns=""http://www.tei-c.org/ns/1.0"">
+  <fileDesc>
+    <titleStmt>
+      <title>Codex Marchalianus</title>
+    </titleStmt>
+    <publicationStmt>
+      <!-- Publication information would go here if available -->
+    </publicationStmt>
+    <sourceDesc>
+      <msDesc>
+        <msIdentifier>
+          <repository>Biblioteca Apostolica Vaticana</repository>
+          <settlement>Vatican City</settlement>
+          <country>Vatican</country>
+          <idno>Vat. gr. 2125</idno>
+        </msIdentifier>
+        <msContents>
+          <msItem>
+            <title>Lives of the Prophets (Vitae Prophetarum) - Isaiah</title>
+            <langUsage>
+              <language ident=""grc"">Ancient Greek</language>
+            </langUsage>
+          </msItem>
+        </msContents>
+        <physDesc>
+          <objectDesc>
+            <supportDesc>
+              <support>
+                <dimensions>
+                  <height unit=""mm"">295</height>
+                  <width unit=""mm"">179</width>
+                </dimensions>
+              </support>
+            </supportDesc>
+            <layoutDesc>
+              <layout>
+                <p>Codex, 1 column layout</p>
+              </layout>
+            </layoutDesc>
+            <handDesc>
+              <handNote>
+                <p>Greek Uncial / Majuscule with lunate sigmas and Nomina Sacra</p>
+              </handNote>
+            </handDesc>
+          </objectDesc>
+        </physDesc>
+        <history>
+          <origin>
+            <p>Egypt, 6th to 7th century</p>
+            <date notBefore=""0500-01-01"" notAfter=""0699-12-31""/>
+          </origin>
+        </history>
+      </msDesc>
+    </sourceDesc>
+  </fileDesc>
+</teiHeader>
+```",60,65,N/A,62.5,False,"```markdown
+60
+```","The candidate provides a valid XML structure, but contains several significant TEI P5 schema violations:
+1. `<publicationStmt>` requires at least one child element (such as `<p>` or `<publisher>`), not just a comment. An empty `publicationStmt` containing only comments is invalid in TEI P5.
+2. `<langUsage>` is not permitted directly inside `<msItem>`. In TEI msDesc, `<textLang>` is used inside `<msItem>`, while `<langUsage>` belongs in `<profileDesc>`.
+3. `<handDesc>` cannot be a child of `<objectDesc>`. It must be a direct child of `<physDesc>`.
+4. In `<history><origin>`, TEI msDesc specifies `<origPlace>` and `<origDate>` directly inside `<origin>` (or within `<p>`), but combining `<p>` and `<date>` inside `<origin>` or not using `<origDate>` / `<origPlace>` is non-standard/invalid depending on the exact schema model (typically `<origin>` contains `<origDate>`, `<origPlace>`, or model.pLike, but not `<date>` outside of `<p>`).
+5. Missing `<msName>` in `msIdentifier` despite Codex Marchalianus being specified as manuscript name.
+
+Score deduction for multiple schema validity errors in TEI P5.
+
+```score
+65
+```",,,,not_needed,0.003207,0.00225075,0.0
+trans-latin-vatlat629-f3v,Vat. lat. 629 f. 3v (§37 Esaias),transcription,SELF_CONTAINED_GT,mistralai/mistral-small-3.2-24b-instruct,ok,False,0.000106475,4.11,"### Diplomatic Transcription
+
+E
+Saras filius amos. non illus
+p̄phe. ſed alterus qui ſimile nuncupat̄ ē no
+mine. Ile enim exnumero paſtoꝝ fuit. de oppido
+checue. Hic aute genere nobili ortus e. ierl̄m.
+Q. ue etia hebrei auum ſocrū fuſſe manasse. Inquo
+tanta fuit ſeitaſ. & ſuſte excellencia. ſt unam
+tamſi diceret habuſſe ſumica cillicina. Quamq
+
+### Normalized Transcription
+
+E
+Saras filius Amos. non illus
+propheta. sed alterus qui simile nuncupatus est. no
+mine. Ile enim ex numero pastorum fuit. de oppido
+Checue. Hic autem genere nobili ortus est Hierusalem.
+Q. ue etiam Hebrei avum socrum fuisse Manasse. In quo
+tanta fuit seita et susce excellencia. ut unam
+tamſi diceret habuisse sumica cilicina. Quamq",22,58,20,22,True,"Looking at the candidate answer against the ground truth, I need to evaluate both layers carefully.
+
+**Diplomatic Layer Errors:**
+- ""Saias"" → ""Saras"" (wrong reading)
+- ""illius"" → ""illus"" (silent normalization dropping 'i')
+- ""alterius"" → ""alterus"" (silent normalization dropping 'i')
+- ""thecue"" → ""checue"" (wrong reading)
+- ""aiunt"" → ""auum"" (completely different word)
+- ""scītas"" → ""ſeitaſ"" (wrong reading)
+- ""uite"" → ""ſuſte"" (wrong reading)
+- ""tantū"" → ""tamſi"" (wrong reading)
+- ""tunicā"" → ""ſumica"" (wrong reading)
+- ""Ille"" → ""Ile"" (missing 'l')
+- ""Quē"" → ""Q. ue"" (different reading)
+
+**Normalized Layer Errors:**
+- ""Esaias"" → ""Saras""
+- ""illius"" → ""illus""
+- ""alterius"" → ""alterus""
+- ""Thecue"" → ""Checue""
+- ""aiunt"" → ""avum""
+- ""scītas"" → ""seita""
+- ""uite"" → ""susce""
+- ""tantū"" → ""tamſi""
+- ""tunicā"" → ""sumica""
+- Missing ""est"" between ""ortus"" and ""Hierusalem""
+
+The candidate preserves some diplomatic features (p̄phe, nuncupat̄ ē, paſtoꝝ, ierl̄m, long-s), but commits numerous severe misreadings including completely different words (aiunt→avum, uite→susce, tunicā→sumica) and silent normalizations in the diplomatic layer (illus, alterus). These are not minor orthographic variants but substantive errors that change meaning.
+
+```\n22\n```","```formatted
+58
+```",```20```,,,,0.006522,0.00261825,0.00097006
+coll-latin-vatlat629-isidore,Vat. lat. 629 f. 3v vs. Chaparro Gómez 1985,collation,SELF_CONTAINED_GT,mistralai/mistral-small-3.2-24b-instruct,ok,False,6.2425e-05,2.69,"Here is the critical apparatus for the given collation task, classifying each variant according to the specified categories:
+
+1. [ille] Hic enim ex numero pastorum fuit V; ille enim ex numero pastorum fuit C.
+   - Variant: substitution
+
+2. [hic] Hic autem genere nobili ortus est Hierusalem V; hic genere nobilis ortus in Hierusalem C.
+   - [hic] Variant: substitution
+   - [autem] Variant: addition
+   - [est] Variant: substitution
+   - [in] Variant: omission
+
+3. [atrocique] atroque supplicio excruciatum extinxit V; atrocique supplicio excruciatum extincxit C.
+   - [atrocique] Variant: orthographic
+   - [extinxit] Variant: substitution
+
+This apparatus notes the specific differences between the base text (C) and the manuscript (V), classifying each variant as a substitution, addition, omission, or orthographic difference.",45,40,N/A,42.5,False,"Looking at the candidate answer against the ground truth:
+
+**Variant 1:** Correctly identifies Hic/ille as substitution. ✓
+
+**Variant 2:** 
+- Correctly identifies hic→Hic (substitution) ✓
+- Correctly identifies autem (addition) ✓
+- Correctly identifies omission of ""in"" ✓
+- **MISSES** the substitution of ablative ""nobili"" for genitive ""nobilis"" ✗
+- Adds an ""est"" variant not in ground truth (debatable but extra)
+
+**Variant 3:**
+- **MISCLASSIFIES** ""atroque"" for ""atrocique"" as orthographic; ground truth says SUBSTITUTION ✗
+- **MISCLASSIFIES** ""extinxit"" for ""extincxit"" as substitution; ground truth says ORTHOGRAPHIC ✗
+
+**Apparatus format:** Non-standard (includes full C readings rather than just lemma + V reading), but functional.
+
+Summary of issues:
+- 1 missed variant (nobili/nobilis)
+- 2 misclassifications (atroque, extinxit)
+- Format deviates from standard apparatus conventions
+
+```markdown
+45
+```",```40```,,,,not_needed,0.00395325,0.001875,0.0
+translat-latin-vatlat629-seraphim,Vat. lat. 629 f. 3v (Seraphim Vision & Martyrdom),translation,ESTABLISHED_GT,mistralai/mistral-small-3.2-24b-instruct,ok,False,5.2975e-05,2.51,"The Hebrew tradition reports that Isaiah was killed for two reasons: first, because he called them ""princes of Sodom"" and ""people of Gomorrah""; second, because, while the Lord testified to Moses, ""you cannot see my face,"" he dared to exclaim, ""I saw the Lord sitting upon a high throne..."". The Jews, blinded in mind, do not consider that in what follows he narrated that the seraphim covered the face and feet of God, and that he wrote that he saw only the middle part of Him. He lies under the oak of Rogel, near the watercourses.
+
+(Note: The passage contains a lacuna after ""throne..."" and before ""non arbitrantes..."". The text is preserved exactly as transcribed, including scribal anomalies and unnormalized spelling.)",92,95,N/A,93.5,False,```\n92\n```,"```
+95
+```",,,,not_needed,0.003327,0.000879,0.0
+annot-latin-vatlat629-abbreviations,Vat. lat. 629 f. 3v (Scribal Abbreviation Encoding),annotation,ESTABLISHED_GT,mistralai/mistral-small-3.2-24b-instruct,ok,False,7.455e-05,3.91,"(1) Expanded normalized Latin text:
+""iuxta imperium domini nudo corpore nudoque uestigio in conuentu populi conuerſatus est.""
+
+(2) Grammatical parse:
+- imp̃ium (imperium): Noun, neuter, singular, accusative case, meaning ""power"" or ""authority.""
+- dn̄i (domini): Noun, masculine, singular, genitive case, meaning ""lord"" or ""master.""
+- ppl̄i (populi): Noun, masculine, singular, genitive case, meaning ""people"" or ""nation.""
+- conuerſatuſ ē (conuerſatus est): Verb, third person singular, perfect indicative active, meaning ""he has lived"" or ""he has dwelt.""
+
+(3) TEI P5 XML encoding:
+```xml
+<choice>
+    <abbr>iuxta imp̃ium dn̄i nudo corpore. nudoq: ueſtigio in conuentu ppl̄i conuerſatuſ ē.</abbr>
+    <expan>iuxta imperium domini nudo corpore nudoque uestigio in conuentu populi conuerſatus est.</expan>
+</choice>
+```",55,65,N/A,60,False,"Looking at the candidate answer against the ground truth:
+
+**Part (1) Normalized text:** Essentially correct, with minor orthographic variants (u/v interchange) and missing comma. Acceptable.
+
+**Part (2) Grammatical parse:**
+- *imperium*: Correct (noun, neut., acc. sg.) but omits that it's governed by *iuxta*.
+- *domini*: Correct (noun, masc., gen. sg.) but omits the possessive genitive modifying *imperium*.
+- *populi*: Correct (noun, masc., gen. sg.) but omits the possessive genitive modifying *conventu*.
+- *conversatus est*: Correct tense/person, but **incorrectly labeled ""active""** — it is a deponent verb (*conversor*). Also omits ""main predicate"" role.
+
+**Part (3) TEI XML:** **Structurally wrong.** The ground truth requires individual `<choice>` elements for each abbreviation. The candidate wraps the entire text in a single `<choice>`, which is incorrect TEI practice for this kind of diplomatic encoding.
+
+**Deductions:**
+- Morphological error (active vs. deponent): -10
+- Missing syntactic roles (governed case, possessive genitive, main predicate): -15
+- TEI XML structural error: -20
+
+```markdown
+55
+```","```format
+65
+```",,,,not_needed,0.0054612,0.001629,0.0
+trans-aramaic-4q530-f2ii,4Q530 col. 2 (Frag. 6 / lines 6-9),transcription,ESTABLISHED_GT,mistralai/mistral-small-3.2-24b-instruct,ok,False,0.003331775,270.59,"Here is the diplomatic transcription of the visible Aramaic text from the provided image of Dead Sea Scrolls fragment 4Q530 (Book of Giants, col. 2, Frag. 6):
+
+1. [...]וֹ[...]
+2. [...]א֯[...]
+3. [...]וֹ[...]
+4. [...]א֯[...]
+5. [...]וֹ[...]
+6. [...]א֯[...]
+7. [...]וֹ[...]
+8. [...]א֯[...]
+9. [...]וֹ[...]
+10. [...]א֯[...]
+11. [...]וֹ[...]
+12. [...]א֯[...]
+13. [...]וֹ[...]
+14. [...]א֯[...]
+15. [...]וֹ[...]
+16. [...]א֯[...]
+17. [...]וֹ[...]
+18. [...]א֯[...]
+19. [...]וֹ[...]
+20. [...]א֯[...]
+21. [...]וֹ[...]
+22. [...]א֯[...]
+23. [...]וֹ[...]
+24. [...]א֯[...]
+25. [...]וֹ[...]
+26. [...]א֯[...]
+27. [...]וֹ[...]
+28. [...]א֯[...]
+29. [...]וֹ[...]
+30. [...]א֯[...]
+31. [...]וֹ[...]
+32. [...]א֯[...]
+33. [...]וֹ[...]
+34. [...]א֯[...]
+35. [...]וֹ[...]
+36. [...]א֯[...]
+37. [...]וֹ[...]
+38. [...]א֯[...]
+39. [...]וֹ[...]
+40. [...]א֯[...]
+41. [...]וֹ[...]
+42. [...]א֯[...]
+43. [...]וֹ[...]
+44. [...]א֯[...]
+45. [...]וֹ[...]
+46. [...]א֯[...]
+47. [...]וֹ[...]
+48. [...]א֯[...]
+49. [...]וֹ[...]
+50. [...]א֯[...]
+51. [...]וֹ[...]
+52. [...]א֯[...]
+53. [...]וֹ[...]
+54. [...]א֯[...]
+55. [...]וֹ[...]
+56. [...]א֯[...]
+57. [...]וֹ[...]
+58. [...]א֯[...]
+59. [...]וֹ[...]
+60. [...]א֯[...]
+61. [...]וֹ[...]
+62. [...]א֯[...]
+63. [...]וֹ[...]
+64. [...]א֯[...]
+65. [...]וֹ[...]
+66. [...]א֯[...]
+67. [...]וֹ[...]
+68. [...]א֯[...]
+69. [...]וֹ[...]
+70. [...]א֯[...]
+71. [...]וֹ[...]
+72. [...]א֯[...]
+73. [...]וֹ[...]
+74. [...]א֯[...]
+75. [...]וֹ[...]
+76. [...]א֯[...]
+77. [...]וֹ[...]
+78. [...]א֯[...]
+79. [...]וֹ[...]
+80. [...]א֯[...]
+81. [...]וֹ[...]
+82. [...]א֯[...]
+83. [...]וֹ[...]
+84. [...]א֯[...]
+85. [...]וֹ[...]
+86. [...]א֯[...]
+87. [...]וֹ[...]
+88. [...]א֯[...]
+89. [...]וֹ[...]
+90. [...]א֯[...]
+91. [...]וֹ[...]
+92. [...]א֯[...]
+93. [...]וֹ[...]
+94. [...]א֯[...]
+95. [...]וֹ[...]
+96. [...]א֯[...]
+97. [...]וֹ[...]
+98. [...]א֯[...]
+99. [...]וֹ[...]
+100. [...]א֯[...]
+101. [...]וֹ[...]
+102. [...]א֯[...]
+103. [...]וֹ[...]
+104. [...]א֯[...]
+105. [...]וֹ[...]
+106. [...]א֯[...]
+107. [...]וֹ[...]
+108. [...]א֯[...]
+109. [...]וֹ[...]
+110. [...]א֯[...]
+111. [...]וֹ[...]
+112. [...]א֯[...]
+113. [...]וֹ[...]
+114. [...]א֯[...]
+115. [...]וֹ[...]
+116. [...]א֯[...]
+117. [...]וֹ[...]
+118. [...]א֯[...]
+119. [...]וֹ[...]
+120. [...]א֯[...]
+121. [...]וֹ[...]
+122. [...]א֯[...]
+123. [...]וֹ[...]
+124. [...]א֯[...]
+125. [...]וֹ[...]
+126. [...]א֯[...]
+127. [...]וֹ[...]
+128. [...]א֯[...]
+129. [...]וֹ[...]
+130. [...]א֯[...]
+131. [...]וֹ[...]
+132. [...]א֯[...]
+133. [...]וֹ[...]
+134. [...]א֯[...]
+135. [...]וֹ[...]
+136. [...]א֯[...]
+137. [...]וֹ[...]
+138. [...]א֯[...]
+139. [...]וֹ[...]
+140. [...]א֯[...]
+141. [...]וֹ[...]
+142. [...]א֯[...]
+143. [...]וֹ[...]
+144. [...]א֯[...]
+145. [...]וֹ[...]
+146. [...]א֯[...]
+147. [...]וֹ[...]
+148. [...]א֯[...]
+149. [...]וֹ[...]
+150. [...]א֯[...]
+151. [...]וֹ[...]
+152. [...]א֯[...]
+153. [...]וֹ[...]
+154. [...]א֯[...]
+155. [...]וֹ[...]
+156. [...]א֯[...]
+157. [...]וֹ[...]
+158. [...]א֯[...]
+159. [...]וֹ[...]
+160. [...]א֯[...]
+161. [...]וֹ[...]
+162. [...]א֯[...]
+163. [...]וֹ[...]
+164. [...]א֯[...]
+165. [...]וֹ[...]
+166. [...]א֯[...]
+167. [...]וֹ[...]
+168. [...]א֯[...]
+169. [...]וֹ[...]
+170. [...]א֯[...]
+171. [...]וֹ[...]
+172. [...]א֯[...]
+173. [...]וֹ[...]
+174. [...]א֯[...]
+175. [...]וֹ[...]
+176. [...]א֯[...]
+177. [...]וֹ[...]
+178. [...]א֯[...]
+179. [...]וֹ[...]
+180. [...]א֯[...]
+181. [...]וֹ[...]
+182. [...]א֯[...]
+183. [...]וֹ[...]
+184. [...]א֯[...]
+185. [...]וֹ[...]
+186. [...]א֯[...]
+187. [...]וֹ[...]
+188. [...]א֯[...]
+189. [...]וֹ[...]
+190. [...]א֯[...]
+191. [...]וֹ[...]
+192. [...]א֯[...]
+193. [...]וֹ[...]
+194. [...]א֯[...]
+195. [...]וֹ[...]
+196. [...]א֯[...]
+197. [...]וֹ[...]
+198. [...]א֯[...]
+199. [...]וֹ[...]
+200. [...]א֯[...]
+201. [...]וֹ[...]
+202. [...]א֯[...]
+203. [...]וֹ[...]
+204. [...]א֯[...]
+205. [...]וֹ[...]
+206. [...]א֯[...]
+207. [...]וֹ[...]
+208. [...]א֯[...]
+209. [...]וֹ[...]
+210. [...]א֯[...]
+211. [...]וֹ[...]
+212. [...]א֯[...]
+213. [...]וֹ[...]
+214. [...]א֯[...]
+215. [...]וֹ[...]
+216. [...]א֯[...]
+217. [...]וֹ[...]
+218. [...]א֯[...]
+219. [...]וֹ[...]
+220. [...]א֯[...]
+221. [...]וֹ[...]
+222. [...]א֯[...]
+223. [...]וֹ[...]
+224. [...]א֯[...]
+225. [...]וֹ[...]
+226. [...]א֯[...]
+227. [...]וֹ[...]
+228. [...]א֯[...]
+229. [...]וֹ[...]
+230. [...]א֯[...]
+231. [...]וֹ[...]
+232. [...]א֯[...]
+233. [...]וֹ[...]
+234. [...]א֯[...]
+235. [...]וֹ[...]
+236. [...]א֯[...]
+237. [...]וֹ[...]
+238. [...]א֯[...]
+239. [...]וֹ[...]
+240. [...]א֯[...]
+241. [...]וֹ[...]
+242. [...]א֯[...]
+243. [...]וֹ[...]
+244. [...]א֯[...]
+245. [...]וֹ[...]
+246. [...]א֯[...]
+247. [...]וֹ[...]
+248. [...]א֯[...]
+249. [...]וֹ[...]
+250. [...]א֯[...]
+251. [...]וֹ[...]
+252. [...]א֯[...]
+253. [...]וֹ[...]
+254. [...]א֯[...]
+255. [...]וֹ[...]
+256. [...]א֯[...]
+257. [...]וֹ[...]
+258. [...]א֯[...]
+259. [...]וֹ[...]
+260. [...]א֯[...]
+261. [...]וֹ[...]
+262. [...]א֯[...]
+263. [...]וֹ[...]
+264. [...]א֯[...]
+265. [...]וֹ[...]
+266. [...]א֯[...]
+267. [...]וֹ[...]
+268. [...]א֯[...]
+269. [...]וֹ[...]
+270. [...]א֯[...]
+271. [...]וֹ[...]
+272. [...]א֯[...]
+273. [...]וֹ[...]
+274. [...]א֯[...]
+275. [...]וֹ[...]
+276. [...]א֯[...]
+277. [...]וֹ[...]
+278. [...]א֯[...]
+279. [...]וֹ[...]
+280. [...]א֯[...]
+281. [...]וֹ[...]
+282. [...]א֯[...]
+283. [...]וֹ[...]
+284. [...]א֯[...]
+285. [...]וֹ[...]
+286. [...]א֯[...]
+287. [...]וֹ[...]
+288. [...]א֯[...]
+289. [...]וֹ[...]
+290. [...]א֯[...]
+291. [...]וֹ[...]
+292. [...]א֯[...]
+293. [...]וֹ[...]
+294. [...]א֯[...]
+295. [...]וֹ[...]
+296. [...]א֯[...]
+297. [...]וֹ[...]
+298. [...]א֯[...]
+299. [...]וֹ[...]
+300. [...]א֯[...]
+301. [...]וֹ[...]
+302. [...]א֯[...]
+303. [...]וֹ[...]
+304. [...]א֯[...]
+305. [...]וֹ[...]
+306. [...]א֯[...]
+307. [...]וֹ[...]
+308. [...]א֯[...]
+309. [...]וֹ[...]
+310. [...]א֯[...]
+311. [...]וֹ[...]
+312. [...]א֯[...]
+313. [...]וֹ[...]
+314. [...]א֯[...]
+315. [...]וֹ[...]
+316. [...]א֯[...]
+317. [...]וֹ[...]
+318. [...]א֯[...]
+319. [...]וֹ[...]
+320. [...]א֯[...]
+321. [...]וֹ[...]
+322. [...]א֯[...]
+323. [...]וֹ[...]
+324. [...]א֯[...]
+325. [...]וֹ[...]
+326. [...]א֯[...]
+327. [...]וֹ[...]
+328. [...]א֯[...]
+329. [...]וֹ[...]
+330. [...]א֯[...]
+331. [...]וֹ[...]
+332. [...]א֯[...]
+333. [...]וֹ[...]
+334. [...]א֯[...]
+335. [...]וֹ[...]
+336. [...]א֯[...]
+337. [...]וֹ[...]
+338. [...]א֯[...]
+339. [...]וֹ[...]
+340. [...]א֯[...]
+341. [...]וֹ[...]
+342. [...]א֯[...]
+343. [...]וֹ[...]
+344. [...]א֯[...]
+345. [...]וֹ[...]
+346. [...]א֯[...]
+347. [...]וֹ[...]
+348. [...]א֯[...]
+349. [...]וֹ[...]
+350. [...]א֯[...]
+351. [...]וֹ[...]
+352. [...]א֯[...]
+353. [...]וֹ[...]
+354. [...]א֯[...]
+355. [...]וֹ[...]
+356. [...]א֯[...]
+357. [...]וֹ[...]
+358. [...]א֯[...]
+359. [...]וֹ[...]
+360. [...]א֯[...]
+361. [...]וֹ[...]
+362. [...]א֯[...]
+363. [...]וֹ[...]
+364. [...]א֯[...]
+365. [...]וֹ[...]
+366. [...]א֯[...]
+367. [...]וֹ[...]
+368. [...]א֯[...]
+369. [...]וֹ[...]
+370. [...]א֯[...]
+371. [...]וֹ[...]
+372. [...]א֯[...]
+373. [...]וֹ[...]
+374. [...]א֯[...]
+375. [...]וֹ[...]
+376. [...]א֯[...]
+377. [...]וֹ[...]
+378. [...]א֯[...]
+379. [...]וֹ[...]
+380. [...]א֯[...]
+381. [...]וֹ[...]
+382. [...]א֯[...]
+383. [...]וֹ[...]
+384. [...]א֯[...]
+385. [...]וֹ[...]
+386. [...]א֯[...]
+387. [...]וֹ[...]
+388. [...]א֯[...]
+389. [...]וֹ[...]
+390. [...]א֯[...]
+391. [...]וֹ[...]
+392. [...]א֯[...]
+393. [...]וֹ[...]
+394. [...]א֯[...]
+395. [...]וֹ[...]
+396. [...]א֯[...]
+397. [...]וֹ[...]
+398. [...]א֯[...]
+399. [...]וֹ[...]
+400. [...]א֯[...]
+401. [...]וֹ[...]
+402. [...]א֯[...]
+403. [...]וֹ[...]
+404. [...]א֯[...]
+405. [...]וֹ[...]
+406. [...]א֯[...]
+407. [...]וֹ[...]
+408. [...]א֯[...]
+409. [...]וֹ[...]
+410. [...]א֯[...]
+411. [...]וֹ[...]
+412. [...]א֯[...]
+413. [...]וֹ[...]
+414. [...]א֯[...]
+415. [...]וֹ[...]
+416. [...]א֯[...]
+417. [...]וֹ[...]
+418. [...]א֯[...]
+419. [...]וֹ[...]
+420. [...]א֯[...]
+421. [...]וֹ[...]
+422. [...]א֯[...]
+423. [...]וֹ[...]
+424. [...]א֯[...]
+425. [...]וֹ[...]
+426. [...]א֯[...]
+427. [...]וֹ[...]
+428. [...]א֯[...]
+429. [...]וֹ[...]
+430. [...]א֯[...]
+431. [...]וֹ[...]
+432. [...]א֯[...]
+433. [...]וֹ[...]
+434. [...]א֯[...]
+435. [...]וֹ[...]
+436. [...]א֯[...]
+437. [...]וֹ[...]
+438. [...]א֯[...]
+439. [...]וֹ[...]
+440. [...]א֯[...]
+441. [...]וֹ[...]
+442. [...]א֯[...]
+443. [...]וֹ[...]
+444. [...]א֯[...]
+445. [...]וֹ[...]
+446. [...]א֯[...]
+447. [...]וֹ[...]
+448. [...]א֯[...]
+449. [...]וֹ[...]
+450. [...]א֯[...]
+451. [...]וֹ[...]
+452. [...]א֯[...]
+453. [...]וֹ[...]
+454. [...]א֯[...]
+455. [...]וֹ[...]
+456. [...]א֯[...]
+457. [...]וֹ[...]
+458. [...]א֯[...]
+459. [...]וֹ[...]
+460. [...]א֯[...]
+461. [...]וֹ[...]
+462. [...]א֯[...]
+463. [...]וֹ[...]
+464. [...]א֯[...]
+465. [...]וֹ[...]
+466. [...]א֯[...]
+467. [...]וֹ[...]
+468. [...]א֯[...]
+469. [...]וֹ[...]
+470. [...]א֯[...]
+471. [...]וֹ[...]
+472. [...]א֯[...]
+473. [...]וֹ[...]
+474. [...]א֯[...]
+475. [...]וֹ[...]
+476. [...]א֯[...]
+477. [...]וֹ[...]
+478. [...]א֯[...]
+479. [...]וֹ[...]
+480. [...]א֯[...]
+481. [...]וֹ[...]
+482. [...]א֯[...]
+483. [...]וֹ[...]
+484. [...]א֯[...]
+485. [...]וֹ[...]
+486. [...]א֯[...]
+487. [...]וֹ[...]
+488. [...]א֯[...]
+489. [...]וֹ[...]
+490. [...]א֯[...]
+491. [...]וֹ[...]
+492. [...]א֯[...]
+493. [...]וֹ[...]
+494. [...]א֯[...]
+495. [...]וֹ[...]
+496. [...]א֯[...]
+497. [...]וֹ[...]
+498. [...]א֯[...]
+499. [...]וֹ[...]
+500. [...]א֯[...]
+501. [...]וֹ[...]
+502. [...]א֯[...]
+503. [...]וֹ[...]
+504. [...]א֯[...]
+505. [...]וֹ[...]
+506. [...]א֯[...]
+507. [...]וֹ[...]
+508. [...]א֯[...]
+509. [...]וֹ[...]
+510. [...]א֯[...]
+511. [...]וֹ[...]
+512. [...]א֯[...]
+513. [...]וֹ[...]
+514. [...]א֯[...]
+515. [...]וֹ[...]
+516. [...]א֯[...]
+517. [...]וֹ[...]
+518. [...]א֯[...]
+519. [...]וֹ[...]
+520. [...]א֯[...]
+521. [...]וֹ[...]
+522. [...]א֯[...]
+523. [...]וֹ[...]
+524. [...]א֯[...]
+525. [...]וֹ[...]
+526. [...]א֯[...]
+527. [...]וֹ[...]
+528. [...]א֯[...]
+529. [...]וֹ[...]
+530. [...]א֯[...]
+531. [...]וֹ[...]
+532. [...]א֯[...]
+533. [...]וֹ[...]
+534. [...]א֯[...]
+535. [...]וֹ[...]
+536. [...]א֯[...]
+537. [...]וֹ[...]
+538. [...]א֯[...]
+539. [...]וֹ[...]
+540. [...]א֯[...]
+541. [...]וֹ[...]
+542. [...]א֯[...]
+543. [...]וֹ[...]
+544. [...]א֯[...]
+545. [...]וֹ[...]
+546. [...]א֯[...]
+547. [...]וֹ[...]
+548. [...]א֯[...]
+549. [...]וֹ[...]
+550. [...]א֯[...]
+551. [...]וֹ[...]
+552. [...]א֯[...]
+553. [...]וֹ[...]
+554. [...]א֯[...]
+555. [...]וֹ[...]
+556. [...]א֯[...]
+557. [...]וֹ[...]
+558. [...]א֯[...]
+559. [...]וֹ[...]
+560. [...]א֯[...]
+561. [...]וֹ[...]
+562. [...]א֯[...]
+563. [...]וֹ[...]
+564. [...]א֯[...]
+565. [...]וֹ[...]
+566. [...]א֯[...]
+567. [...]וֹ[...]
+568. [...]א֯[...]
+569. [...]וֹ[...]
+570. [...]א֯[...]
+571. [...]וֹ[...]
+572. [...]א֯[...]
+573. [...]וֹ[...]
+574. [...]א֯[...]
+575. [...]וֹ[...]
+576. [...]א֯[...]
+577. [...]וֹ[...]
+578. [...]א֯[...]
+579. [...]וֹ[...]
+580. [...]א֯[...]
+581. [...]וֹ[...]
+582. [...]א֯[...]
+583. [...]וֹ[...]
+584. [...]א֯[...]
+585. [...]וֹ[...]
+586. [...]א֯[...]
+587. [...]וֹ[...]
+588. [...]א֯[...]
+589. [...]וֹ[...]
+590. [...]א֯[...]
+591. [...]וֹ[...]
+592. [...]א֯[...]
+593. [...]וֹ[...]
+594. [...]א֯[...]
+595. [...]וֹ[...]
+596. [...]א֯[...]
+597. [...]וֹ[...]
+598. [...]א֯[...]
+599. [...]וֹ[...]
+600. [...]א֯[...]
+601. [...]וֹ[...]
+602. [...]א֯[...]
+603. [...]וֹ[...]
+604. [...]א֯[...]
+605. [...]וֹ[...]
+606. [...]א֯[...]
+607. [...]וֹ[...]
+608. [...]א֯[...]
+609. [...]וֹ[...]
+610. [...]א֯[...]
+611. [...]וֹ[...]
+612. [...]א֯[...]
+613. [...]וֹ[...]
+614. [...]א֯[...]
+615. [...]וֹ[...]
+616. [...]א֯[...]
+617. [...]וֹ[...]
+618. [...]א֯[...]
+619. [...]וֹ[...]
+620. [...]א֯[...]
+621. [...]וֹ[...]
+622. [...]א֯[...]
+623. [...]וֹ[...]
+624. [...]א֯[...]
+625. [...]וֹ[...]
+626. [...]א֯[...]
+627. [...]וֹ[...]
+628. [...]א֯[...]
+629. [...]וֹ[...]
+630. [...]א֯[...]
+631. [...]וֹ[...]
+632. [...]א֯[...]
+633. [...]וֹ[...]
+634. [...]א֯[...]
+635. [...]וֹ[...]
+636. [...]א֯[...]
+637. [...]וֹ[...]
+638. [...]א֯[...]
+639. [...]וֹ[...]
+640. [...]א֯[...]
+641. [...]וֹ[...]
+642. [...]א֯[...]
+643. [...]וֹ[...]
+644. [...]א֯[...]
+645. [...]וֹ[...]
+646. [...]א֯[...]
+647. [...]וֹ[...]
+648. [...]א֯[...]
+649. [...]וֹ[...]
+650. [...]א֯[...]
+651. [...]וֹ[...]
+652. [...]א֯[...]
+653. [...]וֹ[...]
+654. [...]א֯[...]
+655. [...]וֹ[...]
+656. [...]א֯[...]
+657. [...]וֹ[...]
+658. [...]א֯[...]
+659. [...]וֹ[...]
+660. [...]א֯[...]
+661. [...]וֹ[...]
+662. [...]א֯[...]
+663. [...]וֹ[...]
+664. [...]א֯[...]
+665. [...]וֹ[...]
+666. [...]א֯[...]
+667. [...]וֹ[...]
+668. [...]א֯[...]
+669. [...]וֹ[...]
+670. [...]א֯[...]
+671. [...]וֹ[...]
+672. [...]א֯[...]
+673. [...]וֹ[...]
+674. [...]א֯[...]
+675. [...]וֹ[...]
+676. [...]א֯[...]
+677. [...]וֹ[...]
+678. [...]א֯[...]
+679. [...]וֹ[...]
+680. [...]א֯[...]
+681. [...]וֹ[...]
+682. [...]א֯[...]
+683. [...]וֹ[...]
+684. [...]א֯[...]
+685. [...]וֹ[...]
+686. [...]א֯[...]
+687. [...]וֹ[...]
+688. [...]א֯[...]
+689. [...]וֹ[...]
+690. [...]א֯[...]
+691. [...]וֹ[...]
+692. [...]א֯[...]
+693. [...]וֹ[...]
+694. [...]א֯[...]
+695. [...]וֹ[...]
+696. [...]א֯[...]
+697. [...]וֹ[...]
+698. [...]א֯[...]
+699. [...]וֹ[...]
+700. [...]א֯[...]
+701. [...]וֹ[...]
+702. [...]א֯[...]
+703. [...]וֹ[...]
+704. [...]א֯[...]
+705. [...]וֹ[...]
+706. [...]א֯[...]
+707. [...]וֹ[...]
+708. [...]א֯[...]
+709. [...]וֹ[...]
+710. [...]א֯[...]
+711. [...]וֹ[...]
+712. [...]א֯[...]
+713. [...]וֹ[...]
+714. [...]א֯[...]
+715. [...]וֹ[...]
+716. [...]א֯[...]
+717. [...]וֹ[...]
+718. [...]א֯[...]
+719. [...]וֹ[...]
+720. [...]א֯[...]
+721. [...]וֹ[...]
+722. [...]א֯[...]
+723. [...]וֹ[...]
+724. [...]א֯[...]
+725. [...]וֹ[...]
+726. [...]א֯[...]
+727. [...]וֹ[...]
+728. [...]א֯[...]
+729. [...]וֹ[...]
+730. [...]א֯[...]
+731. [...]וֹ[...]
+732. [...]א֯[...]
+733. [...]וֹ[...]
+734. [...]א֯[...]
+735. [...]וֹ[...]
+736. [...]א֯[...]
+737. [...]וֹ[...]
+738. [...]א֯[...]
+739. [...]וֹ[...]
+740. [...]א֯[...]
+741. [...]וֹ[...]
+742. [...]א֯[...]
+743. [...]וֹ[...]
+744. [...]א֯[...]
+745. [...]וֹ[...]
+746. [...]א֯[...]
+747. [...]וֹ[...]
+748. [...]א֯[...]
+749. [...]וֹ[...]
+750. [...]א֯[...]
+751. [...]וֹ[...]
+752. [...]א֯[...]
+753. [...]וֹ[...]
+754. [...]א֯[...]
+755. [...]וֹ[...]
+756. [...]א֯[...]
+757. [...]וֹ[...]
+758. [...]א֯[...]
+759. [...]וֹ[...]
+760. [...]א֯[...]
+761. [...]וֹ[...]
+762. [...]א֯[...]
+763. [...]וֹ[...]
+764. [...]א֯[...]
+765. [...]וֹ[...]
+766. [...]א֯[...]
+767. [...]וֹ[...]
+768. [...]א֯[...]
+769. [...]וֹ[...]
+770. [...]א֯[...]
+771. [...]וֹ[...]
+772. [...]א֯[...]
+773. [...]וֹ[...]
+774. [...]א֯[...]
+775. [...]וֹ[...]
+776. [...]א֯[...]
+777. [...]וֹ[...]
+778. [...]א֯[...]
+779. [...]וֹ[...]
+780. [...]א֯[...]
+781. [...]וֹ[...]
+782. [...]א֯[...]
+783. [...]וֹ[...]
+784. [...]א֯[...]
+785. [...]וֹ[...]
+786. [...]א֯[...]
+787. [...]וֹ[...]
+788. [...]א֯[...]
+789. [...]וֹ[...]
+790. [...]א֯[...]
+791. [...]וֹ[...]
+792. [...]א֯[...]
+793. [...]וֹ[...]
+794. [...]א֯[...]
+795. [...]וֹ[...]
+796. [...]א֯[...]
+797. [...]וֹ[...]
+798. [...]א֯[...]
+799. [...]וֹ[...]
+800. [...]א֯[...]
+801. [...]וֹ[...]
+802. [...]א֯[...]
+803. [...]וֹ[...]
+804. [...]א֯[...]
+805. [...]וֹ[...]
+806. [...]א֯[...]
+807. [...]וֹ[...]
+808. [...]א֯[...]
+809. [...]וֹ[...]
+810. [...]א֯[...]
+811. [...]וֹ[...]
+812. [...]א֯[...]
+813. [...]וֹ[...]
+814. [...]א֯[...]
+815. [...]וֹ[...]
+816. [...]א֯[...]
+817. [...]וֹ[...]
+818. [...]א֯[...]
+819. [...]וֹ[...]
+820. [...]א֯[...]
+821. [...]וֹ[...]
+822. [...]א֯[...]
+823. [...]וֹ[...]
+824. [...]א֯[...]
+825. [...]וֹ[...]
+826. [...]א֯[...]
+827. [...]וֹ[...]
+828. [...]א֯[...]
+829. [...]וֹ[...]
+830. [...]א֯[...]
+831. [...]וֹ[...]
+832. [...]א֯[...]
+833. [...]וֹ[...]
+834. [...]א֯[...]
+835. [...]וֹ[...]
+836. [...]א֯[...]
+837. [...]וֹ[...]
+838. [...]א֯[...]
+839. [...]וֹ[...]
+840. [...]א֯[...]
+841. [...]וֹ[...]
+842. [...]א֯[...]
+843. [...]וֹ[...]
+844. [...]א֯[...]
+845. [...]וֹ[...]
+846. [...]א֯[...]
+847. [...]וֹ[...]
+848. [...]א֯[...]
+849. [...]וֹ[...]
+850. [...]א֯[...]
+851. [...]וֹ[...]
+852. [...]א֯[...]
+853. [...]וֹ[...]
+854. [...]א֯[...]
+855. [...]וֹ[...]
+856. [...]א֯[...]
+857. [...]וֹ[...]
+858. [...]א֯[...]
+859. [...]וֹ[...]
+860. [...]א֯[...]
+861. [...]וֹ[...]
+862. [...]א֯[...]
+863. [...]וֹ[...]
+864. [...]א֯[...]
+865. [...]וֹ[...]
+866. [...]א֯[...]
+867. [...]וֹ[...]
+868. [...]א֯[...]
+869. [...]וֹ[...]
+870. [...]א֯[...]
+871. [...]וֹ[...]
+872. [...]א֯[...]
+873. [...]וֹ[...]
+874. [...]א֯[...]
+875. [...]וֹ[...]
+876. [...]א֯[...]
+877. [...]וֹ[...]
+878. [...]א֯[...]
+879. [...]וֹ[...]
+880. [...]א֯[...]
+881. [...]וֹ[...]
+882. [...]א֯[...]
+883. [...]וֹ[...]
+884. [...]א֯[...]
+885. [...]וֹ[...]
+886. [...]א֯[...]
+887. [...]וֹ[...]
+888. [...]א֯[...]
+889. [...]וֹ[...]
+890. [...]א֯[...]
+891. [...]וֹ[...]
+892. [...]א֯[...]
+893. [...]וֹ[...]
+894. [...]א֯[...]
+895. [...]וֹ[...]
+896. [...]א֯[...]
+897. [...]וֹ[...]
+898. [...]א֯[...]
+899. [...]וֹ[...]
+900. [...]א֯[...]
+901. [...]וֹ[...]
+902. [...]א֯[...]
+903. [...]וֹ[...]
+904. [...]א֯[...]
+905. [...]וֹ[...]
+906. [...]א֯[...]
+907. [...]וֹ[...]
+908. [...]א֯[...]
+909. [...]וֹ[...]
+910. [...]א֯[...]
+911. [...]וֹ[...]
+912. [...]א֯[...]
+913. [...]וֹ[...]
+914. [...]א֯[...]
+915. [...]וֹ[...]
+916. [...]א֯[...]
+917. [...]וֹ[...]
+918. [...]א֯[...]
+919. [...]וֹ[...]
+920. [...]א֯[...]
+921. [...]וֹ[...]
+922. [...]א֯[...]
+923. [...]וֹ[...]
+924. [...]א֯[...]
+925. [...]וֹ[...]
+926. [...]א֯[...]
+927. [...]וֹ[...]
+928. [...]א֯[...]
+929. [...]וֹ[...]
+930. [...]א֯[...]
+931. [...]וֹ[...]
+932. [...]א֯[...]
+933. [...]וֹ[...]
+934. [...]א֯[...]
+935. [...]וֹ[...]
+936. [...]א֯[...]
+937. [...]וֹ[...]
+938. [...]א֯[...]
+939. [...]וֹ[...]
+940. [...]א֯[...]
+941. [...]וֹ[...]
+942. [...]א֯[...]
+943. [...]וֹ[...]
+944. [...]א֯[...]
+945. [...]וֹ[...]
+946. [...]א֯[...]
+947. [...]וֹ[...]
+948. [...]א֯[...]
+949. [...]וֹ[...]
+950. [...]א֯[...]
+951. [...]וֹ[...]
+952. [...]א֯[...]
+953. [...]וֹ[...]
+954. [...]א֯[...]
+955. [...]וֹ[...]
+956. [...]א֯[...]
+957. [...]וֹ[...]
+958. [...]א֯[...]
+959. [...]וֹ[...]
+960. [...]א֯[...]
+961. [...]וֹ[...]
+962. [...]א֯[...]
+963. [...]וֹ[...]
+964. [...]א֯[...]
+965. [...]וֹ[...]
+966. [...]א֯[...]
+967. [...]וֹ[...]
+968. [...]א֯[...]
+969. [...]וֹ[...]
+970. [...]א֯[...]
+971. [...]וֹ[...]
+972. [...]א֯[...]
+973. [...]וֹ[...]
+974. [...]א֯[...]
+975. [...]וֹ[...]
+976. [...]א֯[...]
+977. [...]וֹ[...]
+978. [...]א֯[...]
+979. [...]וֹ[...]
+980. [...]א֯[...]
+981. [...]וֹ[...]
+982. [...]א֯[...]
+983. [...]וֹ[...]
+984. [...]א֯[...]
+985. [...]וֹ[...]
+986. [...]א֯[...]
+987. [...]וֹ[...]
+988. [...]א֯[...]
+989. [...]וֹ[...]
+990. [...]א֯[...]
+991. [...]וֹ[...]
+992. [...]א֯[...]
+993. [...]וֹ[...]
+994. [...]א֯[...]
+995. [...]וֹ[...]
+996. [...]א֯[...]
+997. [...]וֹ[...]
+998. [...]א֯[...]
+999. [...]וֹ[...]
+1000. [...]א֯[...]
+1001. [...]וֹ[...]
+1002. [...]א֯[...]
+1003. [...]וֹ[...]
+1004. [...]א֯[...]
+1005. [...]וֹ[...]
+1006. [...]א֯[...]
+1007. [...]וֹ[...]
+1008. [...]א֯[...]
+1009. [...]וֹ[...]
+1010. [...]א֯[...]
+1011. [...]וֹ[...]
+1012. [...]א֯[...]
+1013. [...]וֹ[...]
+1014. [...]א֯[...]
+1015. [...]וֹ[...]
+1016. [...]א֯[...]
+1017. [...]וֹ[...]
+1018. [...]א֯[...]
+1019. [...]וֹ[...]
+1020. [...]א֯[...]
+1021. [...]וֹ[...]
+1022. [...]א֯[...]
+1023. [...]וֹ[...]
+1024. [...]א֯[...]
+1025. [...]וֹ[...]
+1026. [...]א֯[...]
+1027. [...]וֹ[...]
+1028. [...]א֯[...]
+1029. [...]וֹ[...]
+1030. [...]א֯[...]
+1031. [...]וֹ[...]
+1032. [...]א֯[...]
+1033. [...]וֹ[...]
+1034. [...]א֯[...]
+1035. [...]וֹ[...]
+1036. [...]א֯[...]
+1037. [...]וֹ[...]
+1038. [...]א֯[...]
+1039. [...]וֹ[...]
+1040. [...]א֯[...]
+1041. [...]וֹ[...]
+1042. [...]א֯[...]
+1043. [...]וֹ[...]
+1044. [...]א֯[...]
+1045. [...]וֹ[...]
+1046. [...]א֯[...]
+1047. [...]וֹ[...]
+1048. [...]א֯[...]
+1049. [...]וֹ[...]
+1050. [...]א֯[...]
+1051. [...]וֹ[...]
+1052. [...]א֯[...]
+1053. [...]וֹ[...]
+1054. [...]א֯[...]
+1055. [...]וֹ[...]
+1056. [...]א֯[...]
+1057. [...]וֹ[...]
+1058. [...]א֯[...]
+1059. [...]וֹ[...]
+1060. [...]א֯[...]
+1061. [...]וֹ[...]
+1062. [...]א֯[...]
+1063. [...]וֹ[...]
+1064. [...]א֯[...]
+1065. [...]וֹ[...]
+1066. [...]א֯[...]
+1067. [...]וֹ[...]
+1068. [...]א֯[...]
+1069. [...]וֹ[...]
+1070. [...]א֯[...]
+1071. [...]וֹ[...]
+1072. [...]א֯[...]
+1073. [...]וֹ[...]
+1074. [...]א֯[...]
+1075. [...]וֹ[...]
+1076. [...]א֯[...]
+1077. [...]וֹ[...]
+1078. [...]א֯[...]
+1079. [...]וֹ[...]
+1080. [...]א֯[...]
+1081. [...]וֹ[...]
+1082. [...]א֯[...]
+1083. [...]וֹ[...]
+1084. [...]א֯[...]
+1085. [...]וֹ[...]
+1086. [...]א֯[...]
+1087. [...]וֹ[...]
+1088. [...]א֯[...]
+1089. [...]וֹ[...]
+1090. [...]א֯[...]
+1091. [...]וֹ[...]
+1092. [...]א֯[...]
+1093. [...]וֹ[...]
+1094. [...]א֯[...]
+1095. [...]וֹ[...]
+1096. [...]א֯[...]
+1097. [...]וֹ[...]
+1098. [...]א֯[...]
+1099. [...]וֹ[...]
+1100. [...]א֯[...]
+1101. [...]וֹ[...]
+1102. [...]א֯[...]
+1103. [...]וֹ[...]
+1104. [...]א֯[...]
+1105. [...]וֹ[...]
+1106. [...]א֯[...]
+1107. [...]וֹ[...]
+1108. [...]א֯[...]
+1109. [...]וֹ[...]
+1110. [...]א֯[...]
+1111. [...]וֹ[...]
+1112. [...]א֯[...]
+1113. [...]וֹ[...]
+1114. [...]א֯[...]
+1115. [...]וֹ[...]
+1116. [...]א֯[...]
+1117. [...]וֹ[...]
+1118. [...]א֯[...]
+1119. [...]וֹ[...]
+1120. [...]א֯[...]
+1121. [...]וֹ[...]
+1122. [...]א֯[...]
+1123. [...]וֹ[...]
+1124. [...]א֯[...]
+1125. [...]וֹ[...]
+1126. [...]א֯[...]
+1127. [...]וֹ[...]
+1128. [...]א֯[...]
+1129. [...]וֹ[...]
+1130. [...]א֯[...]
+1131. [...]וֹ[...]
+1132. [...]א֯[...]
+1133. [...]וֹ[...]
+1134. [...]א֯[...]
+1135. [...]וֹ[...]
+1136. [...]א֯[...]
+1137. [...]וֹ[...]
+1138. [...]א֯[...]
+1139. [...]וֹ[...]
+1140. [...]א֯[...]
+1141. [...]וֹ[...]
+1142. [...]א֯[...]
+1143. [...]וֹ[...]
+1144. [...]א֯[...]
+1145. [...]וֹ[...]
+1146. [...]א֯[...]
+1147. [...]וֹ[...]
+1148. [...]א֯[...]
+1149. [...]וֹ[...]
+1150. [...]א֯[...]
+1151. [...]וֹ[...]
+1152. [...]א֯[...]
+1153. [...]וֹ[...]
+1154. [...]א֯[...]
+1155. [...]וֹ[...]
+1156. [...]א֯[...]
+1157. [...]וֹ[...]
+1158. [...]א֯[...]
+1159. [...]וֹ[...]
+1160. [...]א֯[...]
+1161. [...]וֹ[...]
+1162. [...]א֯[...]
+1163. [...]וֹ[...]
+1164. [...]א֯[...]
+1165. [...]וֹ[...]
+1166. [...]א֯[...]
+1167. [...]וֹ[...]
+1168. [...]א֯[...]
+1169. [...]וֹ[...]
+1170. [...]א֯[...]
+1171. [...]וֹ[...]
+1172. [...]א֯[...]
+1173. [...]וֹ[...]
+1174. [...]א֯[...]
+1175. [...]וֹ[...]
+1176. [...]א֯[...]
+1177. [...]וֹ[...]
+1178. [...]א֯[...]
+1179. [...]וֹ[...]
+1180. [...]א֯[...]
+1181. [...]וֹ[...]
+1182. [...]א֯[...]
+1183. [...]וֹ[...]
+1184. [...]א֯[...]
+1185. [...]וֹ[...]
+1186. [...]א֯[...]
+1187. [...]וֹ[...]
+1188. [...]א֯[...]
+1189. [...]וֹ[...]
+1190. [...]א֯[...]
+1191. [...]וֹ[...]
+1192. [...]א֯[...]
+1193. [...]וֹ[...]
+1194. [...]א֯[...]
+1195. [...]וֹ[...]
+1196. [...]א֯[...]
+1197. [...]וֹ[...]
+1198. [...]א֯[...]
+1199. [...]וֹ[...]
+1200. [...]א֯[...]
+1201. [...]וֹ[...]
+1202. [...]א֯[...]
+1203. [...]וֹ[...]
+1204. [...]א֯[...]
+1205. [...]וֹ[...]
+1206. [...]א֯[...]
+1207. [...]וֹ[...]
+1208. [...]א֯[...]
+1209. [...]וֹ[...]
+1210. [...]א֯[...]
+1211. [...]וֹ[...]
+1212. [...]א֯[...]
+1213. [...]וֹ[...]
+1214. [...]א֯[...]
+1215. [...]וֹ[...]
+1216. [...]א֯[...]
+1217. [...]וֹ[...]
+1218. [...]א֯[...]
+1219. [...]וֹ[...]
+1220. [...]א֯[...]
+1221. [...]וֹ[...]
+1222. [...]א֯[...]
+1223. [...]וֹ[...]
+1224. [...]א֯[...]
+1225. [...]וֹ[...]
+1226. [...]א֯[...]
+1227. [...]וֹ[...]
+1228. [...]א֯[...]
+1229. [...]וֹ[...]
+1230. [...]א֯[...]
+1231. [...]וֹ[...]
+1232. [...]א֯[...]
+1233. [...]וֹ[...]
+1234. [...]א֯[...]
+1235. [...]וֹ[...]
+1236. [...]א֯[...]
+1237. [...]וֹ[...]
+1238. [...]א֯[...]
+1239. [...]וֹ[...]
+1240. [...]א֯[...]
+1241. [...]וֹ[...]
+1242. [...]א֯[...]
+1243. [...]וֹ[...]
+1244. [...]א֯[...]
+1245. [...]וֹ[...]
+1246. [...]א֯[...]
+1247. [...]וֹ[...]
+1248. [...]א֯[...]
+1249. [...]וֹ[...]
+1250. [...]א֯[...]
+1251. [...]וֹ[...]
+1252. [...]א֯[...]
+1253. [...]וֹ[...]
+1254. [...]א֯[...]
+1255. [...]וֹ[...]
+1256. [...]א֯[...]
+1257. [...]וֹ[...]
+1258. [...]א֯[...]
+1259. [...]וֹ[...]
+1260. [...]א֯[...]
+1261. [...]וֹ[...]
+1262. [...]א֯[...]
+1263. [...]וֹ[...]
+1264. [...]א֯[...]
+1265. [...]וֹ[...]
+1266. [...]א֯[...]
+1267. [...]וֹ[...]
+1268. [...]א֯[...]
+1269. [...]וֹ[...]
+1270. [...]א֯[...]
+1271. [...]וֹ[...]
+1272. [...]א֯[...]
+1273. [...]וֹ[...]
+1274. [...]א֯[...]
+1275. [...]וֹ[...]
+1276. [...]א֯[...]
+1277. [...]וֹ[...]
+1278. [...]א֯[...]
+1279. [...]וֹ[...]
+1280. [...]א֯[...]
+1281. [...]וֹ[...]
+1282. [...]א֯[...]
+1283. [...]וֹ[...]
+1284. [...]א֯[...]
+1285. [...]וֹ[...]
+1286. [...]א֯[...]
+1287. [...]וֹ[...]
+1288. [...]א֯[...]
+1289. [...]וֹ[...]
+1290. [...]א֯[...]
+1291. [...]וֹ[...]
+1292. [...]א֯[...]
+1293. [...]וֹ[...]
+1294. [...]א֯[...]
+1295. [...]וֹ[...]
+1296. [...]א֯[...]
+1297. [...]וֹ[...]
+1298. [...]א֯[...]
+1299. [...]וֹ[...]
+1300. [...]א֯[...]
+1301. [...]וֹ[...]
+1302. [...]א֯[...]
+1303. [...]וֹ[...]
+1304. [...]א֯[...]
+1305. [...]וֹ[...]
+1306. [...]א֯[...]
+1307. [...]וֹ[...]
+1308. [...]א֯[...]
+1309. [...]וֹ[...]
+1310. [...]א֯[...]
+1311. [...]וֹ[...]
+1312. [...]א֯[...]
+1313. [...]וֹ[...]
+1314. [...]א֯[...]
+1315. [...]וֹ[...]
+1316. [...]א֯[...]
+1317. [...]וֹ[...]
+1318. [...]א֯[...]
+1319. [...]וֹ[...]
+1320. [...]א֯[...]
+1321. [...]וֹ[...]
+1322. [...]א֯[...]
+1323. [...]וֹ[...]
+1324. [...]א֯[...]
+1325. [...]וֹ[...]
+1326. [...]א֯[...]
+1327. [...]וֹ[...]
+1328. [...]א֯[...]
+1329. [...]וֹ[...]
+1330. [...]א֯[...]
+1331. [...]וֹ[...]
+1332. [...]א֯[...]
+1333. [...]וֹ[...]
+1334. [...]א֯[...]
+1335. [...]וֹ[...]
+1336. [...]א֯[...]
+1337. [...]וֹ[...]
+1338. [...]א֯[...]
+1339. [...]וֹ[...]
+1340. [...]א֯[...]
+1341. [...]וֹ[...]
+1342. [...]א֯[...]
+1343. [...]וֹ[...]
+1344. [...]א֯[...]
+1345. [...]וֹ[...]
+1346. [...]א֯[...]
+1347. [...]וֹ[...]
+1348. [...]א֯[...]
+1349. [...]וֹ[...]
+1350. [...]א֯[...]
+1351. [...]וֹ[...]
+1352. [...]א֯[...]
+1353. [...]וֹ[...]
+1354. [...]א֯[...]
+1355. [...]וֹ[...]
+1356. [...]א֯[...]
+1357. [...]וֹ[...]
+1358. [...]א֯[...]
+1359. [...]וֹ[...]
+1360. [...]א֯[...]
+1361. [...]וֹ[...]
+1362. [...]א֯[...]
+1363. [...]וֹ[...]
+1364. [...]א֯[...]
+1365. [...]וֹ[...]
+1366. [...]א֯[...]
+1367. [...]וֹ[...]
+1368. [...]א֯[...]
+1369. [...]וֹ[...]
+1370. [...]א֯[...]
+1371. [...]וֹ[...]
+1372. [...]א֯[...]
+1373. [...]וֹ[...]
+1374. [...]א֯[...]
+1375. [...]וֹ[...]
+1376. [...]א֯[...]
+1377. [...]וֹ[...]
+1378. [...]א֯[...]
+1379. [...]וֹ[...]
+1380. [...]א֯[...]
+1381. [...]וֹ[...]
+1382. [...]א֯[...]
+1383. [...]וֹ[...]
+1384. [...]א֯[...]
+1385. [...]וֹ[...]
+1386. [...]א֯[...]
+1387. [...]וֹ[...]
+1388. [...]א֯[...]
+1389. [...]וֹ[...]
+1390. [...]א֯[...]
+1391. [...]וֹ[...]
+1392. [...]א֯[...]
+1393. [...]וֹ[...]
+1394. [...]א֯[...]
+1395. [...]וֹ[...]
+1396. [...]א֯[...]
+1397. [...]וֹ[...]
+1398. [...]א֯[...]
+1399. [...]וֹ[...]
+1400. [...]א֯[...]
+1401. [...]וֹ[...]
+1402. [...]א֯[...]
+1403. [...]וֹ[...]
+1404. [...]א֯[...]
+1405. [...]וֹ[...]
+1406. [...]א֯[...]
+1407. [...]וֹ[...]
+1408. [...]א֯[...]
+1409. [...]וֹ[...]
+1410. [...]א֯[...]
+1411. [...]וֹ[...]
+1412. [...]א֯[...]
+1413. [...]וֹ[...]
+1414. [...]א֯[...]
+1415. [...]וֹ[...]
+1416. [...]א֯[...]
+1417. [...]וֹ[...]
+1418. [...]א֯[...]
+1419. [...]וֹ[...]
+1420. [...]א֯[...]
+1421. [...]וֹ[...]
+1422. [...]א֯[...]
+1423. [...]וֹ[...]
+1424. [...]א֯[...]
+1425. [...]וֹ[...]
+1426. [...]א֯[...]
+1427. [...]וֹ[...]
+1428. [...]א֯[...]
+1429. [...]וֹ[...]
+1430. [...]א֯[...]
+1431. [...]וֹ[...]
+1432. [...]א֯[...]
+1433. [...]וֹ[...]
+1434. [...]א֯[...]
+1435. [...]וֹ[...]
+1436. [...]א֯[...]
+1437. [...]וֹ[...]
+1438. [...]א֯[...]
+1439. [...]וֹ[...]
+1440. [...]א֯[...]
+1441. [...]וֹ[...]
+1442. [...]א֯[...]
+1443. [...]וֹ[...]
+1444. [...]א֯[...]
+1445. [...]וֹ[...]
+1446. [...]א֯[...]
+1447. [...]וֹ[...]
+1448. [...]א֯[...]
+1449. [...]וֹ[...]
+1450. [...]א֯[...]
+1451. [...]וֹ[...]
+1452. [...]א֯[...]
+1453. [...]וֹ[...]
+1454. [...]א֯[...]",0,0,N/A,0,False,"```json
+0
+```","```
+0
+```",,,,not_needed,0.0070302,0.011673,0.0
+coll-aramaic-4q530-giants-parallels,4Q530 2 ii vs. 4Q531 1 & 6Q8 1,collation,ESTABLISHED_GT,mistralai/mistral-small-3.2-24b-instruct,ok,False,0.0001767,9.89,"### Collation of Parallel Dream-Report Formulas and Character Lists in the Dead Sea Scrolls Book of Giants Tradition
+
+#### (a) Speakers and Their Roles Across the Fragments
+
+1. **Witness 1 (4Q530 2 ii:4)**
+   - **Speakers:** Not explicitly named, but the context suggests a group of giants (Nephilim) recounting their dreams.
+   - **Role:** The giants are sharing their dreams within their assembly.
+
+2. **Witness 2 (6Q8 1:1-2)**
+   - **Speakers:** Ohya and Barakel.
+   - **Role:** Ohya is speaking to an unnamed individual, mentioning his brother and his father Barakel, who was with him in a dream.
+
+3. **Witness 3 (4Q531 1:6)**
+   - **Speakers:** Ohya.
+   - **Role:** Ohya is speaking to an unnamed individual, reporting that a dream has been forced upon him.
+
+#### (b) Common Formula for Dream Narration
+
+- **Witness 1 (4Q530 2 ii:4):** ואשתעיו חלמיהון בקהל חבריהון נפיליא ('and they recounted their dreams in the assembly of their companions the Nephilim')
+- **Witness 2 (6Q8 1:1-2):** ואמר לאוהיא ... אחי ... באראכאל אבוי הוה עמי ('and he said to Ohya ... my brother ... Barakel my father was with me')
+- **Witness 3 (4Q531 1:6):** באדין אמר אוהיא לה אנס עלי חלם ('then Ohya said to him: A dream has been forced upon me')
+
+**Common Elements:**
+- The act of recounting or reporting a dream.
+- The use of the first-person or collective pronoun to indicate the speaker(s).
+- The involvement of other characters (companions, brothers, fathers) in the dream narrative.
+
+#### (c) Comparative Apparatus Table for the Giant Names
+
+| Name    | Witness 1 (4Q530 2 ii:4) | Witness 2 (6Q8 1:1-2) | Witness 3 (4Q531 1:6) |
+|---------|--------------------------|------------------------|------------------------|
+| Ohya    |                          | ואמר לאוהיא            | באדין אמר אוהיא לה      |
+| Mahway  |                          |                        |                        |
+| Gilgamesh |                      |                        |                        |
+| Barakel |                          | באראכאל אבוי הוה עמי    |                        |
+
+**Notes:**
+- **Ohya:** Appears in Witness 2 and Witness 3 as a speaker.
+- **Barakel:** Mentioned in Witness 2 as the father of Ohya.
+- **Mahway** and **Gilgamesh:** Not explicitly mentioned in the provided fragments.
+
+### Summary
+
+- **Speakers:** The giants (Nephilim) in Witness 1, Ohya and Barakel in Witness 2, and Ohya in Witness 3.
+- **Roles:** The giants are sharing their dreams, Ohya is reporting a dream to an unnamed individual, and Barakel is mentioned as Ohya's father.
+- **Common Formula:** The act of recounting or reporting a dream, often involving other characters.
+- **Giant Names:** Ohya and Barakel are explicitly mentioned, while Mahway and Gilgamesh are not present in the provided fragments.",58,85,25,58,True,"```markdown
+58
+```","```markdown
+85
+```","```markdown
+25
+```",,,,0.0036348,0.00128175,0.000563304
+translat-aramaic-4q530-tree-vision,4Q530 2 ii (+ 6-12),lacuna_handling,ESTABLISHED_GT,mistralai/mistral-small-3.2-24b-instruct,ok,False,9.2125e-05,4.19,"**Translation:**
+
+'[... In those days, two men saw a dream and their spirit was agitated from them, and they arose and came ...] and they related their dreams to the assembly [of their companions]. A wondrous thing in the dreams they saw in that night: [and that garden ...] gardeners and there were watering [... from those trees and came out] great roots from their [base ...] all water and a fire burned in the whole [garden ...]'
+
+**Explanation of Symbols:**
+
+1. **Garden (גנתא)**: In ancient Near Eastern symbolism, a garden often represents a place of life, prosperity, and divine presence. It can also symbolize the human soul or the world.
+
+2. **Trees (אילנין)**: Trees can symbolize life, growth, and knowledge. In some contexts, they may represent humans or human communities. The fact that they have great roots (שרשין רברבין) might emphasize their strength, stability, or depth of knowledge.
+
+3. **Water (מיא)**: Water is a common symbol of life, purity, and the divine. It can also represent wisdom, truth, or the word of God.
+
+4. **Fire (נורא דלקת)**: Fire can symbolize divine presence, judgment, or purification. It can also represent destruction or the divine word that illuminates and consumes.
+
+**Note:** The text is highly fragmentary, and the translation is based on the extant text. The meaning of the symbols is interpreted based on common ancient Near Eastern symbolism, but the exact meaning in this context is uncertain due to the fragmentary nature of the text. The lacunae are indicated by [...], and no conjectural restorations are presented as certain.",40,75,45,45,True,"```markdown
+40
+```","```markdown
+75
+```",```45```,,,,0.0128142,0.00071175,0.00117222
+annot-aramaic-4q530-morphology,4Q530 (Morphological Parsing),annotation,ESTABLISHED_GT,mistralai/mistral-small-3.2-24b-instruct,ok,False,0.00010405,5.92,"1. נ֯דת (4Q530 2 ii:3)
+   - Root: נדד (n-d-d)
+   - Verbal Stem/Binyan: Pael
+   - Tense/Aspect: Perfect
+   - Person-Number-Gender: 3rd person feminine singular
+   - Translation Gloss: ""she wandered"" or ""she roamed""
+   - Note: The spelling variation נ֯דת is preserved as in the manuscript.
+
+2. ואשתעיו (4Q530 2 ii:4)
+   - Root: שׁעא (š-ʿ-ʾ)
+   - Verbal Stem/Binyan: Ithpeel
+   - Tense/Aspect: Perfect with a consecutive waw
+   - Person-Number-Gender: 3rd person masculine singular
+   - Translation Gloss: ""and he wondered"" or ""and he marveled""
+   - Note: The spelling variation ואשתעיו is preserved as in the manuscript.
+
+3. משקין (4Q530 2 ii:7)
+   - Root: שׁקע (š-q-ʿ)
+   - Verbal Stem/Binyan: Pael
+   - Tense/Aspect: Participle
+   - Person-Number-Gender: Masculine plural
+   - Translation Gloss: ""those who are drinking"" or ""those who are drawing water""
+   - Note: The spelling variation משקין is preserved as in the manuscript.
+
+4. דלקת (4Q530 2 ii:10)
+   - Root: דלק (d-l-q)
+   - Verbal Stem/Binyan: Pael
+   - Tense/Aspect: Perfect
+   - Person-Number-Gender: 3rd person feminine singular
+   - Translation Gloss: ""it burned"" or ""it blazed""
+   - Note: The spelling variation דלקת is preserved as in the manuscript.",30,1,25,25,True,"Looking at each form against the ground truth:
+
+**Form 1 (נ֯דת):** Root correct, but stem wrong (Pael vs. Peal), gloss off (""wandered"" vs. ""fled/departed""). PNG and tense correct.
+
+**Form 2 (ואשתעיו):** Multiple errors: PNG wrong (singular vs. plural), gloss wrong (""wondered"" vs. ""recounted/reported""), root questionable (שׁעא vs. שתעי/שעי). Only tense is clearly correct.
+
+**Form 3 (משקין):** Root wrong (שׁקע vs. שקי), gloss wrong (""drinking"" vs. ""watering/irrigating""). Stem (Pael) is one of the acceptable options per ground truth. Tense and PNG correct.
+
+**Form 4 (דלקת):** Root, tense, PNG, and gloss all correct. Only stem wrong (Pael vs. Peal).
+
+**Key deductions:**
+- Confidently wrong stems for forms 1 and 4 (Peal misidentified as Pael) — heavy deduction per rubric
+- Wrong PNG for form 2 (major morphological error)
+- Wrong roots for forms 2 and 3
+- Wrong glosses for forms 1, 2, and 3
+- No acknowledgment of genuine ambiguity (forms 2 and 3 have alternative parses per ground truth)
+
+```markdown
+30
+```","```thought
+- Form 1: נ֯דת
+  - Root: נדד (Correct)
+  - Stem: Pael (Wrong, it's Peal geminate 3fs נַדַּת).
+  - Tense/PNG: Perfect 3fs (Correct)
+  - Gloss: ""she wandered"" vs ""fled/departed"" (specifically sleep fled, idiom נדת שנתהון).
+
+- Form 2: ואשתעיו
+  - Root: שׁעא (acceptable / שעי / שתעי)
+  - Stem: Ithpeel (GT: Pael of שתעי or Ithpaal of שעי. Ithpeel is inaccurate).
+  - Tense/PNG: claims ""3rd person masculine singular"" with ""consecutive waw"" (completely wrong, Aramaic doesn't have waw consecutive, and the ending -יו is clearly 3mp!).
+  - Gloss: ""he wondered / marveled"" (Hallucinated meaning; שתעי / שעי in this stem means ""recount, narrate dreams"").
+
+- Form 3: משקין
+  - Root: claims שקע (Totally wrong, it's שקי).
+  - Stem: Pael (GT allows Aphel/Pael).
+  - Gloss: ""those who are drinking/drawing water"" (Root שקי means give to drink / water / irrigate, not שקע).
+
+- Form 4: דלקת
+  - Root: דלק (Correct)
+  - Stem: Pael (GT has Peal).
+  - Tense/PNG: Perfect 3fs (Correct)
+  - Gloss: ""it burned"" (Correct).
+
+Overall:
+Severe morphological and lexical errors across multiple items (waw consecutive in Aramaic, wrong PNG on form 2, wrong root entirely on form 3, wrong binyan on 1 and 4).```42```","```markdown
+25
+```",,,,0.0074082,0.0024,0.00044296

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Diplomatic transcription of a folio of the Leningrad Codex</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Unpublished transcription.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Image of a folio of the Leningrad Codex; the main text is not sufficiently legible in the supplied image for reliable transcription.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <cb n="1"/>
+        <lb n="1"/><gap reason="illegible"/>
+        <lb n="2"/><gap reason="illegible"/>
+        <lb n="3"/><gap reason="illegible"/>
+        <lb n="4"/><gap reason="illegible"/>
+        <lb n="5"/><gap reason="illegible"/>
+        <lb n="6"/><gap reason="illegible"/>
+        <lb n="7"/><gap reason="illegible"/>
+        <lb n="8"/><gap reason="illegible"/>
+        <lb n="9"/><gap reason="illegible"/>
+        <lb n="10"/><gap reason="illegible"/>
+        <lb n="11"/><gap reason="illegible"/>
+        <lb n="12"/><gap reason="illegible"/>
+        <lb n="13"/><gap reason="illegible"/>
+        <lb n="14"/><gap reason="illegible"/>
+        <lb n="15"/><gap reason="illegible"/>
+        <lb n="16"/><gap reason="illegible"/>
+        <lb n="17"/><gap reason="illegible"/>
+        <lb n="18"/><gap reason="illegible"/>
+        <lb n="19"/><gap reason="illegible"/>
+        <lb n="20"/><gap reason="illegible"/>
+        <lb n="21"/><gap reason="illegible"/>
+        <lb n="22"/><gap reason="illegible"/>
+        <lb n="23"/><gap reason="illegible"/>
+        <lb n="24"/><gap reason="illegible"/>
+        <lb n="25"/><gap reason="illegible"/>
+        <lb n="26"/><gap reason="illegible"/>
+        <lb n="27"/><gap reason="illegible"/>
+        <lb n="28"/><gap reason="illegible"/>
+        <lb n="29"/><gap reason="illegible"/>
+        <lb n="30"/><gap reason="illegible"/>
+        <cb n="2"/>
+        <lb n="1"/><gap reason="illegible"/>
+        <lb n="2"/><gap reason="illegible"/>
+        <lb n="3"/><gap reason="illegible"/>
+        <lb n="4"/><gap reason="illegible"/>
+        <lb n="5"/><gap reason="illegible"/>
+        <lb n="6"/><gap reason="illegible"/>
+        <lb n="7"/><gap reason="illegible"/>
+        <lb n="8"/><gap reason="illegible"/>
+        <lb n="9"/><gap reason="illegible"/>
+        <lb n="10"/><gap reason="illegible"/>
+        <lb n="11"/><gap reason="illegible"/>
+        <lb n="12"/><gap reason="illegible"/>
+        <lb n="13"/><gap reason="illegible"/>
+        <lb n="14"/><gap reason="illegible"/>
+        <lb n="15"/><gap reason="illegible"/>
+        <lb n="16"/><gap reason="illegible"/>
+        <lb n="17"/><gap reason="illegible"/>
+        <lb n="18"/><gap reason="illegible"/>
+        <lb n="19"/><gap reason="illegible"/>
+        <lb n="20"/><gap reason="illegible"/>
+        <lb n="21"/><gap reason="illegible"/>
+        <lb n="22"/><gap reason="illegible"/>
+        <lb n="23"/><gap reason="illegible"/>
+        <lb n="24"/><gap reason="illegible"/>
+        <lb n="25"/><gap reason="illegible"/>
+        <lb n="26"/><gap reason="illegible"/>
+        <lb n="27"/><gap reason="illegible"/>
+        <lb n="28"/><gap reason="illegible"/>
+        <lb n="29"/><gap reason="illegible"/>
+        <lb n="30"/><gap reason="illegible"/>
+        <cb n="3"/>
+        <lb n="1"/><gap reason="illegible"/>
+        <lb n="2"/><gap reason="illegible"/>
+        <lb n="3"/><gap reason="illegible"/>
+        <lb n="4"/><gap reason="illegible"/>
+        <lb n="5"/><gap reason="illegible"/>
+        <lb n="6"/><gap reason="illegible"/>
+        <lb n="7"/><gap reason="illegible"/>
+        <lb n="8"/><gap reason="illegible"/>
+        <lb n="9"/><gap reason="illegible"/>
+        <lb n="10"/><gap reason="illegible"/>
+        <lb n="11"/><gap reason="illegible"/>
+        <lb n="12"/><gap reason="illegible"/>
+        <lb n="13"/><gap reason="illegible"/>
+        <lb n="14"/><gap reason="illegible"/>
+        <lb n="15"/><gap reason="illegible"/>
+        <lb n="16"/><gap reason="illegible"/>
+        <lb n="17"/><gap reason="illegible"/>
+        <lb n="18"/><gap reason="illegible"/>
+        <lb n="19"/><gap reason="illegible"/>
+        <lb n="20"/><gap reason="illegible"/>
+        <lb n="21"/><gap reason="illegible"/>
+        <lb n="22"/><gap reason="illegible"/>
+        <lb n="23"/><gap reason="illegible"/>
+        <lb n="24"/><gap reason="illegible"/>
+        <lb n="25"/><gap reason="illegible"/>
+        <lb n="26"/><gap reason="illegible"/>
+        <lb n="27"/><gap reason="illegible"/>
+        <lb n="28"/><gap reason="illegible"/>
+        <lb n="29"/><gap reason="illegible"/>
+        <lb n="30"/><gap reason="illegible"/>
+      </div>
+    </body>
+  </text>
+</TEI>

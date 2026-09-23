@@ -1,0 +1,500 @@
+benchmark,siglum,task_type,verification_status,model,answer_status,answer_cached,answer_cost_usd,answer_latency_s,answer,score::minimax/minimax-m3,score::google/gemini-3.8-flash,score::deepseek/deepseek-v4-flash (tiebreak),score_consensus,tiebreak_triggered,score_raw::minimax/minimax-m3,score_raw::google/gemini-3.8-flash,score_raw::deepseek/deepseek-v4-flash (tiebreak),score_error::minimax/minimax-m3,score_error::google/gemini-3.8-flash,score_error::deepseek/deepseek-v4-flash (tiebreak),score_cost_usd::minimax/minimax-m3,score_cost_usd::google/gemini-3.8-flash,score_cost_usd::deepseek/deepseek-v4-flash (tiebreak)
+trans-greek-marchalianus-p11,Vat. gr. 2125 p. 11 (Marchalianus),transcription,ESTABLISHED_GT,google/gemini-3.5-flash-lite,ok,True,0.0028822,5.31,"As a strict philologist, I present the two requested transcription layers from the provided image of Codex Marchalianus p. 11, strictly preserving all scribal features without normalization of spelling variations.
+
+### 1. DIPLOMATIC LAYER
+(Majuscules, scriptio continua, lunate Ϲ and Ⲱ, overlines for Nomina Sacra, exact line breaks and puncta/ornaments as visible on the manuscript)
+
+Line 1: 𐅃ⲰΝⳞΥNⳞAIT.ПРO⳰HΤⲰN. KAI.ΠOΘEN.EICI. KAI.ΠOY. (Note: standardizing glyphs to available Unicode majuscules with lunate sigmas/omegas and supralinear elements as visible:  
+`[line 1 heading ornament/overline elements]`  
+`BIOCAIⳞΥNⳞAITIPOMHTWNKAIПOΘENEICIKAIΠOY` *(Wait, let's look closer at line 1 and 2)*:
+
+Line 1: 
+̅Ο̅Ν̅Ⳟ̅Υ̅Ⳟ̅A̅I̅Τ̅.̅Π̅Ρ̅Ο̅Ⳟ̅Η̅Τ̅Ⲱ̅Ν̅ ̅Κ̅Α̅Ι̅ ̅Π̅Ο̅Θ̅Ε̅Ν̅ ̅Ε̅Ι̅Ⳟ̅Ι̅ ̅Κ̅Α̅Ι̅ ̅Π̅Ο̅Υ̅  
+*(Strict diplomatic reading of line 1)*:  
+̅Β̅Ι̅Ο̅Ⳟ̅ ̅Τ̅Ⲱ̅Ν̅ ̅Π̅Ρ̅Ο̅Ⳟ̅Η̅Τ̅Ⲱ̅Ν̅ ̅Κ̅Α̅Ι̅ ̅Π̅Ο̅Θ̅Ε̅Ν̅ ̅Ε̅Ι̅Ⳟ̅Ι̅ ̅Κ̅Α̅Ι̅ ̅Π̅Ο̅Υ̅
+
+Let us transcribe exactly what the pixels show:
+**Line 1:** 
+BIOCⳞTⳞNⳞIIPOMHTWNKAIΠOΘENEICIKAIΠΟΥ  
+*(Wait, let's trace character by character from the image)*:
+`ΒΙΟϹ ΤⲰΝ ΠΡΟ⳰ΗΤⲰΝ ΚΑΙ ΠΟΘΕΝ ΕΙϹΙ ΚΑΙ ΠΟΥ` (with overlines on certain abbreviations if present, here `ⳞⲰΝ` / `ΠΡO⳰ΗΤⲰΝ`). Let's render the diplomatic transcription strictly:
+
+Line 1: ΒΙΟϹΤⲰΝΠΡΟ⳰ΗΤⲰΝ ΚΑΙΠΟΘΕΝΕΙϹΙΚΑΙΠΟΥ
+Line 2: AΠΕΘΑΝΟΝ ΚΑΙΠⲰϹ ΚΑΙΠΟΥΚΕΙΝΤΑΙ ⁖ ⸖ ⸖ ⁓
+Line 3: ̅Η̅Ϲ̅Α̅Ι̅Α̅Ⳟ̅ ̅Α̅Π̅Ο̅ ̅Ι̅Ε̅Ρ̅Ο̅Υ̅Ⳟ̅Α̅Λ̅Η̅Μ̅ ̅Η̅Ν̅ ̅Δ̅Ε̅ ̅Κ̅Α̅Ι̅ ̅Υ̅Π̅Ο̅Ⳟ̅Τ̅Α̅Ν̅Α̅Ϲ̅
+Line 4: ̅Ε̅Ν̅Π̅Ρ̅Ι̅Ⳟ̅Θ̅Ε̅Ι̅Ⳟ̅ ̅Ε̅Ι̅Ⳟ̅ ̅Δ̅Υ̅Ο̅·̅ ̅Κ̅Α̅Ι̅ ̅Ε̅Τ̅Ε̅Θ̅Η̅ ̅Υ̅Π̅Ο̅Κ̅Α̅Τ̅Ⲱ̅
+
+*(Note on lacunae: No interior lacunae or missing text breaks are present in these 4 visible lines; all extant letters are legible).*
+
+---
+
+### 2. NORMALIZED CRITICAL LAYER
+(Lower-case, standard word division, expanded breathings/accents, resolved Nomina Sacra)
+
+Line 1: βίος τῶν προφητῶν, καὶ πόθεν εἰσί, καὶ ποῦ
+Line 2: ἀπέθανον, καὶ πῶς, καὶ ποῦ κεῖνται·
+Line 3: Ἠσαΐας ἀπὸ Ἱερουσαλήμ· ἦν δὲ καὶ ὑποστάνας
+Line 4: ἐνπρισθείς εἰς δύο· καὶ ἐτέθη ὑποκάτω",5,30,5,5,True,"```5
+```","The model suffered severe hallucinations and character recognition errors:
+- Line 1: Read ΒΙΟϹ instead of ΟΝΟΜΑΤΑ (huge discrepancy).
+- Line 3: Read ΗΝ ΔΕ ΚΑΙ ΥΠΟϹΤΑΝΑϹ instead of ΘΝΗϹΚΕΙ ΫΠΟ ΜΑΝΑϹ.
+- Line 4: Read ΕΝΠΡΙϹΘΕΙϹ instead of ϹΗ ΠΡΙϹΘΕΙϹ.
+- Strange, erratic Unicode characters (Coptic/Gothic glyphs like Ⳟ, ⳰) and internal confusion/false starts left directly in the diplomatic transcription output.
+
+```
+30
+```",```5```,,,,0.0063666,0.0019815,0.000841252
+coll-greek-marchalianus-vitae,Vat. gr. 2125 p. 11 vs. Schermann 1907,collation,SELF_CONTAINED_GT,google/gemini-3.5-flash-lite,ok,True,0.0004757,1.19,"Strict philological collation of Codex Marchalianus (M) against the base text of Schermann (S) for *Lives of the Prophets*:
+
+1. 
+[ἔχει δὲ εἴσοδον ἀπὸ Γαβαών] ἥτις ἔχει εἴσοδον ἀπὸ Γαβαών M; *(addition)*
+
+2. 
+[ἠρώτων γὰρ οἱ πολέμιοι] ἠρώτων γὰρ οἱ πολέμιοι πόθεν πίνουσιν M; *(addition)*
+
+3. 
+[καὶ ἐδόθη αὐτοῖς χρησμὸς] ὅτι καὶ χρησμὸς ἐδόθη αὐτοῖς M; *(transposition and addition)*",72,82,N/A,77,False,"Looking at the candidate answer against the ground truth:
+
+**Locus 1:** The candidate correctly identifies the reading but **misclassifies** the variant as ""addition"" when the ground truth identifies it as a **substitution** (δὲ → ἥτις). This is a significant typological error — δὲ and ἥτις occupy the same syntactic slot, making this a substitution, not an addition.
+
+**Locus 2:** Correctly identified as an addition. ✓
+
+**Locus 3:** Correctly identified as transposition and addition. ✓
+
+**Assessment:**
+- Variant detection: All three variants found, none invented. ✓
+- Correct alignment: Lemmas and readings properly paired. ✓
+- Variant typology: 2/3 correct; locus 1 misclassified (substitution → addition). ✗
+- Apparatus discipline: Well-formed with lemma, reading, siglum. ✓
+
+The misclassification of locus 1 is a meaningful error in variant typology, though the readings themselves are correctly identified.
+
+```markdown
+72
+```","```markdown
+82
+```",,,,not_needed,0.0039117,0.00177375,0.0
+translat-greek-marchalianus-siloam,Vat. gr. 2125 p. 11 (Siloam Miracle),translation,ESTABLISHED_GT,google/gemini-3.5-flash-lite,ok,True,0.0017984,3.35,"""And God performed the sign of Siloam through the prophet; because before dying, having grown faint, he prayed to drink water, and immediately it was sent to him from it; therefore it was called Siloam, which is interpreted 'Sent'—[lacuna in manuscript]—if, therefore, the Jews were coming, water would come forth; but if foreigners, no; wherefore until today it suddenly comes forth, so that the mystery might be shown.""
+
+*(Note: The ellipsis in the source text represents a lacuna / break in the manuscript tradition at this point; no conjectural restoration is supplied.)*",75,92,98,92,True,"Looking at the candidate answer against the ground truth:
+
+**Lexical accuracy:**
+- ""διὰ τὸν προφήτην"" rendered as ""through the prophet"" rather than ""for the sake of the prophet"" — this is a meaningful mistranslation that changes the sense (God acting through the prophet vs. God acting on behalf of the prophet).
+- ""ἀπεσταλμένος"" rendered as ""interpreted"" rather than ""translated"" — minor but the Greek specifically means ""translated.""
+
+**Morphological correctness:**
+- The imperfect tenses (ἤρχοντο, ἐξήρχετο) are rendered as ""were coming... would come forth,"" introducing an unwarranted conditional/future sense. The ground truth's simple past (""came... flowed out"") better captures the habitual past meaning.
+- Otherwise segmentation and morphology are handled well.
+
+**Handling of uncertainty:**
+- The candidate explicitly flags the lacuna with ""[lacuna in manuscript]"" and adds a scholarly note declining to restore it. This is actually better practice than the ground truth's bare ellipsis, showing appropriate caution.
+
+**Formal stuckness:**
+- No silent normalization of scribal anomalies detected.
+
+**Summary of deductions:**
+- Significant lexical error on ""διὰ τὸν προφήτην"" (~10-12 points)
+- Tense distortion on the conditional clauses (~5-8 points)
+- Minor ""interpreted"" vs. ""translated"" (~2 points)
+- Bonus for proper lacuna handling (+3-5 points)
+
+```json
+75
+```","```
+92
+```",```98```,,,,0.0044874,0.00086775,0.000335268
+annot-greek-marchalianus-tei-msd,Vat. gr. 2125 p. 11 (TEI MSD & Lemma),annotation,ESTABLISHED_GT,google/gemini-3.5-flash-lite,ok,True,0.0052051,6.64,"As a strict philologist, I present the analysis of the provided text from Codex Marchalianus. No lacunae are present in this specific segment. Scribal orthography is preserved strictly without normalization.
+
+### 1. Philological Transcription & Morphosyntactic Parse
+
+* **Ἠσαΐας** – Lemma: Ἠσαΐας | POS: Proper Noun (N) | Parsing: Nominative, Singular, Masculine
+* **ἀπὸ** – Lemma: ἀπό | POS: Preposition (PREP) | Parsing: governs Genitive
+* **Ἱερουσαλὴμ** – Lemma: Ἱερουσαλήμ | POS: Proper Noun (N) | Parsing: Indeclinable (Genitive function)
+* **θνῄσκει** – Lemma: θνῄσκω | POS: Verb (V) | Parsing: Present, Indicative, Active, 3rd Person, Singular
+* **ὑπὸ** – Lemma: ὑπό | POS: Preposition (PREP) | Parsing: governs Genitive
+* **Μανασσῆ** – Lemma: Μανασσῆς | POS: Proper Noun (N) | Parsing: Genitive, Singular, Masculine (scribal contraction/variant for Μανασσῆς)
+* **ἐν** – Lemma: ἐν | POS: Preposition (PREP) | Parsing: governs Dative
+* **πρίσει** – Lemma: πρίσις | POS: Noun (N) | Parsing: Dative, Singular, Feminine
+* **εἰς** – Lemma: εἰς | POS: Preposition (PREP) | Parsing: governs Accusative
+* **δύο** – Lemma: δύο | POS: Numeral (NUM) | Parsing: Indeclinable
+* **καὶ** – Lemma: καί | POS: Conjunction (CONJ) | Parsing: coordinating
+* **ἐτέθη** – Lemma: τίθημι | POS: Verb (V) | Parsing: Aorist, Passive, Indicative, 3rd Person, Singular
+* **ὑποκάτω** – Lemma: ὑποκάτω | POS: Adverb / Improper Preposition (ADV) | Parsing: governs Genitive
+* **δρυὸς** – Lemma: δρῦς | POS: Noun (N) | Parsing: Genitive, Singular, Feminine
+* **Ῥωγήλ** – Lemma: Ῥωγήλ | POS: Proper Noun (N) | Parsing: Indeclinable (Genitive function)
+
+---
+
+### 2. TEI XML Encoding
+
+```xml
+<ab>
+  <w lemma=""Ἠσαΐας"" msd=""Case=Nom|Number=Sing|Gender=Masc|Type=Proper"">Ἠσαΐας</w>
+  <w lemma=""ἀπό"" msd=""AdpType=Prep"">ἀπὸ</w>
+  <w lemma=""Ἱερουσαλήμ"" msd=""Case=Gen|Type=Proper"">Ἱερουσαλὴμ</w>
+  <w lemma=""θνῄσκω"" msd=""Mood=Ind|Number=Sing|Person=3|Tense=Pres|Voice=Act"">θνῄσκει</w>
+  <w lemma=""ὑπό"" msd=""AdpType=Prep"">ὑπὸ</w>
+  <w lemma=""Μανασσῆς"" msd=""Case=Gen|Number=Sing|Gender=Masc|Type=Proper"">Μανασσῆ</w>
+  <w lemma=""ἐν"" msd=""AdpType=Prep"">ἐν</w>
+  <w lemma=""πρίσις"" msd=""Case=Dat|Number=Sing|Gender=Fem"">πρίσει</w>
+  <w lemma=""εἰς"" msd=""AdpType=Prep"">εἰς</w>
+  <w lemma=""δύο"" msd=""NumType=Card"">δύο</w>
+  <pununctuation>·</pununctuation>
+  <w lemma=""καί"" msd=""ConjunctionType=Coord"">καὶ</w>
+  <w lemma=""τίθημι"" msd=""Mood=Ind|Number=Sing|Person=3|Tense=Aor|Voice=Pass"">ἐτέθη</w>
+  <w lemma=""ὑποκάτω"" msd=""Degree=Pos"">ὑποκάτω</w>
+  <w lemma=""δρῦς"" msd=""Case=Gen|Number=Sing|Gender=Fem"">δρυὸς</w>
+  <w lemma=""Ῥωγήλ"" msd=""Case=Gen|Type=Proper"">Ῥωγήλ</w>
+  <pununctuation>.</pununctuation>
+</ab>
+```",82,100,85,85,True,"Looking at the candidate answer against the ground truth:
+
+**Morphological correctness:**
+- All verbal parses (θνῄσκει as VPAI3S, ἐτέθη as VAPI3S) are correct.
+- Noun cases/numbers/genders are all correctly identified.
+- However, in the TEI XML, ὑποκάτω has `msd=""Degree=Pos""` which is wrong — it should be marked as a preposition (P), not with an adjective/adverb degree feature.
+
+**Lexical accuracy:**
+- All lemmas (Ἠσαΐας, ἀπό, Ἱερουσαλήμ, θνῄσκω, ὑπό, Μανασσῆς, ἐν, πρίσις, εἰς, δύο, καί, τίθημι, ὑποκάτω, δρῦς, Ῥωγήλ) are correct.
+
+**Syntactic role:**
+- Prepositions correctly identified with their governed cases.
+- Agent role of Μανασσῆ noted.
+- Means role of πρίσει noted.
+
+**Handling of uncertainty:**
+- The parse descriptions correctly note Ἱερουσαλήμ and Ῥωγήλ as ""Indeclinable,"" but the TEI msd attributes contradict this by assigning `Case=Gen` — an internal inconsistency.
+- The msd format differs from ground truth (UD-style feature-value pairs vs. EAGLES compact codes), which is a stylistic deviation but not inherently wrong.
+
+**TEI XML issues:**
+- `<pununctuation>` is not a valid TEI element (should be `<pc>`).
+- ὑποκάτω msd is incorrect.
+- Inconsistent treatment of indeclinable nouns between parse text and msd attribute.
+
+The parse descriptions are thorough and accurate, but the TEI XML has notable errors and inconsistencies.
+
+```markdown
+82
+```","```narrative
+The candidate provides an accurate regularized text, an exact and flawless morphosyntactic parse for all words, and valid TEI-compatible XML (though it invents `<pununctuation>` instead of TEI's standard `<pc>`, the `<w>` tags and attributes are fully correct and well-formed).
+```
+
+```100
+```",```85```,,,,0.0076782,0.00196725,0.000918512
+encode-greek-marchalianus-teiheader,Vat. gr. 2125 (Codex Marchalianus Header),encoding,ESTABLISHED_GT,google/gemini-3.5-flash-lite,ok,True,0.001533,2.21,"```xml
+<teiHeader xmlns=""http://www.tei-c.org/ns/1.0"">
+   <fileDesc>
+      <titleStmt>
+         <title>Codex Marchalianus: Lives of the Prophets and Isaiah</title>
+      </titleStmt>
+      <publicationStmt>
+         <publisher>Biblioteca Apostolica Vaticana</publisher>
+         <availability>
+            <p>Public Domain / Digitized under the auspices of the Biblioteca Apostolica Vaticana.</p>
+         </availability>
+      </publicationStmt>
+      <sourceDesc>
+         <msDesc>
+            <msIdentifier>
+               <settlement>Vatican City</settlement>
+               <country>Vatican</country>
+               <repository>Biblioteca Apostolica Vaticana</repository>
+               <idno>Vat. gr. 2125</idno>
+               <msName>Codex Marchalianus</msName>
+            </msIdentifier>
+            <msContents>
+               <msItem>
+                  <locus>Various</locus>
+                  <title>Lives of the Prophets (Vitae Prophetarum) - Isaiah</title>
+                  <textLang mainLang=""grc"">Ancient Greek</textLang>
+               </msItem>
+            </msContents>
+            <physDesc>
+               <objectDesc form=""codex"">
+                  <supportDesc>
+                     <support>
+                        <material>Parchment</material>
+                     </support>
+                     <extent>
+                        <dimensions type=""leaf"" unit=""mm"">
+                           <height>295</height>
+                           <width>179</width>
+                        </dimensions>
+                     </extent>
+                     <collation>
+                        <p>Codex format.</p>
+                     </collation>
+                  </supportDesc>
+                  <layoutDesc>
+                     <layout columns=""1""/>
+                  </layoutDesc>
+               </objectDesc>
+               <scriptDesc>
+                  <scriptNote>Greek Uncial / Majuscule with lunate sigmas and Nomina Sacra</scriptNote>
+               </scriptDesc>
+            </physDesc>
+            <history>
+               <origin>
+                  <origPlace>Egypt</origPlace>
+                  <origDate notBefore=""0500-01-01"" notAfter=""0699-12-31"">6th to 7th century</origDate>
+               </origin>
+            </history>
+         </msDesc>
+      </sourceDesc>
+   </fileDesc>
+</teiHeader>
+```",50,95,35,50,True,"```markdown
+50
+```","```chart
+95
+```","```xml
+35
+```",,,,0.0030831,0.00125625,0.000833078
+trans-latin-vatlat629-f3v,Vat. lat. 629 f. 3v (§37 Esaias),transcription,SELF_CONTAINED_GT,google/gemini-3.5-flash-lite,ok,True,0.0013593,2.5,"As a strict philologist, I present the two requested transcription layers from the provided image of Vat. lat. 629 f. 3v, strictly preserving scribal features in the diplomatic layer without normalizing orthographic variants (such as *amos* for *Amos*, *illuſ* for *illius*, *checue* for *Thecue*, etc.), and providing the expanded classical orthography in the normalized layer.
+
+---
+
+### (1) DIPLOMATIC LAYER
+
+[Red rubricated initial E]  
+E Saiaſ filiuſ amoſ . non illiuſ  
+pphe . ſed alteriuſ qui ſimile nuncupat̄ ē . no  
+mine . Ille enim exnumero paſtoꝝ fuit . de oppido  
+thecue . Hic autē genere nobili ortuſ ē . ierl̄m .  
+Quē etiā hebrei aiunt ſocrū fuiſſe manaſſe . In quo  
+tanta fuit ſc̄itas . q̄ uitae excellentia . ut unam  
+tantū dicerē habuiſſe tunicā ciličinā . Quamqꝝ :  
+
+---
+
+### (2) NORMALIZED CRITICAL LAYER
+
+Esaias filius Amos, non illius  
+prophetae, sed alterius qui similis nuncupatus est nomine.  
+Ille enim ex numero pastorum fuit, de oppido  
+Thecue. Hic autem genere nobili ortus est Hierusalem.  
+Quem etiam Hebraei aiunt socrum fuisse Manasse. In quo  
+tanta fuit sanctitas, quae vitae excellentia, ut unam  
+tantum dicerent habuisse tunicam cilicinam. Quamquam:",58,98,90,90,True,"Looking at this carefully, I need to evaluate the candidate's transcription against the ground truth across multiple dimensions.
+
+**Diplomatic Layer Analysis (Lines 1-4):**
+- Long-s preserved correctly ✓
+- ""pphe"" instead of ""p̄phe"" — lost the macron abbreviation mark over p
+- Added spaces around periods (minor normalization)
+- ""exnumero"" vs. ground truth's ""ex numero"" — potential misreading
+- Otherwise largely faithful
+
+**Diplomatic Layer Analysis (Lines 5-7, optional):**
+- ""ſc̄itas"" vs. ground truth's ""scītas"" — macron position wrong (should be over i, not c)
+- ""q̄ uitae"" vs. ground truth's ""& uite"" — misread ""&"" (et) as ""q̄"" (que)
+- ""dicerē"" vs. ground truth's ""diceret̄"" — macron position wrong
+- ""Quamqꝝ"" vs. ground truth's ""Quamq:"" — different abbreviation symbol
+- ""ciličinā"" has an unusual háček on the c
+
+**Normalized Layer Analysis:**
+- ""simile"" (ground truth) vs. ""similis"" (candidate) — substantive textual variant
+- ""ortus in Hierusalem"" (ground truth) vs. ""ortus est Hierusalem"" (candidate) — substantive textual variant
+- Otherwise reasonable expansion
+
+**Summary of Issues:**
+- Multiple abbreviation mark misplacements in extended lines
+- Two substantive textual variants in normalized layer
+- Minor normalization (spaces around periods)
+- Lost macron in p̄phe
+
+The core lines 1-4 are mostly faithful with minor issues, but the extended lines contain several abbreviation mark errors, and the normalized layer introduces substantive textual variants not present in the ground truth.
+
+```json
+58
+```","```
+98
+```","```90
+```",,,,0.0087816,0.0010065,0.000961852
+coll-latin-vatlat629-isidore,Vat. lat. 629 f. 3v vs. Chaparro Gómez 1985,collation,SELF_CONTAINED_GT,google/gemini-3.5-flash-lite,ok,True,0.0002113,0.68,"[ille] Hic V ;
+[hic genere nobilis ortus in Hierusalem] Hic autem genere nobili ortus est Hierusalem V ;
+[atrocique supplicio excruciatum extincxit] atroque supplicio excruciatum extinxit V ;",35,40,N/A,37.5,False,"Looking at the candidate answer against the ground truth:
+
+**Variant 1**: `[ille] Hic V ;` — Correct lemma, reading, and siglum. ✓ But missing the SUBSTITUTION classification.
+
+**Variant 2**: `[hic genere nobilis ortus in Hierusalem] Hic autem genere nobili ortus est Hierusalem V ;` — **Critical alignment error**: the lemma includes ""in"" but the reading omits it without any indication (ground truth uses ellipsis and `[om. in]`). The omission of ""in"" is not properly marked as a variant. Also missing classifications (ADDITION of autem, SUBSTITUTION of nobili, OMISSION of in).
+
+**Variant 3**: `[atrocique supplicio excruciatum extincxit] atroque supplicio excruciatum extinxit V ;` — Correct readings, but missing the SUBSTITUTION and ORTHOGRAPHIC classifications.
+
+**Scoring by dimensions**:
+- *Variant detection*: All three variant locations identified, but the omission of ""in"" in variant 2 is not properly flagged as a distinct variant point (~60%).
+- *Correct alignment*: Variant 2 has a real misalignment (lemma contains ""in"" but reading lacks it without notation) (~50%).
+- *Variant typology*: No classifications provided at all (0%).
+- *Apparatus discipline*: Format is mostly correct but missing required classifications and has the alignment issue in variant 2 (~40%).
+
+```markdown
+35
+```","```markdown
+40
+```",,,,not_needed,0.0057255,0.00216825,0.0
+translat-latin-vatlat629-seraphim,Vat. lat. 629 f. 3v (Seraphim Vision & Martyrdom),translation,ESTABLISHED_GT,google/gemini-3.5-flash-lite,ok,True,0.0024048,3.23,"""Moreover, the Hebrews hand down [the tradition] that Isaiah was put to death for two reasons: first, because he called them rulers of Sodom and people of Gomorrah; second, because, while the Lord bore witness to Moses «You will not be able to see my face», this man dared to cry out: «I saw the Lord sitting upon a high throne...», the Jews, blinded in mind, not considering that in what follows [he] had narrated that the Seraphim covered the face and feet of God, and writes that he saw only His middle parts. He lies beneath the oak of Rogel near the conduits of waters.""",88,96,N/A,92,False,"```88
+```","```
+96
+```",,,,not_needed,0.0035535,0.00054,0.0
+annot-latin-vatlat629-abbreviations,Vat. lat. 629 f. 3v (Scribal Abbreviation Encoding),annotation,ESTABLISHED_GT,google/gemini-3.5-flash-lite,ok,True,0.001359,2.24,"### (1) Expanded Normalized Latin Text
+iuxta imperium domini nudo corpore, nudoque vestigio in conventu populi conversatus est.
+
+### (2) Grammatical Parse
+*   **imp̃ium** (*imperium*): Noun, neuter, singular, accusative (direct object of the preposition *iuxta*).
+*   **dn̄i** (*domini*): Noun, masculine, singular, genitive (possessive modifier modifying *imperium*).
+*   **ppl̄i** (*populi*): Noun, masculine, singular, genitive (possessive or partitive modifier modifying *conventu*).
+*   **conuerſatuſ ē** (*conversatus est*): Verb, deponent (conversor), perfect tense, indicative mood, 3rd person, singular (main predicate of the clause, with *est* written separately as an auxiliary).
+
+### (3) TEI P5 XML Encoding
+
+```xml
+<ab>
+  <w>iuxta</w> 
+  <choice>
+    <abbr>imp̃ium</abbr>
+    <expan>imperium</expan>
+  </choice> 
+  <choice>
+    <abbr>dn̄i</abbr>
+    <expan>domini</expan>
+  </choice> 
+  <w>nudo</w> 
+  <w>corpore</w>
+  <pc>.</pc> 
+  <w>nudoq<ex>ue</ex></w> <!-- or using choice/abbr for the suspension/enclitic -->
+  <w>ueſtigio</w> 
+  <w>in</w> 
+  <w>conuentu</w> 
+  <choice>
+    <abbr>ppl̄i</abbr>
+    <expan>populi</expan>
+  </choice> 
+  <w>conuerſatuſ</w> 
+  <w>ē</w>
+  <pc>.</pc>
+</ab>
+```
+*(Note: For strict diplomatic fidelity regarding the scribal abbreviation mark on `q:`, it may also be encoded via `<choice><abbr>nudoq:</abbr><expan>nudoque</expan></choice>` depending on the specific project guidelines).*",78,88,N/A,83,False,"```markdown
+78
+```","```markdown
+88
+```",,,,not_needed,0.0035277,0.00192,0.0
+trans-aramaic-4q530-f2ii,4Q530 col. 2 (Frag. 6 / lines 6-9),transcription,ESTABLISHED_GT,google/gemini-3.5-flash-lite,ok,True,0.000849,1.82,"As a strict philologist adhering to Dead Sea Scrolls epigraphic conventions, I provide below the diplomatic transcription of the ink physically visible on fragment 4Q530 (col. 2, Frag. 6). Lacunae are marked with square brackets `[...]`, damaged or doubtful letters with a supralinear dot (`̇`), and no normalization or unpreserved text restoration has been applied.
+
+Line 1: `[...]גל̇ מ̇י̇[...`  
+Line 2: `[...] א̇נ̇י̇א י̇ס̇פ̇ א̇מ̇ר̇ [...]`  
+Line 3: `[...]ה̇ ב̇רא̇י̇ צ̇ל̇ מ̇י̇רא̇י̇[...]`  
+Line 4: `[...] מ̇ח̇ו̇י̇ן ס̇פ̇ר̇ין מ̇[...]`",0,0,N/A,0,False,"```json
+0
+```","```json
+0
+```",,,,not_needed,0.00209385,0.0018225,0.0
+coll-aramaic-4q530-giants-parallels,4Q530 2 ii vs. 4Q531 1 & 6Q8 1,collation,ESTABLISHED_GT,google/gemini-3.5-flash-lite,ok,True,0.0052929,7.83,"As a strict philologist, I present the collation of the provided Aramaic fragments from the Book of Giants tradition, adhering strictly to the manuscript evidence without spelling normalization or unverified conjectural restorations.
+
+### (a) Speakers and Their Roles Across the Fragments
+
+*   **Witness 1 (4Q530 2 ii:4):** 
+    *   *Speaker:* Plural indefinite / Group of Nephilim (indicated by the 3rd person masculine plural verbal form ואשתעיו, ""and they recounted"").
+    *   *Role:* Collective narrators presenting their dreams publicly ""in the assembly of their companions the Nephilim"" (בקהל חבריהון נפיליא).
+*   **Witness 2 (6Q8 1:1–2):** 
+    *   *Speaker:* Unnamed interlocutor (lacuna present between ואמר לאוהיא and אחי). 
+    *   *Role:* Direct speaker addressing Ohya, invoking familial lineage (""my brother... Barakel my father was with me"" [ל]אשר ... אחי ... באראכאל אבוי הוה עמי). Note the scribal lacuna immediately following the mention of Ohya.
+*   **Witness 3 (4Q531 1:6):** 
+    *   *Speaker:* Ohya (אוהיא).
+    *   *Role:* Active dream-reporter stating that a vision has been forcefully imposed upon him (אנס עלי חלם).
+
+---
+
+### (b) Common Formulas for Dream Narration
+
+The parallel tradition utilizes two distinct formulas for introducing and reporting visionary experiences:
+
+1.  **Public/Collective Recounting Formula (Witness 1 - 4Q530):**
+    *   [Verb of recounting, *š-y-ʕ* stem *hithpael*] + [Dream noun + 3mp suffix] + [Locative/Assembly marker].
+    *   Text: ואשתעיו חלמיהון בקהל...
+2.  **Direct Discourse / Experiential Formula (Witnesses 2 & 3 - 6Q8 & 4Q531):**
+    *   [Verb of speaking, *ʾ-m-r*] + [Named Speaker] + [Direct discourse introducing the internal/external compulsion of the dream].
+    *   Text (4Q531): באדין אמר אוהיא לה אנס עלי חלם.
+
+---
+
+### (c) Comparative Apparatus Table for Giant Names
+
+*Philological Note:* Of the requested characters, only **Ohya** and **Barakel** appear in the provided witness transcriptions. **Mahway** and **Gilgamesh** are absent from these specific lines/fragments (lacunae/unattested in this specific dataset); no conjectural insertions are supplied.
+
+| Witness | Manuscript | Character Name | Attested Spelling (Orthography) | Context / Scribal Anomalies & Lacunae |
+| :--- | :--- | :--- | :--- | :--- |
+| **1** | 4Q530 2 ii:4 | *Nephilim* (General) | נפיליא (*n-p-y-l-y-ʾ*) | Collective designation; pl. emphatic state. No lacuna. |
+| **2** | 6Q8 1:1 | **Ohya** | לאוהיא (*l-ʾ-w-h-y-ʾ*) | Preceded by preposition *lamed*; followed by a physical lacuna in the manuscript before *[...]* אחי. |
+| **2** | 6Q8 1:2 | **Barakel** | באראכאל (*b-ʾ-r-ʾ-k-ʾ-l*) | Theophoric element *-el* intact; functions as patronymic (*aboy*). |
+| **3** | 4Q531 1:6 | **Ohya** | אוהיא (*ʾ-w-h-y-ʾ*) | Subject of the speech introduction (אמר אוהיא). Spelled defectively/plene consistently with 6Q8. |
+| **—** | *4Q530 / 4Q531 / 6Q8* | **Mahway** | *Unattested* | Absent from the provided text segments. |
+| **—** | *4Q530 / 4Q531 / 6Q8* | **Gilgamesh** | *Unattested* | Absent from the provided text segments. |",85,100,88,88,True,"```markdown
+85
+```","```markdown
+100
+```",```88```,,,,0.00303135,0.00145425,0.00072142
+translat-aramaic-4q530-tree-vision,4Q530 2 ii (+ 6-12),lacuna_handling,ESTABLISHED_GT,google/gemini-3.5-flash-lite,ok,True,0.0041069,6.82,"As a strict philologist, I present the translation of the surviving Aramaic text of 4Q530 column 2, preserving the exact fragmentary nature of the manuscript. Physical breaks in the text are explicitly marked with brackets (`[...]`), and no missing words are supplied as absolute certainties beyond what the surviving letters permit.
+
+### Translation of 4Q530 Col. 2
+
+[... Then both of them dreamed dreams, and the sleep of their eyes fled from them, and they arose and came ...] and they related their dreams in the assembly of [their companions,] the giants. In my dream I was seeing this night, [and behold, a garden ...] gardens, and they were watering [... trees, and there went forth] large roots from their roots [...] all the water, and fire burned in all [the garden ...]
+
+***
+
+### Philological Notes on Scribal Features
+*   **Orthography:** The text exhibits standard Middle Aramaic orthography characteristic of the Dead Sea Scrolls (e.g., plene spelling such as *חלמין* for dreams, *חבריהון* for their companions). Scribal anomalies and variations in spacing are preserved in the transcription.
+*   **Lacunae:** Significant portions of the physical leather are lost at the beginnings and ends of clauses (noted by `[...]`), particularly regarding the exact number or description of the trees and the full extent of the fiery destruction.
+
+***
+
+### Analysis of Symbolic Meaning (Enochic/Parabiblical Context)
+
+In the context of the *Book of Giants* (4Q530), which expands upon the Enochic cycle, dream visions function as premonitions of imminent divine judgment (the Deluge and inter-necine destruction) awaiting the Nephilim. 
+
+1.  **The Garden (גנתא / גננין):** 
+    *   *Symbolic Meaning:* The garden represents the cultivated sphere of the Nephilim's dominion on earth—their perceived paradise or established order. In ancient Near Eastern and apocalyptic literature, a garden or orchard often symbolizes a closed community, a dynasty, or a planted order. Here, it frames the terrestrial domain over which the giants rule.
+2.  **The Trees (אילנין) and Roots (שרשין):** 
+    *   *Symbolic Meaning:* In the broader Enochic tradition (cf. 1 Enoch and the *Book of Giants* arboreal symbolism), trees directly symbolize the giants themselves and their offspring. The ""large roots"" emerging ""from their roots"" represent the ancestral stock and lineage of the Nephilim. The imagery anticipates their violent uprooting, signifying that their generation will be completely eradicated from the earth, leaving no descendants.
+3.  **The Water (מיא):** 
+    *   *Symbolic Meaning:* Water in this apocalyptic context prefigures the cosmic judgment of the Flood. While gardens require water to live, the overwhelming presence of water—coupled with fire—signals cataclysmic destruction. It represents the cleansing and overwhelming force that will sweep away the illicit offspring of the Watchers.
+4.  **The Fire (נורא):** 
+    *   *Symbolic Meaning:* Fire is the quintessential symbol of divine wrath, trial, and total annihilation in apocalyptic literature. While water washes away the physical domain, the fire that ""burned in all [the garden]"" signifies the complete, inescapable destruction and purgation of the Nephilim and their works, leaving total ruin behind.",65,95,85,85,True,"```markdown
+65
+```","```markdown
+95
+```","```85
+```",,,,0.00377625,0.00099825,0.00060166
+annot-aramaic-4q530-morphology,4Q530 (Morphological Parsing),annotation,ESTABLISHED_GT,google/gemini-3.5-flash-lite,ok,True,0.0037802,5.76,"As a strict philologist, I present the morphological and lexical analysis of the requested Aramaic verbal forms from 4Q530, preserving the manuscript's orthography without normalization:
+
+### 1. נ֯דת (4Q530 2 ii:3) in 'ושנת עינהון נדת מנהון'
+*   **Root:** נ-ד-ד (*n-d-d*)
+*   **Stem/Binyan:** Peal
+*   **Tense/Aspect:** Perfect
+*   **Person-Number-Gender (PNG):** 3rd person feminine singular (agreeing with feminine *šnat*)
+*   **Translation Gloss:** ""fled / wandered away""
+*   *Philological Note:* The first radical (נ֯) bears a supralinear scribal supralinear dot/marking in the manuscript, preserved here without alteration.
+
+### 2. ואשתעיו (4Q530 2 ii:4) in 'ואשתעיו חלמיהון'
+*   **Root:** ש-ע-י (*š-ע-y* / *š-'/y*)
+*   **Stem/Binyan:** Ithpaal 
+*   **Tense/Aspect:** Perfect (with waw-conjunctive)
+*   **PNG:** 3rd person masculine plural
+*   **Translation Gloss:** ""and they recounted / related""
+
+### 3. משקין (4Q530 2 ii:7) in 'והוו משקין'
+*   **Root:** ש-ק-י (*š-q-y*)
+*   **Stem/Binyan:** Aphel (Causative)
+*   **Tense/Aspect:** Active Participle (masculine plural, governed by the periphrastic auxiliary *hww*)
+*   **PNG:** Masculine plural
+*   **Translation Gloss:** ""[they] were watering / giving to drink""
+
+### 4. דלקת (4Q530 2 ii:10) in 'ונורא דלקת'
+*   **Root:** ד-ל-ק (*d-l-q*)
+*   **Stem/Binyan:** Peal
+*   **Tense/Aspect:** Active Participle (or Perfect; functioning as a predicate adjective/participle)
+*   **PNG:** 3rd person feminine singular (agreeing with the grammatically feminine noun *nura*)
+*   **Translation Gloss:** ""burning / [was] kindled""",88,98,N/A,93,False,"```markdown
+88
+```","```json
+98
+```",,,,not_needed,0.0035532,0.0009405,0.0

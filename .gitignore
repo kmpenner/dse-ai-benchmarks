@@ -1,0 +1,8 @@
+site/
+pages/resac2026/
+pages/docs/
+__pycache__/
+.env
+*.env
+.venv/
+resac2026/crop_aramaic_4q530_frag6.jpg
