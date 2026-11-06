@@ -3,7 +3,7 @@
 This is the replication package for **"From Author to Editor"**, presented at RESAC 2026 (Memorial University of Newfoundland, 26 September 2026).
 
 - Authors: Ken M. Penner and Demarquis Moss (St. Francis Xavier University)
-- Funding: SSHRC Insight Development Grant R0253025
+- Funding: SSHRC Insight Development Grant 430-2026-01662
 
 The study benchmarks large language models on digital scholarly editing tasks in Greek, Latin, Aramaic and Hebrew: transcription, collation, annotation, encoding, lacuna handling and translation.
 

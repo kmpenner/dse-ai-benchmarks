@@ -1,6 +1,6 @@
 # From Author to Editor: AI benchmarks for digital scholarly editing
 
-Replication materials for the RESAC 2026 paper (SSHRC Insight Development Grant R0253025).
+Replication materials for the RESAC 2026 paper (SSHRC Insight Development Grant 430-2026-01662).
 
 `editio-bench` tests 44 models in 57 configurations on thirteen editorial tasks across three manuscripts: a Latin Caroline minuscule page (*Vat.lat.629*), a Greek uncial page (Codex Marchalianus, *Vat. gr. 2125*) and a damaged Aramaic Dead Sea Scrolls fragment (4Q530).
 

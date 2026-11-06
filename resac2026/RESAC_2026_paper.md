@@ -6,7 +6,7 @@
 *Proceedings of the Research in Religious Studies Association of Canada (RESAC 2026)*
 *Annual Meeting: Teaching, Technology, and the Future of Religious Studies*
 *Memorial University of Newfoundland · September 26, 2026*
-*Project: SSHRC Insight Development Grant (IDG) — Generative AI in Digital Humanities Research Methodology (`R0253025`)*
+*Project: SSHRC Insight Development Grant (IDG) — Generative AI in Digital Humanities Research Methodology (`430-2026-01662`)*
 
 ---
 
